@@ -10,7 +10,7 @@ export function Header() {
 					<span className="text-2xl font-bold">MW</span>
 				</Link>
 
-				<ul className="flex justify-end gap-2">
+				<ul className="flex justify-end gap-8">
 					<li>
 						<Link href="#">
 							<Button variant="link">Projekty</Button>
