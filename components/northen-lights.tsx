@@ -38,7 +38,7 @@ export function NorthenLights() {
 	if (!mounted) return null;
 
 	return (
-		<div className="absolute inset-0 -z-10 overflow-hidden">
+		<div className="absolute inset-0 -z-10 min-h-[150vh] overflow-hidden">
 			<div
 				className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]"
 				style={{opacity, transition: 'opacity 5s'}}
