@@ -72,6 +72,17 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 								</ul>
 							</div>
 						)}
+
+						{position.technologies.length > 0 && (
+							<div className="mt-4">
+								<h4 className="mb-1 text-sm font-semibold">
+									Technologia:
+								</h4>
+								<p className="text-muted-foreground text-sm">
+									{position.technologies.join(', ')}
+								</p>
+							</div>
+						)}
 					</div>
 				))}
 			</CardContent>

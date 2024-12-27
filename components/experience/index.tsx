@@ -10,6 +10,7 @@ export interface Experience {
 		startDate: Date;
 		endDate?: Date;
 		description: string;
+		technologies: string[];
 		projects: Array<{
 			name: string;
 			description: string;
@@ -40,6 +41,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
@@ -65,6 +67,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
@@ -89,6 +92,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 			{
 				title: 'Frontend Developer',
@@ -108,6 +112,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 			{
 				title: 'Junior Frontend Developer',
@@ -127,6 +132,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
@@ -152,6 +158,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
@@ -177,6 +184,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
@@ -202,6 +210,7 @@ const experiences: Experience[] = [
 							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
 					},
 				],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
 	},
