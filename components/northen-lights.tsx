@@ -37,7 +37,7 @@ export function NorthenLights() {
 	if (!mounted) return null;
 
 	return (
-		<div className="relative h-screen w-screen overflow-hidden">
+		<div className="absolute top-0 h-screen w-screen overflow-hidden -z-10">
 			<div className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]">
 				{LIGHTS_ARR.map((_, index) => (
 					<Light
