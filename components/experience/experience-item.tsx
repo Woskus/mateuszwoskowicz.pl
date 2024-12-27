@@ -51,7 +51,7 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 
 						{position.projects.length > 0 && (
 							<div className="mt-4">
-								<h4 className="mb-2 text-base font-semibold">
+								<h4 className="mb-2 text-sm font-semibold">
 									Featured projects:
 								</h4>
 								<ul className="space-y-2">
