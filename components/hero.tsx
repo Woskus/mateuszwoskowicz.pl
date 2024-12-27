@@ -1,29 +1,50 @@
+import Link from 'next/link';
 import {Linkedin, Github} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 
 export function Hero() {
-  return (
-    <section className="mt-[160px]">
-      <Container>
-        <div className="border border-border rounded-full p-1 w-fit mb-2">
-          <img src="/img/mateusz-woskowicz.jpg" alt="Mateusz Woskowicz" className="rounded-full" />
-        </div>
+	return (
+		<section className="mt-[160px]">
+			<Container>
+				<div className="mb-2 w-fit rounded-full border border-border p-1">
+					<img
+						src="/img/mateusz-woskowicz.jpg"
+						alt="Mateusz Woskowicz"
+						className="rounded-full"
+					/>
+				</div>
 
-        <h1 className="text-2xl">Mateusz Woskowicz</h1>
+				<h1 className="text-2xl">Mateusz Woskowicz</h1>
 
-        <p className="text-muted-foreground">Senior Frontend Developer</p>
+				<p className="text-muted-foreground">Senior Frontend Developer</p>
 
-        <div className="space-x-2 mt-4">
-          <Button size="icon" variant="outline">
-            <Linkedin className="h-4 w-4" />
-          </Button>
+				<div className="mt-4 space-x-2">
+					<Link
+						href="https://www.linkedin.com/in/mateusz-woskowicz/"
+						target="_blank"
+					>
+						<Button
+							size="icon"
+							variant="outline"
+						>
+							<Linkedin className="h-4 w-4" />
+						</Button>
+					</Link>
 
-          <Button size="icon" variant="outline">
-            <Github className="h-4 w-4" />
-          </Button>
-        </div>
-      </Container>
-    </section>
-  );
+					<Link
+						href="https://github.com/Woskus"
+						target="_blank"
+					>
+						<Button
+							size="icon"
+							variant="outline"
+						>
+							<Github className="h-4 w-4" />
+						</Button>
+					</Link>
+				</div>
+			</Container>
+		</section>
+	);
 }
