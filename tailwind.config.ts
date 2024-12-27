@@ -63,18 +63,14 @@ module.exports = {
 				sen: ['var(--font-sen)', 'sans-serif'],
 			},
 			keyframes: {
-				'accordion-down': {
-					from: {height: '0'},
-					to: {height: 'var(--radix-accordion-content-height)'},
-				},
-				'accordion-up': {
-					from: {height: 'var(--radix-accordion-content-height)'},
-					to: {height: '0'},
+				shift: {
+					'50%': {
+						transform: 'translate(0, 0) scale(1)',
+					},
 				},
 			},
 			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
+				shift: 'shift var(--duration) var(--delay) infinite ease',
 			},
 		},
 	},
