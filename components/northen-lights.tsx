@@ -21,25 +21,32 @@ const COLORS = ['204, 8%, 76%', '210, 29%, 24%', '210, 29%, 24%'];
 
 const randomInRange = (min: number, max: number): number =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
-const getRandomAlpha = (): number => Math.random();
 
 export function NorthenLights() {
 	const [mounted, setMounted] = useState(false);
+	const [opacity, setOpacity] = useState(0);
 
 	useEffect(() => {
 		setMounted(true);
 	}, []);
 
+	useEffect(() => {
+		const timer = setTimeout(() => setOpacity(1), 200);
+		return () => clearTimeout(timer);
+	}, []);
+
 	if (!mounted) return null;
 
 	return (
-		<div className="absolute inset-0 overflow-hidden -z-10">
+		<div className="absolute inset-0 -z-10 overflow-hidden">
 			<div
-				className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]">
+				className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]"
+				style={{opacity, transition: 'opacity 5s'}}
+			>
 				{LIGHTS_ARR.map((_, index) => (
 					<Light
 						key={index}
-						aplhas={ALPHAS}
+						alphas={ALPHAS}
 					/>
 				))}
 			</div>
@@ -48,10 +55,10 @@ export function NorthenLights() {
 }
 
 interface LightProps {
-	aplhas: number[];
+	alphas: number[];
 }
 
-function Light({aplhas}: LightProps) {
+function Light({alphas}: LightProps) {
 	const duration = randomInRange(5, 15);
 	const delay = randomInRange(4, 10);
 	const x = randomInRange(0, 5);
@@ -64,9 +71,9 @@ function Light({aplhas}: LightProps) {
 		'--y': y,
 		'--up': `calc(var(--y) * 2vmax)`,
 		'--left': `calc(var(--x) * 2vmax)`,
-		'--color-one': `hsla(${COLORS[0]}, ${aplhas[0]})`,
-		'--color-two': `hsla(${COLORS[1]}, ${aplhas[1]})`,
-		'--color-three': `hsla(${COLORS[2]}, ${aplhas[2]})`,
+		'--color-one': `hsla(${COLORS[0]}, ${alphas[0]})`,
+		'--color-two': `hsla(${COLORS[1]}, ${alphas[1]})`,
+		'--color-three': `hsla(${COLORS[2]}, ${alphas[2]})`,
 		backgroundImage: `linear-gradient(0deg, transparent, var(--color-one) 10%, transparent, var(--color-two) 40%, transparent, var(--color-three) 60%)`,
 		backgroundSize: '100% 40vmax',
 		backgroundPosition: 'center bottom',
