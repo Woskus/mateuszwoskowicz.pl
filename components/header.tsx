@@ -10,7 +10,7 @@ export function Header() {
 					<span className="text-2xl font-bold">MW</span>
 				</Link>
 
-				<ul className="flex justify-end gap-5">
+				<ul className="flex justify-end gap-2">
 					<li>
 						<Link href="#">
 							<Button variant="link">Projekty</Button>
@@ -18,7 +18,7 @@ export function Header() {
 					</li>
 					<li>
 						<Link href="#">
-							<Button variant="link">Blog</Button>
+							<Button variant="link">Doświadczenie</Button>
 						</Link>
 					</li>
 					<li>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {Linkedin, Github} from 'lucide-react';
+import {Download, Linkedin, Github} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 
@@ -19,7 +19,12 @@ export function Hero() {
 
 				<p className="text-muted-foreground">Senior Frontend Developer</p>
 
-				<div className="mt-4 space-x-2">
+				<div className="mt-4 flex items-start gap-2">
+					<Button variant="outline">
+						<Download className="h-4 w-4" />
+						Pobierz CV
+					</Button>
+
 					<Link
 						href="https://www.linkedin.com/in/mateusz-woskowicz/"
 						target="_blank"
