@@ -22,9 +22,14 @@ export function Header() {
 						</Link>
 					</li>
 					<li>
-            <Link href="#">
-              <Button variant="link">Opinie</Button>
-            </Link>
+						<Link href="#">
+							<Button variant="link">Opinie</Button>
+						</Link>
+					</li>
+					<li>
+						<Link href="#">
+							<Button variant="link">Blog</Button>
+						</Link>
 					</li>
 				</ul>
 			</Container>
