@@ -52,15 +52,15 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 						{position.projects.length > 0 && (
 							<div className="mt-4">
 								<h4 className="mb-2 text-sm font-semibold">
-									Featured projects:
+									Wyróżnione projekty:
 								</h4>
 								<ul className="space-y-2">
 									{position.projects.map((project, projIndex) => (
 										<li
 											key={projIndex}
-											className="flex items-start gap-2 text-muted-foreground"
+											className="flex items-center gap-1 text-muted-foreground"
 										>
-											<ArrowRight className="mt-1 h-4 w-4 flex-shrink-0" />
+											<ArrowRight className="h-4 w-4 flex-shrink-0 text-primary" />
 											<div className="text-sm">
 												<span className="font-medium">
 													{project.name}:{' '}
