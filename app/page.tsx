@@ -4,6 +4,7 @@ import {Projects} from '@/components/projects';
 import {Experience} from '@/components/experience';
 import {About} from '@/components/about';
 import {Testimonials} from '@/components/testimonials';
+import {Cta} from '@/components/cta';
 
 export default function Home() {
 	return (
@@ -19,6 +20,8 @@ export default function Home() {
 			<About />
 
 			<Testimonials />
+
+			<Cta />
 		</>
 	);
 }
