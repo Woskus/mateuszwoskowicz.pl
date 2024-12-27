@@ -1,5 +1,12 @@
 import {Container} from '@/components/container';
-import {Callpage, Instreamly, Mwebs, Pkobp, Salesmanago, Samsung} from '@/components/logotypes';
+import {
+	Callpage,
+	Instreamly,
+	Mwebs,
+	Pkobp,
+	Salesmanago,
+	Samsung,
+} from '@/components/logotypes';
 import {ExperienceItem} from './experience-item';
 
 export interface Experience {
@@ -28,17 +35,17 @@ const experiences: Experience[] = [
 				startDate: new Date('2024-10-01'),
 				endDate: new Date('2025-03-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Kompleksowa realizacja projektu dla PKO BP, obejmująca development, design i zarządzanie podwykonawcami.',
 				projects: [
 					{
-						name: 'CloudScale',
+						name: 'Bezpieczeństwo',
 						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+							'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
 					},
 					{
-						name: 'DevOps Pipeline',
+						name: 'Zarządzanie zespołem',
 						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
 					},
 				],
 				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
@@ -54,20 +61,9 @@ const experiences: Experience[] = [
 				startDate: new Date('2024-10-01'),
 				endDate: new Date('2025-03-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
-				projects: [
-					{
-						name: 'CloudScale',
-						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
-					},
-					{
-						name: 'DevOps Pipeline',
-						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
-					},
-				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+					'Frontend Developer w projekcie "Mobilne Rozgrywki Galaxy" dla Samsunga, odpowiedzialny za implementację strony internetowej.',
+				projects: [],
+				technologies: ['Node.js', 'Express', 'Pug', 'SCSS'],
 			},
 		],
 	},
@@ -79,17 +75,12 @@ const experiences: Experience[] = [
 				title: 'Senior Frontend Developer',
 				startDate: new Date('2024-06-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Jako Senior Frontend Developer aktywnie pracuję przy produkcie nie tylko kodując, ale również planując jego rozwój. Wszystkie funkcjonalności wdrażam samodzielnie.',
 				projects: [
 					{
-						name: 'CloudScale',
+						name: 'Praca przy produkcie',
 						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
-					},
-					{
-						name: 'DevOps Pipeline',
-						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Planowanie i rozwój funkcjonalności produktu.',
 					},
 				],
 				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
@@ -98,41 +89,40 @@ const experiences: Experience[] = [
 				title: 'Frontend Developer',
 				startDate: new Date('2021-10-01'),
 				endDate: new Date('2024-06-01'),
-				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+				description: '',
 				projects: [
 					{
-						name: 'CloudScale',
+						name: 'Nauka backendu i baz danych',
 						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+							'Duży nacisk kładłem na naukę backendu, co pozwoliło mi na tworzenie nowych projektów.',
 					},
 					{
-						name: 'DevOps Pipeline',
+						name: 'Indywidualne projekty',
 						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Rozpocząłem pracę nad kilkoma projektami, które w większości kodowałem samodzielnie.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['TypeScript', 'Next.js', 'MySQL', 'Node.js'],
 			},
 			{
 				title: 'Junior Frontend Developer',
 				startDate: new Date('2020-12-01'),
 				endDate: new Date('2021-10-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Początkowo do zespołu dołączyłem jako freelancer tworząc stronę internetową w oparciu o Wordpress, ale szybko dostałem propozycję pracy na pełen etat współtworząc aplikację. Zacząłem się uczyć React.js oraz backendu przy użyciu Node.js.',
 				projects: [
 					{
-						name: 'CloudScale',
+						name: 'Pierwszy projekt w React.js',
 						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+							'Wraz z doświadczonym Developerem stworzyłem nową aplikację, gdzie dużo się nauczyłem.',
 					},
 					{
-						name: 'DevOps Pipeline',
+						name: 'Nowa strona internetowa w Wordpress',
 						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Samodzielnie stworzyłem nową stronę internetową w oparciu o Wordpress.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['React.js', 'Wordpress', 'Node.js', 'Express'],
 			},
 		],
 	},
@@ -145,20 +135,19 @@ const experiences: Experience[] = [
 				startDate: new Date('2021-08-07'),
 				endDate: new Date('2025-03-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Własna działalność, gdzie tworzę strony i aplikacje internetowe, jestem odpowiedzialny za pozyskiwanie klientów i zarządzanie zespołem podwykonawców.',
 				projects: [
 					{
-						name: 'CloudScale',
-						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+						name: 'Zarządzanie zespołem',
+						description: 'Koordynacja pracy podwykonawców',
 					},
 					{
-						name: 'DevOps Pipeline',
+						name: 'Praca z klientami',
 						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Rozpoznanie potrzeb klientów i zapewnienie im wsparcia.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['Wordpress', 'Next.js', 'TypeScript', 'TailwindCSS'],
 			},
 		],
 	},
@@ -168,23 +157,22 @@ const experiences: Experience[] = [
 		positions: [
 			{
 				title: 'Frontend Developer',
-				startDate: new Date('2021-08-07'),
-				endDate: new Date('2025-03-01'),
+				startDate: new Date('2020-11-01'),
+				endDate: new Date('2021-01-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Migracja aplikacji z AngularJS do Angulara wraz z Typescript, oraz aktualizacja UI.',
 				projects: [
 					{
-						name: 'CloudScale',
-						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+						name: 'Migracja technologii',
+						description: 'Przepisanie całej aplikacji do nowego frameworka.',
 					},
 					{
-						name: 'DevOps Pipeline',
+						name: 'UI/UX',
 						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+							'Aktualizacja Design Systemu i wdrożenie nowego designu do widoków.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['Angular', 'TypeScript', 'AngularJS', 'SCSS'],
 			},
 		],
 	},
@@ -194,23 +182,22 @@ const experiences: Experience[] = [
 		positions: [
 			{
 				title: 'Junior Frontend Developer',
-				startDate: new Date('2021-08-07'),
-				endDate: new Date('2025-03-01'),
+				startDate: new Date('2019-08-01'),
+				endDate: new Date('2020-12-01'),
 				description:
-					'Lead development of cloud-based solutions and mentored junior developers.',
+					'Byłem odpowiedzialny za rozwój strony firmowej opartej o WordPress, z doświadczeniem w zarządzaniu małym zespołem.',
 				projects: [
 					{
-						name: 'CloudScale',
+						name: 'Kierowanie zespołem',
 						description:
-							'Developed a scalable cloud infrastructure solution, increasing system efficiency by 40%.',
+							'Przez pół roku byłem odpowiedzialny za zarządzanie zespołem.',
 					},
 					{
-						name: 'DevOps Pipeline',
-						description:
-							'Implemented a new CI/CD pipeline, reducing deployment time by 60%.',
+						name: 'UI/UX',
+						description: 'Samodzielne projektowanie interfejsu użytkownika.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['WordPress', 'SCSS', 'PHP', 'HTML'],
 			},
 		],
 	},

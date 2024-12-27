@@ -1,8 +1,11 @@
 import dayjs from 'dayjs';
+import pl from 'dayjs/locale/pl';
 import {ArrowRight, Calendar} from 'lucide-react';
 import {Card, CardContent, CardHeader} from '@/components/ui/card';
 import {Badge, BadgeProps} from '@/components/ui/badge';
 import type {Experience} from './index';
+
+dayjs.locale(pl);
 
 const experiencesColorsMap: Record<Experience['type'], BadgeProps['variant']> = {
 	'full-time': 'success',
@@ -39,10 +42,10 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 							<Calendar className="mr-2 h-3.5 w-3.5" />
 
 							<p className="mr-2">
-								{dayjs(position.startDate).format('DD.MM.YYYY')} -{' '}
+								{dayjs(position.startDate).format('MMMM YYYY')} -{' '}
 
                 {position.endDate
-									? dayjs(position.endDate).format('DD.MM.YYYY')
+									? dayjs(position.endDate).format('MMMM YYYY')
 									: 'Present'}
 							</p>
 						</div>
@@ -50,10 +53,11 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 						<p className="mt-2 text-sm text-muted-foreground">{position.description}</p>
 
 						{position.projects.length > 0 && (
-							<div className="mt-4">
+							<div className="mt-6">
 								<h4 className="mb-2 text-sm font-semibold">
 									Wyróżnione projekty:
 								</h4>
+
 								<ul className="space-y-2">
 									{position.projects.map((project, projIndex) => (
 										<li
@@ -74,7 +78,7 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 						)}
 
 						{position.technologies.length > 0 && (
-							<div className="mt-4">
+							<div className="mt-6">
 								<h4 className="mb-1 text-sm font-semibold">
 									Technologia:
 								</h4>
