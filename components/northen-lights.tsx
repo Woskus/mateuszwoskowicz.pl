@@ -17,11 +17,7 @@ interface LightCSSProperties extends CSSProperties {
 const LIGHT_COUNT = 30;
 const LIGHTS_ARR = Array.from({length: LIGHT_COUNT});
 const ALPHAS = Array(3).fill(0).map(Math.random);
-const COLORS = [
-  '204, 8%, 76%',
-  '210, 29%, 24%',
-  '210, 29%, 24%'
-]
+const COLORS = ['204, 8%, 76%', '210, 29%, 24%', '210, 29%, 24%'];
 
 const randomInRange = (min: number, max: number): number =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
@@ -37,8 +33,9 @@ export function NorthenLights() {
 	if (!mounted) return null;
 
 	return (
-		<div className="absolute top-0 h-screen w-screen overflow-hidden -z-10">
-			<div className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]">
+		<div className="absolute inset-0 overflow-hidden -z-10">
+			<div
+				className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]">
 				{LIGHTS_ARR.map((_, index) => (
 					<Light
 						key={index}
