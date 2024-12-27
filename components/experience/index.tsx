@@ -8,6 +8,8 @@ import {
 	Samsung,
 } from '@/components/logotypes';
 import {ExperienceItem} from './experience-item';
+import {Button} from '@/components/ui/button';
+import Link from 'next/link';
 
 export interface Experience {
 	logo: React.ReactNode;
@@ -20,7 +22,7 @@ export interface Experience {
 		technologies: string[];
 		projects: Array<{
 			name: string;
-			description: string;
+			description: React.ReactNode;
 		}>;
 	}>;
 }
@@ -31,7 +33,7 @@ const experiences: Experience[] = [
 		type: 'freelance',
 		positions: [
 			{
-				title: 'Strona internetowa projektu Fortnite',
+				title: 'Strona internetowa - Fortnite',
 				startDate: new Date('2024-10-01'),
 				endDate: new Date('2025-03-01'),
 				description:
@@ -75,15 +77,18 @@ const experiences: Experience[] = [
 				title: 'Senior Frontend Developer',
 				startDate: new Date('2024-06-01'),
 				description:
-					'Jako Senior Frontend Developer aktywnie pracuję przy produkcie nie tylko kodując, ale również planując jego rozwój. Wszystkie funkcjonalności wdrażam samodzielnie.',
+					'Pracuję przy produkcie nie tylko kodując, ale również planując jego rozwój. Wdrażam rozwiązania związane ze sztuczną inteligencją oraz samodzielnie wdrażam nowe serwisy i aplikacje.',
 				projects: [
 					{
-						name: 'Praca przy produkcie',
-						description:
-							'Planowanie i rozwój funkcjonalności produktu.',
+						name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
+						description: 'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch lub YouTube.',
+					},
+					{
+						name: 'Wdrażanie rozwiązań AI',
+						description: 'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Chatbotów oraz aplikacji.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['TypeScript', 'Next.js', 'MySQL', 'Node.js', 'TailwindCSS'],
 			},
 			{
 				title: 'Frontend Developer',
@@ -91,6 +96,23 @@ const experiences: Experience[] = [
 				endDate: new Date('2024-06-01'),
 				description: '',
 				projects: [
+					{
+						name: 'AI Voice Recognition Mechanism - Monte Snack',
+						description: (
+							<p>
+								Stworzyłem rozwiązanie, które dzięki rozpoznawaniu mowy w
+								odpowiednim momencie wyświetla sponsoring podczas
+								transmisji na żywo na Twitch lub YouTube. NowyMarketing{' '}
+								<Link
+									href="https://nowymarketing.pl/przerwa-na-monte-snack-dzieki-technologii-voice-recognition-na-147-streamach-na-twitchu/"
+									target="_blank"
+								>
+									<Button variant="link">napisał o tym artykuł</Button>
+								</Link>
+								.
+							</p>
+						),
+					},
 					{
 						name: 'Nauka backendu i baz danych',
 						description:

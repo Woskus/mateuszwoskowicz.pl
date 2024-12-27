@@ -29,9 +29,9 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 			</CardHeader>
 
 			<CardContent className="space-y-6">
-				{experience.positions.map((position, posIndex) => (
+				{experience.positions.map((position) => (
 					<div
-						key={posIndex}
+						key={position.title}
 						className="border-t pt-4 first:border-t-0 first:pt-0"
 					>
 						<h3 className="flex items-center gap-2 text-lg font-semibold">
@@ -59,17 +59,17 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 								</h4>
 
 								<ul className="space-y-2">
-									{position.projects.map((project, projIndex) => (
+									{position.projects.map((project) => (
 										<li
-											key={projIndex}
-											className="flex items-center gap-1 text-muted-foreground"
+											key={project.name}
+											className="flex items-start gap-1 text-muted-foreground"
 										>
 											<ArrowRight className="h-4 w-4 flex-shrink-0 text-primary" />
 											<div className="text-sm">
-												<span className="font-medium">
+												<p className="font-medium text-primary">
 													{project.name}:{' '}
-												</span>
-												{project.description}
+												</p>
+												<span>{project.description}</span>
 											</div>
 										</li>
 									))}
