@@ -10,9 +10,21 @@ type ListItemProps = ComponentPropsWithoutRef<'li'>;
 type AnchorProps = ComponentPropsWithoutRef<'a'>;
 
 const components = {
+	h2: (props: ComponentPropsWithoutRef<'h2'>) => (
+		<h2
+			className="mt-5"
+			{...props}
+		/>
+	),
+	h3: (props: ComponentPropsWithoutRef<'h3'>) => (
+		<h3
+			className="mt-5"
+			{...props}
+		/>
+	),
 	p: (props: ParagraphProps) => (
 		<p
-			className="leading-snug"
+			className="leading-snug mt-4 text-muted-foreground"
 			{...props}
 		/>
 	),
