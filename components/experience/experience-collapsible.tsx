@@ -28,7 +28,7 @@ export function ExperienceCollapsible({
 			open={isOpen}
 			onOpenChange={setIsOpen}
 		>
-			<CollapsibleTrigger className="w-full focus:outline-0 focus:ring-1 focus:ring-primary rounded-lg">
+			<CollapsibleTrigger className="w-full focus:outline-0 focus-visible:ring-1 focus:ring-primary rounded-lg">
 				<div className="flex cursor-pointer flex-row items-center justify-between gap-3 p-6">
 					{header}
 
