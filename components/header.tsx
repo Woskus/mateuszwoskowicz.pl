@@ -13,7 +13,6 @@ const navLinks = [
 	{href: '/#doswiadczenie', label: 'Doświadczenie'},
 	{href: '/#o-mnie', label: 'O mnie'},
 	{href: '/#opinie', label: 'Opinie'},
-	// {href: '/blog', label: 'Blog'},
 ];
 
 export function Header() {
@@ -59,7 +58,6 @@ export function Header() {
 					</ul>
 				</nav>
 
-				{/* Mobile Menu Button */}
 				<div className="flex justify-end md:hidden">
 					<Button
 						variant="ghost"
@@ -74,7 +72,6 @@ export function Header() {
 				</div>
 			</Container>
 
-			{/* Mobile Menu */}
 			<AnimatePresence>
 				{isMobileMenuOpen && (
 					<motion.nav
