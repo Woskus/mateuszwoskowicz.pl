@@ -8,24 +8,22 @@ export function Cta() {
   return (
     <section className="mt-16">
       <Container>
-        <Card>
-          <CardHeader className="flex flex-row items-center gap-3">
-            <CardTitle>
+        <Card className="py-8">
+          <CardHeader>
+            <CardTitle className="text-center w-full">
               Chcesz ze mną współpracować?
             </CardTitle>
+
+            <CardDescription className="text-center text-base">
+              Napisz do mnie na linkedin i bądźmy w kontakcie!
+            </CardDescription>
           </CardHeader>
 
-          <CardContent className="space-y-6">
-            <p className="text-muted-foreground">
-              Napisz do mnie na linkedin i bądźmy w kontakcie!
-            </p>
-          </CardContent>
-
-          <CardFooter className="gap-2">
+          <CardFooter className="gap-2 justify-center">
            <Link href="https://linkedin.com/in/mateusz-woskowicz" target="_blank">
              <Button>
                <Linkedin className="h-4 w-4" />
-               Linkedin
+               Napisz na Linkedin
              </Button>
            </Link>
 
