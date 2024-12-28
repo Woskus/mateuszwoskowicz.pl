@@ -87,6 +87,10 @@ export function About() {
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
 								Narzędzia: TailwindCSS, Shadcn UI
 							</li>
+							<li>
+								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
+								Cloud: AWS
+							</li>
 						</ul>
 					</article>
 
