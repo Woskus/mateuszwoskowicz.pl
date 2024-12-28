@@ -28,22 +28,16 @@ export function ExperienceCollapsible({
 			open={isOpen}
 			onOpenChange={setIsOpen}
 		>
-			<CollapsibleTrigger asChild>
-				<div className="flex flex-row items-center justify-between gap-3 p-6 cursor-pointer">
+			<CollapsibleTrigger className="w-full">
+				<div className="flex cursor-pointer flex-row items-center justify-between gap-3 p-6">
 					{header}
 
-					<Button
-						variant="ghost"
-						size="icon"
-						aria-label={isOpen ? 'Zamknij' : 'Otwórz'}
-					>
-						<ArrowDown
-							className={cn(
-								'transform-gpu transition-transform duration-300',
-								{'rotate-180': isOpen},
-							)}
-						/>
-					</Button>
+					<ArrowDown
+						className={cn(
+							'h-4 w-4 transform-gpu transition-transform duration-300',
+							{'rotate-180': isOpen},
+						)}
+					/>
 				</div>
 			</CollapsibleTrigger>
 
