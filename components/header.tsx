@@ -32,12 +32,14 @@ export function Header() {
 			id="start"
 		>
 			<Container className="grid grid-cols-2 pb-2 pt-4 md:py-4">
-				<Link
-					href="/"
-					className="z-10"
-				>
-					<span className="text-2xl font-bold">MW</span>
-				</Link>
+				<div>
+					<Link
+						href="/"
+						className="z-10 rounded-lg py-2 focus:outline-0 focus:ring-1 focus:ring-primary"
+					>
+						<span className="text-2xl font-bold">MW</span>
+					</Link>
+				</div>
 
 				<nav className="hidden md:block">
 					<ul className="flex justify-end gap-8">
