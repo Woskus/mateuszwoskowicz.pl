@@ -20,7 +20,7 @@ interface ExperienceItemProps {
 
 export function ExperienceItem({experience}: ExperienceItemProps) {
 	return (
-		<Card className="w-full">
+		<Card className="w-full" id={experience.id}>
 			<CardHeader className="flex flex-row items-center gap-3">
 				{experience.logo}
 

@@ -41,7 +41,7 @@
 	}
 
 	html {
-		@apply scroll-smooth scroll-pt-16;
+		@apply scroll-smooth scroll-pt-[72px];
 	}
 
 	body {

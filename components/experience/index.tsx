@@ -13,6 +13,7 @@ import {Button} from '@/components/ui/button';
 import Link from 'next/link';
 
 export interface Experience {
+	id: string;
 	logo: React.ReactNode;
 	type: 'full-time' | 'part-time' | 'freelance';
 	positions: Array<{
@@ -30,6 +31,7 @@ export interface Experience {
 
 const experiences: Experience[] = [
 	{
+		id: 'pkobp',
 		logo: <Pkobp />,
 		type: 'freelance',
 		positions: [
@@ -55,6 +57,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'samsung',
 		logo: <Samsung />,
 		type: 'freelance',
 		positions: [
@@ -70,6 +73,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'instreamly',
 		logo: <Instreamly />,
 		type: 'full-time',
 		positions: [
@@ -153,6 +157,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'mwebs',
 		logo: <Mwebs />,
 		type: 'part-time',
 		positions: [
@@ -178,6 +183,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'dcc',
 		logo: <Dcc />,
 		type: 'part-time',
 		positions: [
@@ -205,6 +211,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'callpage',
 		logo: <Callpage />,
 		type: 'part-time',
 		positions: [
@@ -225,6 +232,7 @@ const experiences: Experience[] = [
 		],
 	},
 	{
+		id: 'salesmanago',
 		logo: <Salesmanago />,
 		type: 'full-time',
 		positions: [
