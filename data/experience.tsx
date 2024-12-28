@@ -68,8 +68,8 @@ export const experiences: Experience[] = [
 		positions: [
 			{
 				title: 'Strona internetowa - Mobilne Rozgrywki Galaxy',
-				startDate: new Date('2024-10-01'),
-				endDate: new Date('2025-03-01'),
+				startDate: new Date('2021-12-08'),
+				endDate: new Date('2022-01-31'),
 				description:
 					'Miałem przyjemność pracować jako podwykonawca przy projekcie dla Samsunga. Stworzyłem stronę internetową korzystając z Pug, aby wyświetlać dynamiczne treści przekazywane z backendu kontrolerów Express & Node.js.',
 				projects: [],

@@ -84,7 +84,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 					{position.projects.length > 0 && (
 						<div className="mt-6">
 							<h4 className="mb-2 text-sm font-semibold">
-								Wyróżnione projekty:
+								Wyróżnione:
 							</h4>
 
 							<ul className="space-y-2">
@@ -93,7 +93,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 										key={project.name}
 										className="flex items-start gap-1 text-muted-foreground"
 									>
-										<ArrowRight className="h-4 w-4 flex-shrink-0 text-primary" />
+										<ArrowRight className="h-4 w-4 flex-shrink-0 text-primary mt-[1px]" />
 										<div className="text-sm">
 											<p className="font-medium text-primary">
 												{project.name}:{' '}
