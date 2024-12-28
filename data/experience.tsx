@@ -25,6 +25,7 @@ export interface Experience {
 			description: React.ReactNode;
 		}>;
 	}>;
+	open?: boolean;
 }
 
 export const experiences: Experience[] = [
@@ -45,6 +46,11 @@ export const experiences: Experience[] = [
 							'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
 					},
 					{
+						name: 'Integracja CMS',
+						description:
+							'Jednym z wymagań klienta była integracja z CMS, który pozwalał na zarządzanie treścią i możliwość natychmiastowego zamknięcia strony.',
+					},
+					{
 						name: 'Zarządzanie zespołem',
 						description:
 							'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
@@ -53,6 +59,7 @@ export const experiences: Experience[] = [
 				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
 			},
 		],
+		open: true,
 	},
 	{
 		id: 'samsung',
@@ -69,6 +76,7 @@ export const experiences: Experience[] = [
 				technologies: ['Node.js', 'Express', 'Pug', 'SCSS'],
 			},
 		],
+		open: true,
 	},
 	{
 		id: 'instreamly',
@@ -153,6 +161,7 @@ export const experiences: Experience[] = [
 				technologies: ['React.js', 'Wordpress', 'Node.js', 'Express', 'MySQL'],
 			},
 		],
+		open: true,
 	},
 	{
 		id: 'mwebs',
@@ -179,6 +188,7 @@ export const experiences: Experience[] = [
 				technologies: ['Wordpress', 'Next.js', 'TypeScript', 'TailwindCSS'],
 			},
 		],
+		open: true,
 	},
 	{
 		id: 'dcc',
