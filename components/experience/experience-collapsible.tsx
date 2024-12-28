@@ -27,13 +27,15 @@ export function ExperienceCollapsible({
 		<Collapsible
 			open={isOpen}
 			onOpenChange={setIsOpen}
-			className="w-full"
 		>
-			<CollapsibleTrigger className="w-full">
-				<div className="flex flex-row items-center justify-between gap-3 p-6">
-					{header}
+			<div className="flex flex-row items-center justify-between gap-3 p-6">
+				{header}
 
-					<Button variant="ghost" size="icon">
+				<CollapsibleTrigger asChild>
+					<Button
+						variant="ghost"
+						size="icon"
+					>
 						<ArrowDown
 							className={cn(
 								'transform-gpu transition-transform duration-300',
@@ -41,9 +43,10 @@ export function ExperienceCollapsible({
 							)}
 						/>
 					</Button>
-				</div>
-			</CollapsibleTrigger>
-			<CollapsibleContent className="animate-collapsible-down">
+				</CollapsibleTrigger>
+			</div>
+
+			<CollapsibleContent>
 				{children}
 			</CollapsibleContent>
 		</Collapsible>

@@ -107,10 +107,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 
 export function ExperienceItem({experience}: ExperienceItemProps) {
 	return (
-		<Card
-			className="w-full"
-			id={experience.id}
-		>
+		<Card id={experience.id}>
 			<ExperienceCollapsible
 				header={<ExperienceHeader experience={experience} />}
 				initialOpen={Boolean(experience?.open)}
