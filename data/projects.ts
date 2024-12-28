@@ -7,7 +7,7 @@ interface Project {
 }
 
 export const samsung = {
-	title: 'Mobilne Rozgrywki Galaxy',
+	title: 'Strona "Mobilne Rozgrywki Galaxy"',
 	company: 'Samsung',
 	img: '/img/projects/samsung.jpg',
 	imgHero: '/img/projects/samsung-hero.jpg',
@@ -15,7 +15,7 @@ export const samsung = {
 };
 
 export const pkobp = {
-	title: 'PKO BP Fortnite',
+	title: 'Strona PKO BP Fortnite',
 	company: 'PKO BP',
 	img: '/img/projects/pkobp.jpg',
 	imgHero: '/img/projects/pkobp-hero.jpg',
@@ -23,7 +23,7 @@ export const pkobp = {
 };
 
 export const instreamly = {
-	title: 'Wordpress to Next.js Migration',
+	title: 'Migracja strony z Wordpress do Next.js',
 	company: 'inStreamly',
 	img: '/img/projects/instreamly.jpg',
 	imgHero: '/img/projects/instreamly-hero.jpg',

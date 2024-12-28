@@ -53,7 +53,7 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 									) : (
 										<>
 											<Ping />
-											Present
+											Obecnie
 										</>
 									)}
 								</span>
