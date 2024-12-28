@@ -12,43 +12,43 @@ type AnchorProps = ComponentPropsWithoutRef<'a'>;
 const components = {
 	h2: (props: ComponentPropsWithoutRef<'h2'>) => (
 		<h2
-			className="mt-5"
+			className="mt-8"
 			{...props}
 		/>
 	),
 	h3: (props: ComponentPropsWithoutRef<'h3'>) => (
 		<h3
-			className="mt-5"
+			className="mt-5 text-base"
 			{...props}
 		/>
 	),
 	p: (props: ParagraphProps) => (
 		<p
-			className="mt-4 leading-snug text-muted-foreground"
+			className="mt-2 leading-snug text-muted-foreground"
 			{...props}
 		/>
 	),
 	ol: (props: ListProps) => (
 		<ol
-			className="list-decimal space-y-2 pl-5"
+			className="list-decimal space-y-2 pl-5 mt-2"
 			{...props}
 		/>
 	),
 	ul: (props: ListProps) => (
 		<ul
-			className="list-disc space-y-1 pl-5"
+			className="list-disc space-y-1 pl-5 mt-2"
 			{...props}
 		/>
 	),
 	li: (props: ListItemProps) => (
 		<li
-			className="pl-1"
+			className="pl-1 text-muted-foreground"
 			{...props}
 		/>
 	),
 	strong: (props: ComponentPropsWithoutRef<'strong'>) => (
 		<strong
-			className="font-medium"
+			className="font-medium text-primary"
 			{...props}
 		/>
 	),
