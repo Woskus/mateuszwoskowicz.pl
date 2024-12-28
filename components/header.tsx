@@ -11,7 +11,7 @@ const navLinks = [
 	{href: '/#projekty', label: 'Projekty'},
 	{href: '/#doswiadczenie', label: 'Doświadczenie'},
 	{href: '/#opinie', label: 'Opinie'},
-	{href: '/blog', label: 'Blog'},
+	// {href: '/blog', label: 'Blog'},
 ];
 
 export function Header() {

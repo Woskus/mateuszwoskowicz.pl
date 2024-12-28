@@ -28,10 +28,10 @@ export function ExperienceCollapsible({
 			open={isOpen}
 			onOpenChange={setIsOpen}
 		>
-			<div className="flex flex-row items-center justify-between gap-3 p-6">
-				{header}
+			<CollapsibleTrigger asChild>
+				<div className="flex flex-row items-center justify-between gap-3 p-6 cursor-pointer">
+					{header}
 
-				<CollapsibleTrigger asChild>
 					<Button
 						variant="ghost"
 						size="icon"
@@ -43,12 +43,10 @@ export function ExperienceCollapsible({
 							)}
 						/>
 					</Button>
-				</CollapsibleTrigger>
-			</div>
+				</div>
+			</CollapsibleTrigger>
 
-			<CollapsibleContent>
-				{children}
-			</CollapsibleContent>
+			<CollapsibleContent>{children}</CollapsibleContent>
 		</Collapsible>
 	);
 }

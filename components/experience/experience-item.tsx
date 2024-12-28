@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import pl from 'dayjs/locale/pl';
 import {ArrowRight, Calendar} from 'lucide-react';
 import {Card, CardContent} from '@/components/ui/card';
@@ -8,6 +9,7 @@ import {ExperienceCollapsible} from './experience-collapsible';
 import type {Experience} from '@/data/experience';
 
 dayjs.locale(pl);
+dayjs.extend(relativeTime);
 
 const experiencesMap: Record<
 	Experience['type'],
@@ -74,6 +76,16 @@ function ExperienceContent({experience}: {experience: Experience}) {
 									</>
 								)}
 							</span>
+
+							<span className="flex items-center gap-1">
+								<span>-</span>
+								<span className="text-sm text-muted-foreground">
+									{dayjs(position.startDate).to(
+										position?.endDate ? position.endDate : dayjs(),
+										true,
+									)}
+								</span>
+							</span>
 						</div>
 					</div>
 
@@ -83,9 +95,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 
 					{position.projects.length > 0 && (
 						<div className="mt-6">
-							<h4 className="mb-2 text-sm font-semibold">
-								Wyróżnione:
-							</h4>
+							<h4 className="mb-2 text-sm font-semibold">Wyróżnione:</h4>
 
 							<ul className="space-y-2">
 								{position.projects.map((project) => (
@@ -93,7 +103,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 										key={project.name}
 										className="flex items-start gap-1 text-muted-foreground"
 									>
-										<ArrowRight className="h-4 w-4 flex-shrink-0 text-primary mt-[1px]" />
+										<ArrowRight className="mt-[1px] h-4 w-4 flex-shrink-0 text-primary" />
 										<div className="text-sm">
 											<p className="font-medium text-primary">
 												{project.name}:{' '}
