@@ -1,14 +1,12 @@
 'use client';
 
-import {useCallback, useRef} from 'react';
+import {useRef} from 'react';
 import Link from 'next/link';
-import {ArrowLeft, ArrowRight} from 'lucide-react';
-import {Container} from '@/components/container';
-import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
-
+import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
+import {SwiperNavigation} from '@/components/swiper-navigation';
+import {Container} from '@/components/container';
 import 'swiper/css';
-import {Button} from '@/components/ui/button';
 
 interface Project {
 	title: string;
@@ -52,16 +50,6 @@ const PROJECTS: Project[] = [
 export function Projects() {
 	const sliderRef = useRef<SwiperRef>(null);
 
-	const handlePrev = useCallback(() => {
-		if (!sliderRef.current) return;
-		sliderRef.current.swiper.slidePrev();
-	}, []);
-
-	const handleNext = useCallback(() => {
-		if (!sliderRef.current) return;
-		sliderRef.current.swiper.slideNext();
-	}, []);
-
 	return (
 		<section
 			className="mt-8"
@@ -71,23 +59,7 @@ export function Projects() {
 				<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
 					<h2 className="border-0 text-base">Wyróżnione projekty</h2>
 
-					<div>
-						<Button
-							onClick={handlePrev}
-							variant="ghost"
-							size="icon"
-						>
-							<ArrowLeft className="h-4 w-4" />
-						</Button>
-
-						<Button
-							onClick={handleNext}
-							variant="ghost"
-							size="icon"
-						>
-							<ArrowRight className="h-4 w-4" />
-						</Button>
-					</div>
+					<SwiperNavigation sliderRef={sliderRef} />
 				</div>
 
 				<Swiper
