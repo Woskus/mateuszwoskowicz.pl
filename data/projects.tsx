@@ -1,6 +1,7 @@
 import {Dcc, Instreamly, Pkobp, Samsung} from '@/components/logotypes';
 
-interface Project {
+export interface Project {
+	id: string;
 	title: string;
 	company: string;
 	img: string;
@@ -10,6 +11,7 @@ interface Project {
 }
 
 export const samsung = {
+	id: 'samsung-mobilne-rozgrywki-galaxy',
 	title: 'Strona "Mobilne Rozgrywki Galaxy"',
 	company: 'Samsung',
 	img: '/img/projects/samsung.jpg',
@@ -19,6 +21,7 @@ export const samsung = {
 };
 
 export const pkobp = {
+	id: 'pkobp-fortnite',
 	title: 'Strona PKO BP Fortnite',
 	company: 'PKO BP',
 	img: '/img/projects/pkobp.jpg',
@@ -28,6 +31,7 @@ export const pkobp = {
 };
 
 export const instreamly = {
+	id: 'instreamly-website-migration',
 	title: 'Migracja strony z Wordpress do Next.js',
 	company: 'inStreamly',
 	img: '/img/projects/instreamly.jpg',
@@ -37,6 +41,7 @@ export const instreamly = {
 };
 
 export const dcc = {
+	id: 'dcc-course-platform',
 	title: 'Platforma kursowa DCC',
 	company: 'Digital Creators Community',
 	img: '/img/projects/dcc.jpg',

@@ -6,6 +6,8 @@ import {About} from '@/components/about';
 import {Testimonials} from '@/components/testimonials';
 import {Cta} from '@/components/cta';
 import {NorthenLights} from '@/components/northen-lights';
+import {Container} from '@/components/container';
+import {projects} from '@/data/projects';
 
 export const metadata: Metadata = {
 	title: 'Mateusz Woskowicz - Senior Frontend Developer',
@@ -20,7 +22,9 @@ export default function Home() {
 
 			<Hero />
 
-			<Projects />
+			<Container>
+				<Projects projects={projects} />
+			</Container>
 
 			<Experience />
 
