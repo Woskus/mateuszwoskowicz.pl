@@ -2,8 +2,7 @@ export function Callpage() {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="136.32"
-			height="47.78"
+			width="110"
 			fill="none"
 			viewBox="0 0 481 177"
 		>

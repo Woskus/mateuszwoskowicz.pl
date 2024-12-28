@@ -1,8 +1,7 @@
 export function Mwebs() {
 	return (
 		<svg
-			width="135"
-			height="23"
+			width="130"
 			viewBox="0 0 135 23"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

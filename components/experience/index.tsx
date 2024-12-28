@@ -37,10 +37,10 @@ const experiences: Experience[] = [
 				title: 'Strona internetowa - Fortnite',
 				startDate: new Date('2024-10-01'),
 				description:
-					'Kompleksowa realizacja projektu dla PKO BP, obejmująca development, design i zarządzanie podwykonawcami.',
+					'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
 				projects: [
 					{
-						name: 'Bezpieczeństwo',
+						name: 'Security',
 						description:
 							'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
 					},
@@ -63,7 +63,7 @@ const experiences: Experience[] = [
 				startDate: new Date('2024-10-01'),
 				endDate: new Date('2025-03-01'),
 				description:
-					'Frontend Developer w projekcie "Mobilne Rozgrywki Galaxy" dla Samsunga, odpowiedzialny za implementację strony internetowej.',
+					'Miałem przyjemność pracować jako podwykonawca przy projekcie dla Samsunga. Stworzyłem stronę internetową korzystając z Pug, aby wyświetlać dynamiczne treści przekazywane z backendu kontrolerów Express & Node.js.',
 				projects: [],
 				technologies: ['Node.js', 'Express', 'Pug', 'SCSS'],
 			},
@@ -77,32 +77,41 @@ const experiences: Experience[] = [
 				title: 'Senior Frontend Developer',
 				startDate: new Date('2024-06-01'),
 				description:
-					'Pracuję przy produkcie nie tylko kodując, ale również planując jego rozwój. Wdrażam rozwiązania związane ze sztuczną inteligencją oraz samodzielnie wdrażam nowe serwisy i aplikacje.',
+					'Obecnie, oprócz kodowania, aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI i samodzielnie prowadzę nowe projekty.',
 				projects: [
 					{
 						name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
-						description: 'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch lub YouTube.',
+						description:
+							'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch lub YouTube.',
 					},
 					{
 						name: 'Wdrażanie rozwiązań AI',
-						description: 'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Chatbotów oraz aplikacji.',
+						description:
+							'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Chatbotów oraz aplikacji.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'MySQL', 'Node.js', 'TailwindCSS'],
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'MySQL',
+					'Node.js',
+					'TailwindCSS',
+				],
 			},
 			{
 				title: 'Frontend Developer',
 				startDate: new Date('2021-10-01'),
 				endDate: new Date('2024-06-01'),
-				description: '',
+				description:
+					'W tym okresie znacząco poszerzyłem swoje kompetencje, biorąc odpowiedzialność za coraz większe projekty. Szczególnie skupiłem się na rozwoju w kierunku full-stack.',
 				projects: [
 					{
 						name: 'AI Voice Recognition Mechanism - Monte Snack',
 						description: (
 							<p>
-								Stworzyłem rozwiązanie, które dzięki rozpoznawaniu mowy w
-								odpowiednim momencie wyświetla sponsoring podczas
-								transmisji na żywo na Twitch lub YouTube. NowyMarketing{' '}
+								Stworzyłem mechanizm do automatycznego wyświetlania
+								sponsoringu podczas streamów na Twitch i YouTube.
+								NowyMarketing{' '}
 								<Link
 									href="https://nowymarketing.pl/przerwa-na-monte-snack-dzieki-technologii-voice-recognition-na-147-streamach-na-twitchu/"
 									target="_blank"
@@ -114,14 +123,9 @@ const experiences: Experience[] = [
 						),
 					},
 					{
-						name: 'Nauka backendu i baz danych',
+						name: 'Rozwój w kierunku full-stack',
 						description:
-							'Duży nacisk kładłem na naukę backendu, co pozwoliło mi na tworzenie nowych projektów.',
-					},
-					{
-						name: 'Indywidualne projekty',
-						description:
-							'Rozpocząłem pracę nad kilkoma projektami, które w większości kodowałem samodzielnie.',
+							'Intensywnie rozwijałem umiejętności backendowe i bazodanowe, co pozwoliło mi na samodzielne prowadzenie kompleksowych projektów.',
 					},
 				],
 				technologies: ['TypeScript', 'Next.js', 'MySQL', 'Node.js'],
@@ -131,20 +135,20 @@ const experiences: Experience[] = [
 				startDate: new Date('2020-12-01'),
 				endDate: new Date('2021-10-01'),
 				description:
-					'Początkowo do zespołu dołączyłem jako freelancer tworząc stronę internetową w oparciu o Wordpress, ale szybko dostałem propozycję pracy na pełen etat współtworząc aplikację. Zacząłem się uczyć React.js oraz backendu przy użyciu Node.js.',
+					'Początkowo do zespołu dołączyłem jako freelancer, ale szybko dostałem propozycję pracy na pełen etat współtworząc aplikację. To był okres intensywnej nauki - stawiałem pierwsze kroki w React.js, backendzie z Node.js i bazach danych MySQL.',
 				projects: [
 					{
 						name: 'Pierwszy projekt w React.js',
 						description:
-							'Wraz z doświadczonym Developerem stworzyłem nową aplikację, gdzie dużo się nauczyłem.',
+							'Pod okiem doświadczonego developera współtworzyłem pierwszą aplikację, która dała mi solidne podstawy do dalszego rozwoju.',
 					},
 					{
-						name: 'Nowa strona internetowa w Wordpress',
+						name: 'Migracja strony z Pug do Wordpress',
 						description:
-							'Samodzielnie stworzyłem nową stronę internetową w oparciu o Wordpress.',
+							'Samodzielnie wdrożyłem nową stronę, co było moim pierwszym większym projektem w firmie.',
 					},
 				],
-				technologies: ['React.js', 'Wordpress', 'Node.js', 'Express'],
+				technologies: ['React.js', 'Wordpress', 'Node.js', 'Express', 'MySQL'],
 			},
 		],
 	},
@@ -156,16 +160,17 @@ const experiences: Experience[] = [
 				title: 'Founder & Senior Frontend Developer',
 				startDate: new Date('2021-08-07'),
 				description:
-					'Własna działalność, gdzie tworzę strony i aplikacje internetowe, jestem odpowiedzialny za pozyskiwanie klientów i zarządzanie zespołem podwykonawców.',
+					'Od kilku lat prowadzę własną działalność, gdzie tworzę strony i aplikacje. Samodzielnie pozyskuję klientów i zarządzam zespołem podwykonawców. Zrealizowałem kilkadziesiąt projektów - od prostych stron po zaawansowane aplikacje z użyciem baz danych.',
 				projects: [
 					{
-						name: 'Zarządzanie zespołem',
-						description: 'Koordynacja pracy podwykonawców',
+						name: 'Kompleksowa obsługa klientów',
+						description:
+							'Zajmuję się całym procesem - od pierwszego kontaktu, przez projekt, po wdrożenie i wsparcie techniczne.',
 					},
 					{
-						name: 'Praca z klientami',
+						name: 'Zarządzanie zespołem',
 						description:
-							'Rozpoznanie potrzeb klientów i zapewnienie im wsparcia.',
+							'Koordynuję pracę podwykonawców, dbając o terminową realizację projektów.',
 					},
 				],
 				technologies: ['Wordpress', 'Next.js', 'TypeScript', 'TailwindCSS'],
@@ -181,14 +186,21 @@ const experiences: Experience[] = [
 				startDate: new Date('2022-07-01'),
 				endDate: new Date('2024-06-01'),
 				description:
-					'Jedna z największych społeczności marketingowych w Polsce, którą współtworzyłem przez niemal 2 lata. Na jej potrzeby stworzyłem platformę kursową zintegrowaną z płatnościami Stripe.',
+					'Przez prawie dwa lata współtworzyłem jedną z największych społeczności marketingowych w Polsce. Moim głównym wyzwaniem było stworzenie od podstaw zaawansowanej platformy e-learningowej, która musiała sprawnie obsługiwać płatności i zarządzać treściami kursowymi.',
 				projects: [
 					{
-						name: 'Platforma kursowa',
-						description: 'Zaprojektowanie i wdrożenie platformy kursowej oraz jej integracja z płatnościami Stripe.',
+						name: 'Kompleksowa platforma edukacyjna',
+						description:
+							'Zaprojektowałem i wdrożyłem system, który nie tylko zarządzał treściami kursowymi, ale też sprawnie obsługiwał płatności poprzez integrację ze Stripe. Wykorzystałem nowoczesny stack technologiczny, łącząc PayloadCMS do zarządzania treścią z Next.js po stronie frontendu.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'MongoDB', 'Stripe', 'PayloadCMS'],
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'MongoDB',
+					'Stripe',
+					'PayloadCMS',
+				],
 			},
 		],
 	},
@@ -201,16 +213,11 @@ const experiences: Experience[] = [
 				startDate: new Date('2020-11-01'),
 				endDate: new Date('2021-01-01'),
 				description:
-					'Migracja aplikacji z AngularJS do Angulara wraz z Typescript, oraz aktualizacja UI.',
+					'Przy tym projekcie miałem okazję przeprowadzić kompleksową migrację aplikacji z AngularJS do Angulara z TypeScript. Zadanie wykraczało poza samą zmianę technologii - objęło również aktualizację interfejsu i design systemu.',
 				projects: [
 					{
 						name: 'Migracja technologii',
 						description: 'Przepisanie całej aplikacji do nowego frameworka.',
-					},
-					{
-						name: 'UI/UX',
-						description:
-							'Aktualizacja Design Systemu i wdrożenie nowego designu do widoków.',
 					},
 				],
 				technologies: ['Angular', 'TypeScript', 'AngularJS', 'SCSS'],
@@ -226,16 +233,16 @@ const experiences: Experience[] = [
 				startDate: new Date('2019-08-01'),
 				endDate: new Date('2020-12-01'),
 				description:
-					'Byłem odpowiedzialny za rozwój strony firmowej opartej o WordPress, z doświadczeniem w zarządzaniu małym zespołem.',
+					'Moją karierę rozpocząłem od pracy przy stronie WordPress, gdzie szybko rozwinąłem nie tylko umiejętności techniczne, ale też zdobyłem pierwsze doświadczenie w zarządzaniu zespołem. Oprócz kodowania, często samodzielnie projektowałem interfejsy, co pozwoliło mi lepiej zrozumieć aspekty UI/UX.',
 				projects: [
 					{
-						name: 'Kierowanie zespołem',
+						name: 'Pierwsze kroki w zarządzaniu',
 						description:
-							'Przez pół roku byłem odpowiedzialny za zarządzanie zespołem.',
+							'Przez 6 miesięcy kierowałem małym zespołem, ucząc się planowania pracy, pilnowania terminów i raportowania postępów.',
 					},
 					{
-						name: 'UI/UX',
-						description: 'Samodzielne projektowanie interfejsu użytkownika.',
+						name: 'Rozwój w projektowaniu UI',
+						description: 'Z czasem przejąłem odpowiedzialność za projektowanie interfejsów, co znacząco poszerzyło moje kompetencje poza czysty development.',
 					},
 				],
 				technologies: ['WordPress', 'SCSS', 'PHP', 'HTML'],
@@ -246,7 +253,10 @@ const experiences: Experience[] = [
 
 export function Experience() {
 	return (
-		<section className="mt-16" id="doswiadczenie">
+		<section
+			className="mt-16"
+			id="doswiadczenie"
+		>
 			<Container>
 				<h2 className="text-base">Doświadczenie</h2>
 
