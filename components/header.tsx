@@ -8,7 +8,8 @@ import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
 
 const navLinks = [
-	{href: '/#projekty', label: 'Projekty'},
+	{href: '/#start', label: 'Start'},
+	{href: '/#projekty', label: 'Wyróżnione projekty'},
 	{href: '/#doswiadczenie', label: 'Doświadczenie'},
 	{href: '/#opinie', label: 'Opinie'},
 	// {href: '/blog', label: 'Blog'},
@@ -26,7 +27,7 @@ export function Header() {
 	};
 
 	return (
-		<header className="fixed top-0 z-50 flex w-full shrink-0 items-center gap-2 bg-transparent backdrop-blur-sm">
+		<header className="fixed top-0 z-50 flex w-full shrink-0 items-center gap-2 bg-transparent backdrop-blur-sm" id="start">
 			<Container className="grid grid-cols-2 md:py-4 pt-4 pb-2">
 				<Link
 					href="/"
@@ -101,7 +102,7 @@ export function Header() {
 											size="lg"
 										>
 											<Linkedin className="mr-2 h-4 w-4" />
-											LinkedIn
+											Napisz na LinkedIn
 										</Button>
 									</Link>
 								</li>
