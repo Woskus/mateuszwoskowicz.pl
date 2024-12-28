@@ -2,8 +2,8 @@
 
 import {useRef} from 'react';
 import Link from 'next/link';
-import {Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
+import {Navigation} from 'swiper/modules';
 import {SwiperNavigation} from '@/components/swiper-navigation';
 import {Container} from '@/components/container';
 import 'swiper/css';
