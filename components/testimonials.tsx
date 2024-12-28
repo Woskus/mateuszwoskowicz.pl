@@ -2,7 +2,7 @@
 
 import {useRef} from 'react';
 import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
-import {Autoplay, Navigation} from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 import {Container} from '@/components/container';
 import {Card, CardContent, CardFooter} from '@/components/ui/card';
 import {SwiperNavigation} from '@/components/swiper-navigation';
@@ -26,17 +26,10 @@ export function Testimonials() {
 
 				<Swiper
 					ref={sliderRef}
-					modules={[Autoplay, Navigation]}
+					modules={[Navigation]}
 					navigation
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
 					spaceBetween={8}
 					breakpoints={{
-						1024: {
-							slidesPerView: 3,
-						},
 						768: {
 							slidesPerView: 2,
 						},
@@ -52,7 +45,7 @@ export function Testimonials() {
 							className="group relative cursor-pointer overflow-hidden rounded-lg"
 						>
 							<Card>
-								<CardContent className="pt-6 text-muted-foreground">
+								<CardContent className="pt-6 space-y-2">
 									{text}
 								</CardContent>
 
