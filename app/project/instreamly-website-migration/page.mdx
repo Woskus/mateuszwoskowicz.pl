@@ -1,15 +1,16 @@
 import {Container} from '@/components/container';
 import {ArticleHeading} from '@/components/article-heading';
+import {instreamly} from '@/data/projects';
 
 export const metadata = {
-	title: 'inStreamly Website Migration',
+	title: instreamly.title,
 	description: '',
 };
 
 <ArticleHeading
-	title="inStreamly Website Migration"
-	company="inStreamly"
-	img="/img/projects/instreamly-hero.jpg"
+	title={instreamly.title}
+	company={instreamly.company}
+	img={instreamly.imgHero}
 />
 
 <Container>

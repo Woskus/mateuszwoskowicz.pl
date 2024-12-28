@@ -1,15 +1,16 @@
 import {Container} from '@/components/container';
 import {ArticleHeading} from '@/components/article-heading';
+import {samsung} from '@/data/projects';
 
 export const metadata = {
-	title: 'Mobilne Rozgrywki Galaxy',
-	description: '',
+  title: samsung.title,
+  description: '',
 };
 
 <ArticleHeading
-	title='Strona "Mobilne Rozgrywki Galaxy"'
-	company="Samsung"
-	img="/img/projects/samsung-hero.jpg"
+  title={samsung.title}
+  company={samsung.company}
+  img={samsung.imgHero}
 />
 
 <Container>

@@ -1,15 +1,16 @@
 import {Container} from '@/components/container';
 import {ArticleHeading} from '@/components/article-heading';
+import {pkobp} from '@/data/projects';
 
 export const metadata = {
-	title: 'PKO BP Fortnite',
-	description: '',
+  title: pkobp.title,
+  description: '',
 };
 
 <ArticleHeading
-	title="PKO BP Fortnite"
-	company="PKO BP"
-	img="/img/projects/pkobp-hero.jpg"
+  title={pkobp.title}
+  company={pkobp.company}
+  img={pkobp.imgHero}
 />
 
 <Container>

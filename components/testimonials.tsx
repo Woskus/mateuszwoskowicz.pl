@@ -6,41 +6,8 @@ import {Autoplay, Navigation} from 'swiper/modules';
 import {Container} from '@/components/container';
 import {Card, CardContent, CardFooter} from '@/components/ui/card';
 import {SwiperNavigation} from '@/components/swiper-navigation';
+import {testimonials} from '@/data/testimonials';
 import 'swiper/css';
-
-interface Testimonial {
-	name: string;
-	position: string;
-	img: string;
-	text: string;
-}
-
-const TESTIMONIALS: Testimonial[] = [
-	{
-		name: 'Mateusz Woskowicz 1',
-		position: 'Google',
-		img: '/img/mateusz-woskowicz.jpg',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra nisl, non accumsan lectus. Etiam molestie mauris augue, et aliquam erat porta eget.',
-	},
-	{
-		name: 'Mateusz Woskowicz 2',
-		position: 'Google',
-		img: '/img/mateusz-woskowicz.jpg',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra nisl, non accumsan lectus. Etiam molestie mauris augue, et aliquam erat porta eget.',
-	},
-	{
-		name: 'Mateusz Woskowicz 3',
-		position: 'Apple',
-		img: '/img/mateusz-woskowicz.jpg',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra nisl, non accumsan lectus. Etiam molestie mauris augue, et aliquam erat porta eget.',
-	},
-	{
-		name: 'Mateusz Woskowicz 4',
-		position: 'Apple',
-		img: '/img/mateusz-woskowicz.jpg',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra nisl, non accumsan lectus. Etiam molestie mauris augue, et aliquam erat porta eget.',
-	},
-];
 
 export function Testimonials() {
 	const sliderRef = useRef<SwiperRef>(null);
@@ -79,7 +46,7 @@ export function Testimonials() {
 					}}
 					loop
 				>
-					{TESTIMONIALS.map(({name, position, img, text}) => (
+					{testimonials.map(({name, position, img, text}) => (
 						<SwiperSlide
 							key={name}
 							className="group relative cursor-pointer overflow-hidden rounded-lg"
