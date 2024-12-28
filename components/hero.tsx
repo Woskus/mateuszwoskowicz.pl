@@ -22,10 +22,10 @@ export function Hero() {
 				<p className="text-muted-foreground">Senior Frontend Developer</p>
 
 				<div className="mt-4 flex items-start gap-2">
-					<Button variant="outline">
-						<Download className="h-4 w-4" />
-						Pobierz CV
-					</Button>
+					{/*<Button variant="outline">*/}
+					{/*	<Download className="h-4 w-4" />*/}
+					{/*	Pobierz CV*/}
+					{/*</Button>*/}
 
 					<Link
 						href="https://www.linkedin.com/in/mateusz-woskowicz/"

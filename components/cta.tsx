@@ -2,6 +2,7 @@ import {Download, Linkedin} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter} from '@/components/ui/card';
+import Link from 'next/link';
 
 export function Cta() {
   return (
@@ -21,15 +22,17 @@ export function Cta() {
           </CardContent>
 
           <CardFooter className="gap-2">
-            <Button>
-              <Linkedin className="h-4 w-4" />
-              Linkedin
-            </Button>
+           <Link href="https://linkedin.com/in/mateusz-woskowicz" target="_blank">
+             <Button>
+               <Linkedin className="h-4 w-4" />
+               Linkedin
+             </Button>
+           </Link>
 
-            <Button variant="outline">
-              <Download className="h-4 w-4" />
-              Pobierz CV
-            </Button>
+            {/*<Button variant="outline">*/}
+            {/*  <Download className="h-4 w-4" />*/}
+            {/*  Pobierz CV*/}
+            {/*</Button>*/}
           </CardFooter>
         </Card>
       </Container>
