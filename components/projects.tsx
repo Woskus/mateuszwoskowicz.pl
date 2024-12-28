@@ -53,7 +53,7 @@ export function Projects() {
 								<img
 									src={img}
 									alt={title}
-									className="w-full transition-transform duration-300 group-hover:scale-105"
+									className="w-full transition-transform duration-300 group-hover:scale-105 max-w-[400px]"
 								/>
 
 								<div className="absolute bottom-0 left-0 h-[150px] w-full bg-transparent bg-gradient-to-t from-black/80 to-black/0" />
