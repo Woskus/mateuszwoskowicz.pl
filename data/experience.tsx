@@ -122,12 +122,17 @@ export const experiences: Experience[] = [
 								Stworzyłem mechanizm do automatycznego wyświetlania
 								sponsoringu podczas streamów na Twitch i YouTube.
 								NowyMarketing{' '}
-								<Link
-									href="https://nowymarketing.pl/przerwa-na-monte-snack-dzieki-technologii-voice-recognition-na-147-streamach-na-twitchu/"
-									target="_blank"
+								<Button
+									variant="link"
+									asChild
 								>
-									<Button variant="link">napisał o tym artykuł</Button>
-								</Link>
+									<Link
+										href="https://nowymarketing.pl/przerwa-na-monte-snack-dzieki-technologii-voice-recognition-na-147-streamach-na-twitchu/"
+										target="_blank"
+									>
+										napisał o tym artykuł
+									</Link>
+								</Button>
 								.
 							</p>
 						),

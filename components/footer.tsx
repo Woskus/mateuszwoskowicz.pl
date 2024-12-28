@@ -14,9 +14,14 @@ export function Footer() {
 					<nav className="flex md:justify-end">
 						<ul className="m-0 flex list-none flex-wrap p-0">
 							<li>
-								<Link href="/polityka-prywatnosci">
-									<Button variant="link">Polityka prywatności</Button>
-								</Link>
+								<Button
+									variant="link"
+									asChild
+								>
+									<Link href="/polityka-prywatnosci">
+										Polityka prywatności
+									</Link>
+								</Button>
 							</li>
 						</ul>
 					</nav>

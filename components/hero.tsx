@@ -11,7 +11,7 @@ export function Hero() {
 					<img
 						src="/img/mateusz-woskowicz-avatar.jpg"
 						alt="Mateusz Woskowicz"
-						className="rounded-full w-16 h-16"
+						className="h-16 w-16 rounded-full"
 						width={64}
 						height={64}
 					/>
@@ -27,29 +27,31 @@ export function Hero() {
 					{/*	Pobierz CV*/}
 					{/*</Button>*/}
 
-					<Link
-						href="https://www.linkedin.com/in/mateusz-woskowicz/"
-						target="_blank"
+					<Button
+						size="icon"
+						variant="outline"
+						asChild
 					>
-						<Button
-							size="icon"
-							variant="outline"
+						<Link
+							href="https://www.linkedin.com/in/mateusz-woskowicz/"
+							target="_blank"
 						>
 							<Linkedin className="h-4 w-4" />
-						</Button>
-					</Link>
+						</Link>
+					</Button>
 
-					<Link
-						href="https://github.com/Woskus"
-						target="_blank"
+					<Button
+						size="icon"
+						variant="outline"
+						asChild
 					>
-						<Button
-							size="icon"
-							variant="outline"
+						<Link
+							href="https://github.com/Woskus"
+							target="_blank"
 						>
 							<Github className="h-4 w-4" />
-						</Button>
-					</Link>
+						</Link>
+					</Button>
 				</div>
 			</Container>
 		</section>

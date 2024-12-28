@@ -47,19 +47,24 @@ export function Projects() {
 					{projects.map(({title, company, img, href}) => (
 						<SwiperSlide
 							key={title}
-							className="group relative cursor-pointer overflow-hidden rounded-lg"
+							className="relative cursor-pointer overflow-hidden rounded-lg"
 						>
-							<Link href={href}>
+							<Link
+								href={href}
+								className="group"
+							>
 								<img
 									src={img}
 									alt={title}
-									className="w-full transition-transform duration-300 group-hover:scale-105 max-w-[400px]"
+									className="w-full max-w-[400px] transition-transform duration-300 group-hover:scale-105 group-focus:scale-105"
 								/>
 
 								<div className="absolute bottom-0 left-0 h-[150px] w-full bg-transparent bg-gradient-to-t from-black/80 to-black/0" />
 
 								<div className="absolute bottom-5 left-5">
-									<h3 className="text-lg">{title}</h3>
+									<h3 className="text-lg group-hover:underline group-focus:underline">
+										{title}
+									</h3>
 									<p className="text-sm text-muted-foreground">
 										{company}
 									</p>

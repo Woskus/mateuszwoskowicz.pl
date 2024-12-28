@@ -15,39 +15,51 @@ export function About() {
 			<Container>
 				<h2 className="mb-5 text-base">O mnie</h2>
 
-				<div className="flex md:flex-row flex-col justify-between items-start gap-5">
+				<div className="flex flex-col items-start justify-between gap-5 md:flex-row">
 					<article className="max-w-[750px] space-y-5 text-muted-foreground">
 						<p>Hej! 👋</p>
 
 						<p>
 							Jestem Senior Frontend Developerem z ponad {yearsDiff}
 							-letnim doświadczeniem komercyjnym. Na co dzień pracuję w{' '}
-							<Link href="#instreamly">
-								<Button variant="link">inStreamly</Button>
-							</Link>
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link href="#instreamly">inStreamly</Link>
+							</Button>
 							, gdzie oprócz kodowania, chętnie pomagam przy rozwoju
 							projektu i wdrażam rozwiązania AI.
 						</p>
 
 						<p>
 							Po godzinach prowadzę własną działalność{' '}
-							<Link href="#mwebs">
-								<Button variant="link">mwebs</Button>
-							</Link>
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link href="#mwebs">mwebs</Link>
+							</Button>
 							, gdzie tworzę strony i aplikacje dla moich klientów. Miałem
 							przyjemność współpracować z takimi markami jak{' '}
-							<Link href="#samsung">
-								<Button variant="link">Samsung</Button>
-							</Link>{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link href="#samsung">Samsung</Link>
+							</Button>{' '}
 							czy{' '}
-							<Link href="#pkobp">
-								<Button variant="link">PKO BP</Button>
-							</Link>
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link href="#pkobp">PKO BP</Link>
+							</Button>
 							, a także współtworzyłem jedną z większych społeczności
 							marketingowych w Polsce -{' '}
-							<Link href="#dcc">
-								<Button variant="link">Digital Creators Community</Button>
-							</Link>
+							<Button variant="link" asChild>
+								<Link href="#dcc">Digital Creators Community</Link>
+							</Button>
 							.
 						</p>
 

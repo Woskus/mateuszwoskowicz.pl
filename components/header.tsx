@@ -27,8 +27,11 @@ export function Header() {
 	};
 
 	return (
-		<header className="fixed top-0 z-50 flex w-full shrink-0 items-center gap-2 bg-transparent backdrop-blur-sm" id="start">
-			<Container className="grid grid-cols-2 md:py-4 pt-4 pb-2">
+		<header
+			className="fixed top-0 z-50 flex w-full shrink-0 items-center gap-2 bg-transparent backdrop-blur-sm"
+			id="start"
+		>
+			<Container className="grid grid-cols-2 pb-2 pt-4 md:py-4">
 				<Link
 					href="/"
 					className="z-10"
@@ -40,9 +43,12 @@ export function Header() {
 					<ul className="flex justify-end gap-8">
 						{navLinks.map((link) => (
 							<li key={link.href}>
-								<Link href={link.href}>
-									<Button variant="link">{link.label}</Button>
-								</Link>
+								<Button
+									variant="link"
+									asChild
+								>
+									<Link href={link.href}>{link.label}</Link>
+								</Button>
 							</li>
 						))}
 					</ul>
@@ -77,34 +83,36 @@ export function Header() {
 							<ul className="flex h-full flex-col items-center justify-center gap-5">
 								{navLinks.map((link, index) => (
 									<li key={link.href}>
-										<Link
-											href={link.href}
-											onClick={closeMobileMenu}
+										<Button
+											variant="link"
+											className="w-full justify-start"
+											asChild
 										>
-											<Button
-												variant="link"
-												className="w-full justify-start"
+											<Link
+												href={link.href}
+												onClick={closeMobileMenu}
 											>
 												{link.label}
-											</Button>
-										</Link>
+											</Link>
+										</Button>
 									</li>
 								))}
 
 								<li>
-									<Link
-										href="https://linkedin.com/in/mateusz-woskowicz"
-										target="_blank"
-										onClick={closeMobileMenu}
+									<Button
+										className="w-full justify-start"
+										size="lg"
+										asChild
 									>
-										<Button
-											className="w-full justify-start"
-											size="lg"
+										<Link
+											href="https://linkedin.com/in/mateusz-woskowicz"
+											target="_blank"
+											onClick={closeMobileMenu}
 										>
 											<Linkedin className="mr-2 h-4 w-4" />
 											Napisz na LinkedIn
-										</Button>
-									</Link>
+										</Link>
+									</Button>
 								</li>
 							</ul>
 						</Container>

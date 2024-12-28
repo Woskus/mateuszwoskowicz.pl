@@ -24,7 +24,7 @@ const components = {
 	),
 	p: (props: ParagraphProps) => (
 		<p
-			className="leading-snug mt-4 text-muted-foreground"
+			className="mt-4 leading-snug text-muted-foreground"
 			{...props}
 		/>
 	),
@@ -55,24 +55,34 @@ const components = {
 	a: ({href, children, ...props}: AnchorProps) => {
 		if (href?.startsWith('/') || href?.startsWith('#')) {
 			return (
-				<Link
-					href={href}
-					{...props}
+				<Button
+					variant="link"
+					asChild
 				>
-					<Button variant="link">{children}</Button>
-				</Link>
+					<Link
+						href={href}
+						{...props}
+					>
+						{children}
+					</Link>
+				</Button>
 			);
 		}
 
 		return (
-			<a
-				href={href}
-				target="_blank"
-				rel="noopener noreferrer"
-				{...props}
+			<Button
+				variant="link"
+				asChild
 			>
-				<Button variant="link">{children}</Button>
-			</a>
+				<a
+					href={href}
+					target="_blank"
+					rel="noopener noreferrer"
+					{...props}
+				>
+					{children}
+				</a>
+			</Button>
 		);
 	},
 	code: ({children, ...props}: ComponentPropsWithoutRef<'code'>) => {
