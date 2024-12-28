@@ -11,17 +11,17 @@ const PROJECTS: Project[] = [
 	{
 		title: 'Strona "Mobilne Rozgrywki Galaxy"',
 		company: 'Samsung',
-		img: '/img/projects/samsung.png',
+		img: '/img/projects/samsung.jpg',
 	},
 	{
 		title: 'Strona dla PKO BP Fortnite',
 		company: 'PKO BP',
-		img: '/img/projects/pkobp.png',
+		img: '/img/projects/pkobp.jpg',
 	},
 	{
 		title: 'Wordpress to Next.js Migration',
 		company: 'inStreamly',
-		img: '/img/projects/instreamly.png',
+		img: '/img/projects/instreamly.jpg',
 	},
 ];
 
