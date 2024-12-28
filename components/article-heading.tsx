@@ -14,6 +14,8 @@ export function ArticleHeading({title, company, img}: ArticleHeadingProps) {
 				<OptimizedImage
 					src={img}
 					alt={title}
+					width={1192}
+					height={250}
 					className="h-[250px] w-full rounded-lg object-cover md:h-[400px]"
 				/>
 
