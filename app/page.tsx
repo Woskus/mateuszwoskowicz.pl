@@ -5,6 +5,7 @@ import {Experience} from '@/components/experience';
 import {About} from '@/components/about';
 import {Testimonials} from '@/components/testimonials';
 import {Cta} from '@/components/cta';
+import {NorthenLights} from '@/components/northen-lights';
 
 export const metadata: Metadata = {
 	title: 'Mateusz Woskowicz - Senior Frontend Developer',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<>
+			<NorthenLights />
+
 			<Hero />
 
 			<Projects />

@@ -42,7 +42,7 @@ export const dcc = {
 	img: '/img/projects/dcc.jpg',
 	imgHero: '/img/projects/dcc-hero.jpg',
 	logo: <Dcc />,
-	href: '#',
+	href: '/case-study/platforma-kursowa-dcc',
 };
 
 export const projects: Project[] = [samsung, pkobp, instreamly, dcc];
