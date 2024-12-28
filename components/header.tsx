@@ -27,7 +27,7 @@ export function Header() {
 
 	return (
 		<header className="fixed top-0 z-50 flex w-full shrink-0 items-center gap-2 bg-transparent backdrop-blur-sm">
-			<Container className="grid grid-cols-2 py-4">
+			<Container className="grid grid-cols-2 md:py-4 pt-4 pb-2">
 				<Link
 					href="/"
 					className="z-10"
