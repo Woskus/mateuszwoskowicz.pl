@@ -3,56 +3,52 @@ import {ArticleHeading} from '@/components/article-heading';
 import {dcc} from '@/data/projects';
 
 export const metadata = {
-  title: dcc.title,
-  description: '',
+	title: dcc.title,
+	description: '',
 };
 
 <ArticleHeading
-  title={dcc.title}
-  company={dcc.company}
-  img={dcc.imgHero}
+	title={dcc.title}
+	company={dcc.company}
+	img={dcc.imgHero}
 />
 
-<Container>
+## Wyzwanie
 
-  ## Wyzwanie
+Projekt polegał na stworzeniu nowoczesnej platformy kursowej dla społeczności Digital Creators Community. Istotnym aspektem projektu była pełna automatyzacja procesu sprzedaży kursów.
 
-  Projekt polegał na stworzeniu nowoczesnej platformy kursowej dla społeczności Digital Creators Community. Istotnym aspektem projektu była pełna automatyzacja procesu sprzedaży kursów.
+Dodatkowo, właściciele platformy chcieli móc samodzielnie zarządzać ofertą kursową – wprowadzać nowe kursy, modyfikować treści na stronie oraz ustalać ceny. Rozwiązaniem okazało się zbudowanie serwisu opartego na Next.js, Payload CMS i Stripe, który jednocześnie zapewni skalowalność i bezpieczeństwo danych.
 
-  Dodatkowo, właściciele platformy chcieli móc samodzielnie zarządzać ofertą kursową – wprowadzać nowe kursy, modyfikować treści na stronie oraz ustalać ceny. Rozwiązaniem okazało się zbudowanie serwisu opartego na Next.js, Payload CMS i Stripe, który jednocześnie zapewni skalowalność i bezpieczeństwo danych.
+## Moja rola
 
-  ## Moja rola
+- **Koordynacja projektu i zarządzanie podwykonawcą** - Pierwszym krokiem było nadzorowanie pracy projektanta graficznego. Otrzymywałem od niego projekty i przekazywałem szczegółowy feedback, dbając o spójność wizualną i użyteczność platformy.
 
-  - **Koordynacja projektu i zarządzanie podwykonawcą** - Pierwszym krokiem było nadzorowanie pracy projektanta graficznego. Otrzymywałem od niego projekty i przekazywałem szczegółowy feedback, dbając o spójność wizualną i użyteczność platformy.
+- **Wdrożenie frontendu w Next.js & TypeScript** - Na podstawie przygotowanego designu zakodowałem cały frontend w Next.js.
 
-  - **Wdrożenie frontendu w Next.js & TypeScript** - Na podstawie przygotowanego designu zakodowałem cały frontend w Next.js.
+- **Integracja Payload CMS** - Aby umożliwić właścicielom aktualizowanie treści, wykorzystałem Payload CMS.
 
-  - **Integracja Payload CMS** - Aby umożliwić właścicielom aktualizowanie treści, wykorzystałem Payload CMS.
+- **Automatyzacja płatności przez Stripe** - Kluczowa dla projektu była pełna automatyzacja procesu sprzedaży. Podłączyłem Stripe tak, by po opłaceniu zamówienia użytkownik automatycznie otrzymywał dostęp do zakupionego kursu. W ten sposób zminimalizowaliśmy obsługę manualną.
 
-  - **Automatyzacja płatności przez Stripe** - Kluczowa dla projektu była pełna automatyzacja procesu sprzedaży. Podłączyłem Stripe tak, by po opłaceniu zamówienia użytkownik automatycznie otrzymywał dostęp do zakupionego kursu. W ten sposób zminimalizowaliśmy obsługę manualną.
+- **Implementacja funkcji platformy kursowej** - Zadbałem o funkcjonalności, takie jak śledzenie postępu kursu czy możliwość zdawania testów wiedzy, po których ukończeniu użytkownik otrzymywał spersonalizowany certyfikat.
 
-  - **Implementacja funkcji platformy kursowej** - Zadbałem o funkcjonalności, takie jak śledzenie postępu kursu czy możliwość zdawania testów wiedzy, po których ukończeniu użytkownik otrzymywał spersonalizowany certyfikat.
+- **Zarządzanie infrastrukturą** - Całość działa w chmurze AWS, a dane przechowywane są w MongoDB. Dzięki temu platforma jest bezpieczna, skalowalna i szybka, co w przypadku kursów online jest szczególnie istotne.
 
-  - **Zarządzanie infrastrukturą** - Całość działa w chmurze AWS, a dane przechowywane są w MongoDB. Dzięki temu platforma jest bezpieczna, skalowalna i szybka, co w przypadku kursów online jest szczególnie istotne.
+## Technologia
 
-  ## Technologia
+- **Next.js & TypeScript** - Wykorzystanie Next.js z TypeScript pozwoliło na stworzenie wydajnego frontendu.
 
-  - **Next.js & TypeScript** - Wykorzystanie Next.js z TypeScript pozwoliło na stworzenie wydajnego frontendu.
+- **Payload CMS** - Dzięki koncepcji Headless CMS zespół Digital Creators Community ma pełną kontrolę nad treściami w serwisie.
 
-  - **Payload CMS** - Dzięki koncepcji Headless CMS zespół Digital Creators Community ma pełną kontrolę nad treściami w serwisie.
+- **Stripe** - Stripe automatyzuje wszystkie procesy płatności i pozwala na szybkie wdrożenie modelu subskrypcyjnego lub jednorazowych zakupów.
 
-  - **Stripe** - Stripe automatyzuje wszystkie procesy płatności i pozwala na szybkie wdrożenie modelu subskrypcyjnego lub jednorazowych zakupów.
+- **AWS** - Aplikacja uruchomiona jest na AWS, co gwarantuje skalowalność i bezpieczeństwo.
 
-  - **AWS** - Aplikacja uruchomiona jest na AWS, co gwarantuje skalowalność i bezpieczeństwo.
+- **MongoDB** - Dane przechowywane są w MongoDB, która dobrze radzi sobie z obsługą dynamicznie rosnącej liczby użytkowników.
 
-  - **MongoDB** - Dane przechowywane są w MongoDB, która dobrze radzi sobie z obsługą dynamicznie rosnącej liczby użytkowników.
+## Czego się nauczyłem
 
-  ## Czego się nauczyłem
+- **Zaawansowana integracja płatności** - Projekt pozwolił mi pogłębić wiedzę na temat Stripe – od obsługi jednorazowych płatności, po automatyczne przyznawanie dostępu do kursu.
 
-  - **Zaawansowana integracja płatności** - Projekt pozwolił mi pogłębić wiedzę na temat Stripe – od obsługi jednorazowych płatności, po automatyczne przyznawanie dostępu do kursu.
+- **Zarządzanie projektem i koordynacja zespołu** - Współpraca z zewnętrznym projektantem wymagała jasnej komunikacji i sprawnego przekazywania feedbacku, co przełożyło się na sprawne realizowanie kolejnych etapów projektu.
 
-  - **Zarządzanie projektem i koordynacja zespołu** - Współpraca z zewnętrznym projektantem wymagała jasnej komunikacji i sprawnego przekazywania feedbacku, co przełożyło się na sprawne realizowanie kolejnych etapów projektu.
-
-  - **Rozbudowane funkcjonalności edukacyjne** - Implementacja śledzenia postępu, testów i generowania certyfikatów umożliwiła mi poznanie specyficznych wymagań platform e-learningowych i wypracowanie efektywnych wzorców obsługi użytkowników.
-
-</Container>
+- **Rozbudowane funkcjonalności edukacyjne** - Implementacja śledzenia postępu, testów i generowania certyfikatów umożliwiła mi poznanie specyficznych wymagań platform e-learningowych i wypracowanie efektywnych wzorców obsługi użytkowników.

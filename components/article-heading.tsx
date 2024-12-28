@@ -9,7 +9,7 @@ interface ArticleHeadingProps {
 
 export function ArticleHeading({title, company, img}: ArticleHeadingProps) {
 	return (
-		<Container className="pb-8 pt-[72px]">
+		<div className="pb-8 pt-[72px]">
 			<div className="relative">
 				<OptimizedImage
 					src={img}
@@ -27,6 +27,6 @@ export function ArticleHeading({title, company, img}: ArticleHeadingProps) {
 					<p className="md:text-lg text-muted-foreground">{company}</p>
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }
