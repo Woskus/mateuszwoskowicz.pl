@@ -1,0 +1,59 @@
+import {Container} from '@/components/container';
+import {ArticleHeading} from '@/components/article-heading';
+import {pkobp} from '@/data/projects';
+
+export const metadata = {
+  title: pkobp.title,
+  description: '',
+};
+
+<ArticleHeading
+  title={pkobp.title}
+  company={pkobp.company}
+  img={pkobp.imgHero}
+/>
+
+<Container>
+  ## Wyzwanie
+
+  W projekcie dla PKO BP celem było przygotowanie strony internetowej skierowanej do młodych graczy Fortnite. Wymagało to nowoczesnego, dynamicznego designu przy zachowaniu wysokich standardów bezpieczeństwa – w końcu PKO BP to największy bank w Polsce.
+
+  Równocześnie należało zadbać o pełną dostępność (accessibility) strony, aby każdy użytkownik mógł w pełni z niej korzystać.
+
+  Kluczowe było także umożliwienie elastycznej zmiany treści, tak aby strona mogła być w dowolnym momencie aktualizowana.
+
+  ## Moja rola
+
+  W tym projekcie prowadziłem prace w sposób kompleksowy, nie ograniczając się jedynie do tworzenia kodu:
+
+  - **Przygotowanie designu** - Wspólnie z podwykonawcą przygotowałem dwa wstępne projekty graficzne. Jeden nawiązywał bezpośrednio do stylistyki klienta, drugi stanowił naszą autorską interpretację.Ostatecznie klient wybrał naszą propozycję, którą następnie rozwijaliśmy.
+
+  - **Koordynacja prac podwykonawców** - Byłem odpowiedzialny za nadzór nad zespołem zajmującym się designem, czy cyberbezpieczeństwem. Regularnie przekazywałem feedback, dbałem o terminowość i spójność działań.
+
+  - **Wdrożenie** - Zakodowałem stronę zgodnie z projektem w Figma, wykorzystując Next.js i Tailwind CSS.
+
+  - **Integracja z CMS** - Za pomocą Sanity.io umożliwiłem edycję treści, co dało zespołowi PKO BP pełną kontrolę nad zawartością i pozwalało w dowolnym momencie włączać lub wyłączać stronę.
+
+  - **Zabezpieczenia** - Wdrożyliśmy specjalne rozwiązania w chmurze AWS, a dzięki wykorzystaniu Server Components w Next.js przetwarzanie danych z CMS odbywało się na serwerze. W efekcie użytkownik otrzymywał już wygenerowany kod HTML, co znacznie poprawiło bezpieczeństwo.
+
+  - **Dbałość o dostępność (accessibility)** - Szczególny nacisk położyłem na zapewnienie pełnej dostępności strony. Testowałem ją pod kątem kluczowych wymagań dostępności, aby z witryny mógł bezproblemowo korzystać każdy użytkownik.
+
+  - **Komunikacja z zespołem PKO BP** - Przeprowadziłem konsultacje i szkolenia dla zespołu PKO BP, tak by wykorzystali pełen potencjał wdrożonych rozwiązań. Dbałem o bieżącą wymianę informacji i sprawne zarządzanie oczekiwaniami klienta.
+
+  ## Technologia
+
+  - **Next.js & TypeScript** – wykorzystanie Server Components dla lepszej wydajności i bezpieczeństwa.
+  - **Tailwind CSS** – pozwolił na szybkie stylowanie i utrzymanie spójnego designu, co miało szczególne znaczenie przy dynamicznie rozwijanym projekcie.
+  - **Sanity.io** – CMS, dzięki któremu zespół PKO BP może w dowolnej chwili zmieniać treści na stronie lub całkowicie ją wyłączać.
+  - **AWS** – AWS zapewnił wysoki poziom bezpieczeństwa, skalowalność i ciągłość działania.
+
+  ## Czego się nauczyłem
+  - **Zaawansowane bezpieczeństwo w praktyce** - Praca dla PKO BP wymagała pogłębienia wiedzy na temat implementacji zabezpieczeń i rozwiązań chmurowych.
+
+  - **Kompleksowa koordynacja projektów** - Praca z podwykonawcami i kontakt z klientem pomogły mi rozwinąć umiejętności zarządzania zespołem i komunikacji projektowej na wyższym poziomie.
+
+  - **Lepsza obsługa dostępności** - Projekt wymagał dokładnego uwzględnienia wytycznych dotyczących accessibility, co pozwoliło mi pogłębić wiedzę w tym obszarze.
+
+  - **Integracja CMS w ekosystemie Next.js** - Poznałem w jaki sposób działa Sanity.io i jak wdrożyć go do projektu dbając o wysoki poziom bezpieczeństwa.
+
+</Container>

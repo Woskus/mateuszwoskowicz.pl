@@ -35,7 +35,7 @@ export function Header() {
 				<div>
 					<Link
 						href="/"
-						className="z-10 rounded-lg py-2 focus:outline-0 focus:ring-1 focus:ring-primary"
+						className="z-10 rounded-lg py-2 focus:outline-0 focus-visible:ring-1 focus:ring-primary"
 					>
 						<span className="text-2xl font-bold">MW</span>
 					</Link>

@@ -11,7 +11,7 @@ export const samsung = {
 	company: 'Samsung',
 	img: '/img/projects/samsung.jpg',
 	imgHero: '/img/projects/samsung-hero.jpg',
-	href: '/project/mobilne-rozgrywki-galaxy',
+	href: '/case-study/mobilne-rozgrywki-galaxy',
 };
 
 export const pkobp = {
@@ -19,7 +19,7 @@ export const pkobp = {
 	company: 'PKO BP',
 	img: '/img/projects/pkobp.jpg',
 	imgHero: '/img/projects/pkobp-hero.jpg',
-	href: '/project/pkobp-fortnite',
+	href: '/case-study/pkobp-fortnite',
 };
 
 export const instreamly = {
@@ -27,7 +27,7 @@ export const instreamly = {
 	company: 'inStreamly',
 	img: '/img/projects/instreamly.jpg',
 	imgHero: '/img/projects/instreamly-hero.jpg',
-	href: '/project/instreamly-website-migration',
+	href: '/case-study/instreamly-website-migration',
 };
 
 export const projects: Project[] = [samsung, pkobp, instreamly];
