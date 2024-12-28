@@ -9,7 +9,7 @@ export function Hero() {
 			<Container>
 				<div className="mb-2 w-fit rounded-full border border-border p-1">
 					<img
-						src="/img/mateusz-woskowicz.jpg"
+						src="/img/mateusz-woskowicz-avatar.jpg"
 						alt="Mateusz Woskowicz"
 						className="rounded-full w-16 h-16"
 						width={64}
