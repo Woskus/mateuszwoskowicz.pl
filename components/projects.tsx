@@ -22,9 +22,7 @@ export function Projects() {
 				<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
 					<h2 className="border-0 text-base">Wyróżnione projekty</h2>
 
-					<div className="block md:hidden">
-						<SwiperNavigation sliderRef={sliderRef} />
-					</div>
+					<SwiperNavigation sliderRef={sliderRef} />
 				</div>
 
 				<Swiper

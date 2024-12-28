@@ -1,4 +1,4 @@
-import {Instreamly, Pkobp, Samsung} from '@/components/logotypes';
+import {Dcc, Instreamly, Pkobp, Samsung} from '@/components/logotypes';
 
 interface Project {
 	title: string;
@@ -36,4 +36,13 @@ export const instreamly = {
 	href: '/case-study/instreamly-website-migration',
 };
 
-export const projects: Project[] = [samsung, pkobp, instreamly];
+export const dcc = {
+	title: 'Platforma kursowa DCC',
+	company: 'Digital Creators Community',
+	img: '/img/projects/dcc.jpg',
+	imgHero: '/img/projects/dcc-hero.jpg',
+	logo: <Dcc />,
+	href: '#',
+};
+
+export const projects: Project[] = [samsung, pkobp, instreamly, dcc];
