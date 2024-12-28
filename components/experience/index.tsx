@@ -246,7 +246,7 @@ const experiences: Experience[] = [
 
 export function Experience() {
 	return (
-		<section className="mt-16">
+		<section className="mt-16" id="doswiadczenie">
 			<Container>
 				<h2 className="text-base">Doświadczenie</h2>
 

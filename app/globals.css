@@ -45,6 +45,10 @@
 		@apply border-border;
 	}
 
+	html {
+		@apply scroll-smooth scroll-pt-16;
+	}
+
 	body {
 		@apply font-sen bg-background text-foreground;
 		font-feature-settings: 'rlig' 1, 'calt' 1;
