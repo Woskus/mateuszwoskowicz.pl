@@ -12,6 +12,7 @@ interface Project {
 	title: string;
 	company: string;
 	img: string;
+	href: string;
 }
 
 const PROJECTS: Project[] = [
@@ -19,31 +20,19 @@ const PROJECTS: Project[] = [
 		title: 'Strona "Mobilne Rozgrywki Galaxy"',
 		company: 'Samsung',
 		img: '/img/projects/samsung.jpg',
+		href: '/project/mobilne-rozgrywki-galaxy',
 	},
 	{
 		title: 'Strona dla PKO BP Fortnite',
 		company: 'PKO BP',
 		img: '/img/projects/pkobp.jpg',
+		href: '#',
 	},
 	{
 		title: 'Wordpress to Next.js Migration',
 		company: 'inStreamly',
 		img: '/img/projects/instreamly.jpg',
-	},
-	{
-		title: 'Strona "Mobilne Rozgrywki Galaxy" 2',
-		company: 'Samsung',
-		img: '/img/projects/samsung.jpg',
-	},
-	{
-		title: 'Strona dla PKO BP Fortnite 2',
-		company: 'PKO BP',
-		img: '/img/projects/pkobp.jpg',
-	},
-	{
-		title: 'Wordpress to Next.js Migration 2',
-		company: 'inStreamly',
-		img: '/img/projects/instreamly.jpg',
+		href: '#',
 	},
 ];
 
@@ -80,12 +69,12 @@ export function Projects() {
 					}}
 					loop
 				>
-					{PROJECTS.map(({title, company, img}) => (
+					{PROJECTS.map(({title, company, img, href}) => (
 						<SwiperSlide
 							key={title}
 							className="group relative cursor-pointer overflow-hidden rounded-lg"
 						>
-							<Link href="#">
+							<Link href={href}>
 								<img
 									src={img}
 									alt={title}
