@@ -12,7 +12,7 @@ export function About() {
 	const yearsDiff = currentDate.diff(startDate, 'year');
 
 	return (
-		<section className="mt-16">
+		<section className="mt-16" id="o-mnie">
 			<Container>
 				<h2 className="mb-5 text-base">O mnie</h2>
 

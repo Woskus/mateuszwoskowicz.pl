@@ -1,6 +1,7 @@
 'use client';
 
 import {useState} from 'react';
+import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
@@ -8,14 +9,16 @@ import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
 
 const navLinks = [
-	{href: '/#start', label: 'Start'},
 	{href: '/#projekty', label: 'Wyróżnione projekty'},
 	{href: '/#doswiadczenie', label: 'Doświadczenie'},
+	{href: '/#o-mnie', label: 'O mnie'},
 	{href: '/#opinie', label: 'Opinie'},
 	// {href: '/blog', label: 'Blog'},
 ];
 
 export function Header() {
+	const pathname = usePathname()
+
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
@@ -34,10 +37,10 @@ export function Header() {
 			<Container className="grid grid-cols-2 pb-2 pt-4 md:py-4">
 				<div>
 					<Link
-						href="/"
+						href={pathname === '/' ? '/#start' : '/'}
 						className="z-10 rounded-lg py-2 focus:outline-0 focus-visible:ring-1 focus:ring-primary"
 					>
-						<span className="text-2xl font-bold">MW</span>
+						<span aria-label="Mateusz Woskowicz" className="text-2xl font-bold">MW</span>
 					</Link>
 				</div>
 
