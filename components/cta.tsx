@@ -17,7 +17,7 @@ export function Cta() {
 
           <CardContent className="space-y-6">
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra nisl, non accumsan lectus. Etiam molestie mauris augue, et aliquam erat porta eget.
+              Napisz do mnie na linkedin i bądźmy w kontakcie!
             </p>
           </CardContent>
 
