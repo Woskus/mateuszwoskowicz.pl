@@ -61,7 +61,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 					<div className="mt-1 flex items-center text-sm text-muted-foreground">
 						<Calendar className="mr-2 h-3.5 w-3.5" />
 
-						<div className="flex items-center gap-2">
+						<div className="flex items-center gap-2 flex-wrap">
 							<span>{dayjs(position.startDate).format('MMMM YYYY')}</span>
 
 							<span>-</span>
