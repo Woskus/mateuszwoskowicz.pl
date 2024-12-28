@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
 
 export function Projects() {
 	return (
-		<section className="mt-8">
+		<section className="mt-8" id="projekty">
 			<Container>
 				<h2 className="text-base">Wyróżnione projekty</h2>
 

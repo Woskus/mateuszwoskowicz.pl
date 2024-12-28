@@ -31,7 +31,7 @@ const TESTIMONIALS: Testimonial[] = [
 
 export function Testimonials() {
   return (
-    <section className="mt-16">
+    <section className="mt-16" id="opinie">
       <Container>
         <h2 className="text-base">Opinie</h2>
 
