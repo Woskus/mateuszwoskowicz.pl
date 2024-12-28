@@ -1,4 +1,5 @@
 export {Callpage} from './callpage';
+export {Dcc} from './dcc';
 export {Instreamly} from './instreamly';
 export {Mwebs} from './mwebs';
 export {Pkobp} from './pkobp';

@@ -1,6 +1,7 @@
 import {Container} from '@/components/container';
 import {
 	Callpage,
+	Dcc,
 	Instreamly,
 	Mwebs,
 	Pkobp,
@@ -35,7 +36,6 @@ const experiences: Experience[] = [
 			{
 				title: 'Strona internetowa - Fortnite',
 				startDate: new Date('2024-10-01'),
-				endDate: new Date('2025-03-01'),
 				description:
 					'Kompleksowa realizacja projektu dla PKO BP, obejmująca development, design i zarządzanie podwykonawcami.',
 				projects: [
@@ -155,7 +155,6 @@ const experiences: Experience[] = [
 			{
 				title: 'Founder & Senior Frontend Developer',
 				startDate: new Date('2021-08-07'),
-				endDate: new Date('2025-03-01'),
 				description:
 					'Własna działalność, gdzie tworzę strony i aplikacje internetowe, jestem odpowiedzialny za pozyskiwanie klientów i zarządzanie zespołem podwykonawców.',
 				projects: [
@@ -170,6 +169,26 @@ const experiences: Experience[] = [
 					},
 				],
 				technologies: ['Wordpress', 'Next.js', 'TypeScript', 'TailwindCSS'],
+			},
+		],
+	},
+	{
+		logo: <Dcc />,
+		type: 'part-time',
+		positions: [
+			{
+				title: 'Founder & Frontend Developer',
+				startDate: new Date('2022-07-01'),
+				endDate: new Date('2024-06-01'),
+				description:
+					'Jedna z największych społeczności marketingowych w Polsce, którą współtworzyłem przez niemal 2 lata. Na jej potrzeby stworzyłem platformę kursową zintegrowaną z płatnościami Stripe.',
+				projects: [
+					{
+						name: 'Platforma kursowa',
+						description: 'Zaprojektowanie i wdrożenie platformy kursowej oraz jej integracja z płatnościami Stripe.',
+					},
+				],
+				technologies: ['TypeScript', 'Next.js', 'MongoDB', 'Stripe', 'PayloadCMS'],
 			},
 		],
 	},

@@ -3,6 +3,7 @@ import pl from 'dayjs/locale/pl';
 import {ArrowRight, Calendar} from 'lucide-react';
 import {Card, CardContent, CardHeader} from '@/components/ui/card';
 import {Badge, BadgeProps} from '@/components/ui/badge';
+import {Ping} from '@/components/ping';
 import type {Experience} from './index';
 
 dayjs.locale(pl);
@@ -34,23 +35,34 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 						key={position.title}
 						className="border-t pt-4 first:border-t-0 first:pt-0"
 					>
-						<h3 className="flex items-center gap-2 text-lg font-semibold">
-							{position.title}
-						</h3>
+						<h3 className="text-lg font-semibold">{position.title}</h3>
 
 						<div className="mt-1 flex items-center text-sm text-muted-foreground">
 							<Calendar className="mr-2 h-3.5 w-3.5" />
 
-							<p className="mr-2">
-								{dayjs(position.startDate).format('MMMM YYYY')} -{' '}
+							<div className="flex items-center gap-2">
+								<span>
+									{dayjs(position.startDate).format('MMMM YYYY')}
+								</span>
 
-                {position.endDate
-									? dayjs(position.endDate).format('MMMM YYYY')
-									: 'Present'}
-							</p>
+								<span>-</span>
+
+								<span className="flex items-center gap-1">
+									{position.endDate ? (
+										dayjs(position.endDate).format('MMMM YYYY')
+									) : (
+										<>
+											<Ping />
+											Present
+										</>
+									)}
+								</span>
+							</div>
 						</div>
 
-						<p className="mt-2 text-sm text-muted-foreground">{position.description}</p>
+						<p className="mt-2 text-sm text-muted-foreground">
+							{position.description}
+						</p>
 
 						{position.projects.length > 0 && (
 							<div className="mt-6">
@@ -82,7 +94,7 @@ export function ExperienceItem({experience}: ExperienceItemProps) {
 								<h4 className="mb-1 text-sm font-semibold">
 									Technologia:
 								</h4>
-								<p className="text-muted-foreground text-sm">
+								<p className="text-sm text-muted-foreground">
 									{position.technologies.join(', ')}
 								</p>
 							</div>
