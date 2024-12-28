@@ -35,6 +35,7 @@ export function ExperienceCollapsible({
 					<Button
 						variant="ghost"
 						size="icon"
+						aria-label={isOpen ? 'Zamknij' : 'Otwórz'}
 					>
 						<ArrowDown
 							className={cn(

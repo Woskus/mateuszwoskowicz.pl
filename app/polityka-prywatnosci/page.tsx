@@ -1,9 +1,15 @@
+import {Metadata} from 'next';
 import {Container} from '@/components/container';
+
+export const metadata: Metadata = {
+	title: 'Polityka prywatności - Mateusz Woskowicz',
+	description: 'Polityka prywatności strony mateuszwoskowicz.pl',
+};
 
 export default function Page() {
 	return (
 		<Container className="pt-[120px]">
-			<h1 className="mb-8 md:text-4xl text-3xl">Polityka prywatności</h1>
+			<h1 className="mb-8 text-3xl md:text-4xl">Polityka prywatności</h1>
 
 			<ol className="list-decimal space-y-4 pl-5">
 				<li>

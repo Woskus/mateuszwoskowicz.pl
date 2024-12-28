@@ -31,6 +31,7 @@ export function Hero() {
 						<Link
 							href="https://www.linkedin.com/in/mateusz-woskowicz/"
 							target="_blank"
+							aria-label="LinkedIn"
 						>
 							<Linkedin className="h-4 w-4" />
 						</Link>
@@ -40,6 +41,7 @@ export function Hero() {
 						size="icon"
 						variant="outline"
 						asChild
+						aria-label="Github"
 					>
 						<Link
 							href="https://github.com/Woskus"
