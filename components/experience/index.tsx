@@ -11,7 +11,7 @@ export function Experience() {
 			<Container>
 				<h2 className="text-base">Doświadczenie</h2>
 
-				<div className="mt-5 space-y-3">
+				<div className="mt-5 space-y-8">
 					{experiences.map((experience, index) => (
 						<ExperienceItem
 							key={index}

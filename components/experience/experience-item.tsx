@@ -54,7 +54,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 			{experience.positions.map((position) => (
 				<div
 					key={position.title}
-					className="border-t pt-4 first:border-t-0 first:pt-0"
+					className="border-t pt-6 first:border-t-0 first:pt-0"
 				>
 					<h3 className="text-lg font-semibold">{position.title}</h3>
 
