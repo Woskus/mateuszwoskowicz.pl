@@ -40,7 +40,7 @@ export function NorthenLights() {
 	return (
 		<div className="absolute inset-0 -z-10 min-h-[150vh] overflow-hidden">
 			<div
-				className="absolute left-1/2 top-0 flex h-[100vmax] w-[200vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[75px]"
+				className="absolute left-0 top-0 flex h-[50vmax] w-[100vmax] -translate-x-[20%] -translate-y-[55%] rotate-[30deg] blur-[35px] md:left-1/2 md:h-[100vmax] md:w-[200vmax] md:blur-[75px]"
 				style={{opacity, transition: 'opacity 5s'}}
 			>
 				{LIGHTS_ARR.map((_, index) => (

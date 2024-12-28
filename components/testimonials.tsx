@@ -35,7 +35,7 @@ export function Testimonials() {
       <Container>
         <h2 className="text-base">Opinie</h2>
 
-        <div className="grid grid-cols-3 gap-2 mt-5">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-2 mt-5">
           {TESTIMONIALS.map(({name, position, img, text}) => (
             <Card key={name} className="w-full">
               <CardContent className="pt-6 text-muted-foreground">

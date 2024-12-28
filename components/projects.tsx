@@ -31,7 +31,7 @@ export function Projects() {
 			<Container>
 				<h2 className="text-base">Wyróżnione projekty</h2>
 
-				<div className="mt-5 grid grid-cols-3 gap-2">
+				<div className="mt-5 grid md:grid-cols-3 grid-cols-1 gap-2">
 					{PROJECTS.map(({title, company, img}) => (
 						<Link
 							href="#"

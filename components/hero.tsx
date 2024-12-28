@@ -11,7 +11,9 @@ export function Hero() {
 					<img
 						src="/img/mateusz-woskowicz.jpg"
 						alt="Mateusz Woskowicz"
-						className="rounded-full"
+						className="rounded-full w-16 h-16"
+						width={64}
+						height={64}
 					/>
 				</div>
 

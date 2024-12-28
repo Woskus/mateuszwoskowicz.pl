@@ -11,7 +11,7 @@ export function Footer() {
 						{new Date().getFullYear()} &copy; Mateusz Woskowicz
 					</div>
 
-					<nav className="flex justify-end">
+					<nav className="flex md:justify-end">
 						<ul className="m-0 flex list-none flex-wrap p-0">
 							<li>
 								<Link href="/polityka-prywatnosci">
