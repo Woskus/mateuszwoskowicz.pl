@@ -6,6 +6,7 @@ import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import {SwiperNavigation} from '@/components/swiper-navigation';
 import {Container} from '@/components/container';
+import {OptimizedImage} from '@/components/optimized-image';
 import {projects} from '@/data/projects';
 import 'swiper/css';
 
@@ -53,9 +54,11 @@ export function Projects() {
 								href={href}
 								className="group"
 							>
-								<img
+								<OptimizedImage
 									src={img}
 									alt={title}
+									width={392}
+									height={392}
 									className="w-full max-w-[400px] transition-transform duration-300 group-hover:scale-105 group-focus:scale-105"
 								/>
 

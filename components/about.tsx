@@ -3,6 +3,7 @@ import {ArrowRight} from 'lucide-react';
 import {Container} from '@/components/container';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button';
+import {OptimizedImage} from '@/components/optimized-image';
 
 export function About() {
 	const startDate = dayjs('2019-08-01');
@@ -89,7 +90,7 @@ export function About() {
 						</ul>
 					</article>
 
-					<img
+					<OptimizedImage
 						src="/img/mateusz-woskowicz.jpg"
 						alt="Mateusz Woskowicz"
 						className="rounded-lg"

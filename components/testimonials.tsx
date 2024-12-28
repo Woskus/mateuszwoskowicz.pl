@@ -6,6 +6,7 @@ import {Navigation} from 'swiper/modules';
 import {Container} from '@/components/container';
 import {Card, CardContent, CardFooter} from '@/components/ui/card';
 import {SwiperNavigation} from '@/components/swiper-navigation';
+import {OptimizedImage} from '@/components/optimized-image';
 import {testimonials} from '@/data/testimonials';
 import 'swiper/css';
 
@@ -50,10 +51,13 @@ export function Testimonials() {
 								</CardContent>
 
 								<CardFooter className="gap-2">
-									<img
+									<OptimizedImage
 										src={img}
 										alt={name}
+										width={64}
+										height={64}
 										className="h-10 w-10 rounded-full"
+										loading="lazy"
 									/>
 
 									<div className="flex-col items-start">

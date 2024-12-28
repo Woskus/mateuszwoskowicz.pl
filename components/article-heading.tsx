@@ -1,4 +1,5 @@
 import {Container} from '@/components/container';
+import {OptimizedImage} from '@/components/optimized-image';
 
 interface ArticleHeadingProps {
 	title: string;
@@ -10,7 +11,7 @@ export function ArticleHeading({title, company, img}: ArticleHeadingProps) {
 	return (
 		<Container className="pb-8 pt-[72px]">
 			<div className="relative">
-				<img
+				<OptimizedImage
 					src={img}
 					alt={title}
 					className="h-[250px] w-full rounded-lg object-cover md:h-[400px]"
