@@ -221,7 +221,7 @@ export const experiences: Experience[] = [
 	{
 		id: 'callpage',
 		logo: <Callpage />,
-		type: 'part-time',
+		type: 'freelance',
 		positions: [
 			{
 				title: 'Frontend Developer',

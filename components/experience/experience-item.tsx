@@ -9,10 +9,25 @@ import type {Experience} from '@/data/experience';
 
 dayjs.locale(pl);
 
-const experiencesColorsMap: Record<Experience['type'], BadgeProps['variant']> = {
-	'full-time': 'success',
-	'part-time': 'info',
-	freelance: 'warning',
+const experiencesMap: Record<
+	Experience['type'],
+	{
+		variant: BadgeProps['variant'];
+		label: string;
+	}
+> = {
+	'full-time': {
+		variant: 'success',
+		label: 'Pełen etat',
+	},
+	'part-time': {
+		variant: 'info',
+		label: 'Side project',
+	},
+	freelance: {
+		variant: 'warning',
+		label: 'Freelance',
+	},
 };
 
 interface ExperienceItemProps {
@@ -21,12 +36,12 @@ interface ExperienceItemProps {
 }
 
 function ExperienceHeader({experience}: {experience: Experience}) {
+	const {variant, label} = experiencesMap[experience.type];
+
 	return (
 		<div className="flex items-center gap-3">
 			{experience.logo}
-			<Badge variant={experiencesColorsMap[experience.type]}>
-				{experience.type}
-			</Badge>
+			<Badge variant={variant}>{label}</Badge>
 		</div>
 	);
 }
