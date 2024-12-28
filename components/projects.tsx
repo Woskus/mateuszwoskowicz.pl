@@ -45,7 +45,7 @@ export function Projects() {
 					}}
 					loop
 				>
-					{projects.map(({title, company, img, href}) => (
+					{projects.map(({title, company, img, href, logo}) => (
 						<SwiperSlide
 							key={title}
 							className="relative cursor-pointer overflow-hidden rounded-lg"
@@ -59,18 +59,17 @@ export function Projects() {
 									alt={title}
 									width={392}
 									height={392}
-									className="w-full max-w-[400px] transition-transform duration-300 group-hover:scale-105 group-focus:scale-105"
+									className="w-full max-w-[400px] brightness-75 transition-all duration-300 group-hover:scale-105 group-focus:scale-105 group-hover:brightness-100 group-focus:brightness-100"
 								/>
 
 								<div className="absolute bottom-0 left-0 h-[150px] w-full bg-transparent bg-gradient-to-t from-black/80 to-black/0" />
 
-								<div className="absolute bottom-5 left-5">
-									<h3 className="text-lg group-hover:underline group-focus:underline">
+								<div className="absolute bottom-8 left-5 space-y-3">
+									{logo}
+
+									<h3 className="text-lg">
 										{title}
 									</h3>
-									<p className="text-sm text-muted-foreground">
-										{company}
-									</p>
 								</div>
 							</Link>
 						</SwiperSlide>
