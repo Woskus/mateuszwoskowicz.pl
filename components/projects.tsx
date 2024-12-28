@@ -26,13 +26,13 @@ const PROJECTS: Project[] = [
 		title: 'Strona dla PKO BP Fortnite',
 		company: 'PKO BP',
 		img: '/img/projects/pkobp.jpg',
-		href: '#',
+		href: '/project/pkobp-fortnite',
 	},
 	{
 		title: 'Wordpress to Next.js Migration',
 		company: 'inStreamly',
 		img: '/img/projects/instreamly.jpg',
-		href: '#',
+		href: '/project/instreamly-website-migration',
 	},
 ];
 
@@ -48,7 +48,9 @@ export function Projects() {
 				<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
 					<h2 className="border-0 text-base">Wyróżnione projekty</h2>
 
-					<SwiperNavigation sliderRef={sliderRef} />
+					<div className="block md:hidden">
+						<SwiperNavigation sliderRef={sliderRef} />
+					</div>
 				</div>
 
 				<Swiper
