@@ -1,4 +1,4 @@
-import {ArticleHeading} from '@/components/article-heading';
+import {CaseStudyHeading} from '@/components/case-study-heading';
 import {CaseStudyProjects} from '@/components/case-study-projects';
 import {dcc} from '@/data/projects';
 
@@ -7,10 +7,11 @@ export const metadata = {
 	description: '',
 };
 
-<ArticleHeading
+<CaseStudyHeading
 	title={dcc.title}
 	company={dcc.company}
 	img={dcc.imgHero}
+  date={dcc.date}
 />
 
 ## Wyzwanie

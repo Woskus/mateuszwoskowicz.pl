@@ -8,6 +8,7 @@ export interface Project {
 	imgHero: string;
 	logo: React.ReactNode;
 	href: string;
+	date: Date;
 }
 
 export const samsung = {
@@ -18,6 +19,7 @@ export const samsung = {
 	imgHero: '/img/projects/samsung-hero.jpg',
 	logo: <Samsung />,
 	href: '/case-study/mobilne-rozgrywki-galaxy',
+	date: new Date('2021-12-08'),
 };
 
 export const pkobp = {
@@ -28,6 +30,7 @@ export const pkobp = {
 	imgHero: '/img/projects/pkobp-hero.jpg',
 	logo: <Pkobp />,
 	href: '/case-study/pkobp-fortnite',
+	date: new Date('2024-10-01'),
 };
 
 export const instreamly = {
@@ -38,6 +41,7 @@ export const instreamly = {
 	imgHero: '/img/projects/instreamly-hero.jpg',
 	logo: <Instreamly />,
 	href: '/case-study/instreamly-website-migration',
+	date: new Date('2022-06-01'),
 };
 
 export const dcc = {
@@ -48,6 +52,7 @@ export const dcc = {
 	imgHero: '/img/projects/dcc-hero.jpg',
 	logo: <Dcc />,
 	href: '/case-study/platforma-kursowa-dcc',
+	date: new Date('2023-10-01'),
 };
 
 export const projects: Project[] = [samsung, pkobp, instreamly, dcc];
