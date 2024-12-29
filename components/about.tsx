@@ -12,7 +12,10 @@ export function About() {
 	const yearsDiff = currentDate.diff(startDate, 'year');
 
 	return (
-		<section className="mt-16" id="o-mnie">
+		<section
+			className="mt-16"
+			id="o-mnie"
+		>
 			<Container>
 				<h2 className="mb-5 text-base">O mnie</h2>
 
@@ -58,7 +61,10 @@ export function About() {
 							</Button>
 							, a także współtworzyłem jedną z większych społeczności
 							marketingowych w Polsce -{' '}
-							<Button variant="link" asChild>
+							<Button
+								variant="link"
+								asChild
+							>
 								<Link href="#dcc">Digital Creators Community</Link>
 							</Button>
 							.

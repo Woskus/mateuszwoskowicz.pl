@@ -1,4 +1,5 @@
 import {Metadata} from 'next';
+import {Container} from '@/components/container';
 import {Hero} from '@/components/hero';
 import {Projects} from '@/components/projects';
 import {Experience} from '@/components/experience';
@@ -6,7 +7,7 @@ import {About} from '@/components/about';
 import {Testimonials} from '@/components/testimonials';
 import {Cta} from '@/components/cta';
 import {NorthenLights} from '@/components/northen-lights';
-import {Container} from '@/components/container';
+import {Certificates} from '@/components/certificates';
 import {projects} from '@/data/projects';
 
 export const metadata: Metadata = {
@@ -29,6 +30,8 @@ export default function Home() {
 			<Experience />
 
 			<About />
+
+			<Certificates />
 
 			<Testimonials />
 
