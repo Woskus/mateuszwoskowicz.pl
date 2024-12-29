@@ -1,5 +1,7 @@
 'use client';
 
+import dayjs from 'dayjs';
+import pl from 'dayjs/locale/pl';
 import {useRef} from 'react';
 import Link from 'next/link';
 import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
@@ -9,6 +11,8 @@ import {Container} from '@/components/container';
 import {OptimizedImage} from '@/components/optimized-image';
 import type {Project} from '@/data/projects';
 import 'swiper/css';
+
+dayjs.locale(pl);
 
 interface ProjectsProps {
 	projects: Project[];
@@ -47,7 +51,7 @@ export function Projects({projects, title = 'Wyróżnione projekty'}: ProjectsPr
 				}}
 				loop
 			>
-				{projects.map(({title, company, img, href, logo}) => (
+				{projects.map(({title, img, href, logo, date}) => (
 					<SwiperSlide
 						key={title}
 						className="relative cursor-pointer overflow-hidden rounded-lg"
@@ -66,10 +70,12 @@ export function Projects({projects, title = 'Wyróżnione projekty'}: ProjectsPr
 
 							<div className="absolute bottom-0 left-0 h-[150px] w-full bg-transparent bg-gradient-to-t from-black/80 to-black/0" />
 
-							<div className="absolute bottom-8 left-5 space-y-3">
+							<div className="absolute bottom-8 left-5">
 								{logo}
 
-								<h3 className="text-lg">{title}</h3>
+								<h3 className="text-lg mt-3">{title}</h3>
+
+								<p className="text-muted-foreground text-sm">{dayjs(date).format('MMMM YYYY')}</p>
 							</div>
 						</Link>
 					</SwiperSlide>
