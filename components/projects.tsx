@@ -70,12 +70,12 @@ export function Projects({projects, title = 'Wyróżnione projekty'}: ProjectsPr
 
 							<div className="absolute bottom-0 left-0 h-[150px] w-full bg-transparent bg-gradient-to-t from-black/80 to-black/0" />
 
-							<div className="absolute bottom-8 left-5">
+							<div className="absolute bottom-8 left-5 text-white">
 								{logo}
 
 								<h3 className="text-lg mt-3">{title}</h3>
 
-								<p className="text-muted-foreground text-sm">{dayjs(date).format('MMMM YYYY')}</p>
+								<p className="dark:text-muted-foreground text-secondary text-sm">{dayjs(date).format('MMMM YYYY')}</p>
 							</div>
 						</Link>
 					</SwiperSlide>

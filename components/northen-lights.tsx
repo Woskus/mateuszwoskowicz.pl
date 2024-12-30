@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect, useState, CSSProperties} from 'react';
+import {useTheme} from 'next-themes';
 
 interface LightCSSProperties extends CSSProperties {
 	'--duration'?: string;
@@ -17,7 +18,8 @@ interface LightCSSProperties extends CSSProperties {
 const LIGHT_COUNT = 30;
 const LIGHTS_ARR = Array.from({length: LIGHT_COUNT});
 const ALPHAS = Array(3).fill(0).map(Math.random);
-const COLORS = ['204, 8%, 76%', '210, 29%, 24%', '210, 29%, 24%'];
+const COLORS_DARK = ['204, 8%, 76%', '210, 29%, 24%', '210, 29%, 24%'];
+const COLORS_LIGHT = ['201, 76%, 47%', '216, 49%, 67%', '216, 49%, 67%'];
 
 const randomInRange = (min: number, max: number): number =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
@@ -59,6 +61,9 @@ interface LightProps {
 }
 
 function Light({alphas}: LightProps) {
+	const {resolvedTheme} = useTheme();
+	const COLORS = resolvedTheme === 'dark' ? COLORS_DARK : COLORS_LIGHT;
+
 	const duration = randomInRange(5, 15);
 	const delay = randomInRange(4, 10);
 	const x = randomInRange(0, 5);
