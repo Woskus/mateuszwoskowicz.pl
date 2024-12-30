@@ -79,7 +79,7 @@ export function About() {
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Backend: Node.js, Express
+								Backend: Node.js, TypeScript, Express
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
@@ -91,7 +91,7 @@ export function About() {
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Narzędzia: TailwindCSS, Shadcn UI
+								Narzędzia: TailwindCSS, Shadcn UI, SCSS
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
