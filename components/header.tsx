@@ -3,10 +3,11 @@
 import {useState} from 'react';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
-import {Container} from '@/components/container';
-import {Button} from '@/components/ui/button';
 import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
+import {Container} from '@/components/container';
+import {Button} from '@/components/ui/button';
+import {DarkModeToggler} from '@/components/dark-mode-toggler';
 
 const navLinks = [
 	{href: '/#projekty', label: 'Wyróżnione projekty'},
@@ -55,6 +56,10 @@ export function Header() {
 								</Button>
 							</li>
 						))}
+
+						<li>
+							<DarkModeToggler />
+						</li>
 					</ul>
 				</nav>
 
@@ -115,6 +120,10 @@ export function Header() {
 											Napisz na LinkedIn
 										</Link>
 									</Button>
+								</li>
+
+								<li>
+									<DarkModeToggler />
 								</li>
 							</ul>
 						</Container>

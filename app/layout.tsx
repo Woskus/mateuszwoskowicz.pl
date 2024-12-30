@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import {Header} from '@/components/header';
 import {Footer} from '@/components/footer';
+import {Providers} from '@/components/providers';
 import './globals.css';
 
 const sen = localFont({
@@ -29,11 +30,13 @@ export default function RootLayout({
 	return (
 		<html lang="pl">
 			<body className={`${sen.variable} antialiased`}>
-				<Header />
+				<Providers>
+					<Header />
 
-				{children}
+					{children}
 
-			<Footer />
+					<Footer />
+				</Providers>
 			</body>
 		</html>
 	);
