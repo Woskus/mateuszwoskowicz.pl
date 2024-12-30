@@ -20,7 +20,7 @@ export function About() {
 				<h2 className="mb-5 text-base">O mnie</h2>
 
 				<div className="flex flex-col items-start justify-between gap-5 md:flex-row">
-					<article className="max-w-[750px] space-y-5 text-muted-foreground">
+					<article className="max-w-[800px] space-y-5 text-muted-foreground">
 						<p>Hej! 👋</p>
 
 						<p>
@@ -37,15 +37,7 @@ export function About() {
 						</p>
 
 						<p>
-							Po godzinach prowadzę własną działalność{' '}
-							<Button
-								variant="link"
-								asChild
-							>
-								<Link href="#mwebs">mwebs</Link>
-							</Button>
-							, gdzie tworzę strony i aplikacje dla moich klientów. Miałem
-							przyjemność współpracować z takimi markami jak{' '}
+							Miałem przyjemność współpracować z takimi markami jak{' '}
 							<Button
 								variant="link"
 								asChild
@@ -58,16 +50,56 @@ export function About() {
 								asChild
 							>
 								<Link href="#pkobp">PKO BP</Link>
-							</Button>
-							, a także współtworzyłem jedną z większych społeczności
-							marketingowych w Polsce -{' '}
+							</Button>{' '}
+							jako freelancer. Po godzinach prowadzę własną działalność{' '}
 							<Button
 								variant="link"
 								asChild
 							>
-								<Link href="#dcc">Digital Creators Community</Link>
+								<Link href="#mwebs">mwebs</Link>
 							</Button>
-							.
+							, gdzie tworzę strony i aplikacje dla kilkudziesięciu
+							klientów.
+						</p>
+
+						<p>
+							W mojej pracy biorę{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
+									href="https://handbook.gitlab.com/handbook/people-group/directly-responsible-individuals/"
+									target="_blank"
+								>
+									pełną odpowiedzialność za powierzone zadania (DRI)
+								</Link>
+							</Button>
+							, traktując każdy projekt jak własny, cenię{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
+									href="https://handbook.gitlab.com/handbook/people-group/guidance-on-feedback/"
+									target="_blank"
+								>
+									szczerą i konstruktywną komunikację (Feedback)
+								</Link>
+							</Button>{' '}
+							i wierzę, że{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
+									href="https://nonviolentcommunication.com/learn-nonviolent-communication/nvc-workplace/"
+									target="_blank"
+								>
+									życzliwość i wzajemny szacunek (NVC)
+								</Link>
+							</Button>{' '}
+							są kluczem do sukcesu w zespole.
 						</p>
 
 						<p className="text-primary">Mój stack technologiczny:</p>
