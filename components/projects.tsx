@@ -7,7 +7,6 @@ import Link from 'next/link';
 import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import {SwiperNavigation} from '@/components/swiper-navigation';
-import {Container} from '@/components/container';
 import {OptimizedImage} from '@/components/optimized-image';
 import type {Project} from '@/data/projects';
 import 'swiper/css';

@@ -22,9 +22,9 @@ const experiencesMap: Record<
 		variant: 'success',
 		label: 'Pełen etat',
 	},
-	'part-time': {
+	'business': {
 		variant: 'info',
-		label: 'Side project',
+		label: 'Własna działalność',
 	},
 	freelance: {
 		variant: 'warning',

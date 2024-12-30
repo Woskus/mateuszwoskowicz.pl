@@ -13,7 +13,7 @@ import {Button} from '@/components/ui/button';
 export interface Experience {
 	id: string;
 	logo: React.ReactNode;
-	type: 'full-time' | 'part-time' | 'freelance';
+	type: 'full-time' | 'business' | 'freelance';
 	positions: Array<{
 		title: string;
 		startDate: Date;
@@ -56,7 +56,7 @@ export const experiences: Experience[] = [
 							'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS', 'AWS'],
 			},
 		],
 		open: true,
@@ -71,7 +71,7 @@ export const experiences: Experience[] = [
 				startDate: new Date('2021-12-08'),
 				endDate: new Date('2022-01-31'),
 				description:
-					'Miałem przyjemność pracować jako podwykonawca przy projekcie dla Samsunga. Stworzyłem stronę internetową korzystając z Pug, aby wyświetlać dynamiczne treści przekazywane z backendu kontrolerów Express & Node.js.',
+					'Jako podwykonawca stworzyłem stronę internetową korzystając z Pug, aby wyświetlać dynamiczne treści przekazywane z backendu kontrolerów Express & Node.js.',
 				projects: [],
 				technologies: ['Node.js', 'Express', 'Pug', 'SCSS'],
 			},
@@ -171,7 +171,7 @@ export const experiences: Experience[] = [
 	{
 		id: 'mwebs',
 		logo: <Mwebs />,
-		type: 'part-time',
+		type: 'business',
 		positions: [
 			{
 				title: 'Founder & Senior Frontend Developer',
@@ -198,7 +198,7 @@ export const experiences: Experience[] = [
 	{
 		id: 'dcc',
 		logo: <Dcc />,
-		type: 'part-time',
+		type: 'business',
 		positions: [
 			{
 				title: 'Founder & Frontend Developer',
