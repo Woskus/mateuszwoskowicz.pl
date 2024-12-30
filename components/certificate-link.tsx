@@ -1,4 +1,4 @@
-import {ArrowUpRight} from 'lucide-react';
+import {ExternalLink} from 'lucide-react';
 import {Card} from '@/components/ui/card';
 import {Certificate} from '@/data/certificates';
 
@@ -15,7 +15,7 @@ export function CertificateLink({name, company, url}: CertificateProps) {
 				<p className="text-xs text-muted-foreground">{company}</p>
 				<p className="text-sm group-hover:underline">{name}</p>
 
-				<ArrowUpRight className="absolute top-2 right-2 h-4 w-4" />
+				<ExternalLink className="absolute top-2 right-2 h-3.5 w-3.5" />
 			</Card>
 		</a>
 	);
