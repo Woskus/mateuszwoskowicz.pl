@@ -9,7 +9,7 @@ export const testimonials: Testimonial[] = [
 	{
 		name: 'Wiktoria Wójcik',
 		position: 'Co-founder - inStreamly',
-		img: '/img/testimonials/wiktoria-wojcik.jpg',
+		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/wiktoria-wojcik.jpg',
 		text: (
 			<>
 				<p>
@@ -31,7 +31,7 @@ export const testimonials: Testimonial[] = [
 	{
 		name: 'Robert Szewczyk',
 		position: 'Freelance marketer & copywriter',
-		img: '/img/testimonials/robert-szewczyk.jpg',
+		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/robert-szewczyk.jpg',
 		text: (
       <>
         <p>Współpraca z Mateuszem to była dla mnie czysta przyjemność.</p>
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
 	{
 		name: 'Wojciech Kluk',
 		position: 'CEO & Founder, IT Recruitment Expert & Headhunter',
-    img: '/img/testimonials/wojciech-kluk.jpg',
+    img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/wojciech-kluk.jpg',
 		text: (
       <>
         <p>Mateusz to prawdziwy profesjonalista. Super kontakt i proaktywna postawa.</p>

@@ -101,7 +101,7 @@ export function About() {
 					</article>
 
 					<OptimizedImage
-						src="/img/mateusz-woskowicz.jpg"
+						src="https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/mateusz-woskowicz.jpg"
 						alt="Mateusz Woskowicz"
 						className="rounded-lg"
 						width={360}

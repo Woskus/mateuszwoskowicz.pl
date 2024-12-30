@@ -1,6 +1,9 @@
-import Image, {type ImageProps} from 'next/image';
+import {DetailedHTMLProps, ImgHTMLAttributes} from 'react';
 
-type OptimizedImageProps = Omit<ImageProps, 'src'> & {
+type OptimizedImageProps = Omit<
+	DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>,
+	'src'
+> & {
 	src: string;
 };
 
@@ -19,7 +22,7 @@ export function OptimizedImage({src, ...imageProps}: OptimizedImageProps) {
 				srcSet={src}
 				type={originalType}
 			/>
-			<Image
+			<img
 				src={src}
 				{...imageProps}
 			/>
