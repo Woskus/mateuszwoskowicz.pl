@@ -19,7 +19,7 @@ const LIGHT_COUNT = 30;
 const LIGHTS_ARR = Array.from({length: LIGHT_COUNT});
 const ALPHAS = Array(3).fill(0).map(Math.random);
 const COLORS_DARK = ['204, 8%, 76%', '210, 29%, 24%', '210, 29%, 24%'];
-const COLORS_LIGHT = ['201, 76%, 47%', '216, 49%, 67%', '216, 49%, 67%'];
+const COLORS_LIGHT = ['204, 8%, 76%', '207, 15%, 61%', '207, 15%, 61%'];
 
 const randomInRange = (min: number, max: number): number =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
