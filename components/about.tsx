@@ -119,7 +119,7 @@ export function About() {
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								AI: Claude / ChatGPT, SuperMaven, AWS Bedrock, OpenAI API
+								AI: Claude, SuperMaven, v0, AWS Bedrock, OpenAI API
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />

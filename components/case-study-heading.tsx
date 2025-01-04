@@ -23,12 +23,12 @@ export function CaseStudyHeading({title, company, img, date}: CaseStudyHeadingPr
 					className="h-[250px] w-full rounded-lg object-cover md:h-[400px]"
 				/>
 
-				<div className="absolute bottom-0 left-0 md:h-[400px] h-[250px] w-full bg-transparent bg-gradient-to-t from-background to-black/0" />
+				<div className="absolute bottom-0 left-0 h-[250px] w-full bg-transparent bg-gradient-to-t from-background to-black/0 md:h-[400px]" />
 
-				<div className="absolute bottom-8 md:left-5 left-2 md:space-y-2">
+				<div className="absolute bottom-8 left-2 md:left-5 md:space-y-2">
 					<h1>{title}</h1>
 
-					<p className="md:text-lg text-muted-foreground">
+					<p className="text-muted-foreground md:text-lg">
 						{company}
 						{' • '}
 						{dayjs(date).format('MMMM YYYY')}
