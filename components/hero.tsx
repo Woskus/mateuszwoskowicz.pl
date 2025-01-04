@@ -2,8 +2,27 @@ import Link from 'next/link';
 import {Download, Linkedin, Github} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
+import {Tooltip, TooltipTrigger, TooltipContent} from '@/components/ui/tooltip';
 import {OptimizedImage} from '@/components/optimized-image';
 import {Leetcode} from '@/components/logotypes';
+
+const links = [
+	{
+		name: 'LinkedIn',
+		href: 'https://www.linkedin.com/in/mateusz-woskowicz/',
+		icon: <Linkedin />,
+	},
+	{
+		name: 'Github',
+		href: 'https://github.com/Woskus',
+		icon: <Github />,
+	},
+	{
+		name: 'LeetCode',
+		href: 'https://leetcode.com/u/MateuszWoskowicz/',
+		icon: <Leetcode />,
+	},
+];
 
 export function Hero() {
 	return (
@@ -24,47 +43,27 @@ export function Hero() {
 				<p className="text-muted-foreground">Senior Frontend Developer</p>
 
 				<div className="mt-4 flex items-start gap-2">
-					<Button
-						size="icon"
-						variant="outline"
-						asChild
-					>
-						<Link
-							href="https://www.linkedin.com/in/mateusz-woskowicz/"
-							target="_blank"
-							aria-label="LinkedIn"
-						>
-							<Linkedin className="h-4 w-4" />
-						</Link>
-					</Button>
+					{links.map((link) => (
+						<Tooltip key={link.name}>
+							<TooltipTrigger asChild>
+								<Button
+									size="icon"
+									variant="outline"
+									asChild
+								>
+									<Link
+										href={link.href}
+										target="_blank"
+										aria-label={link.name}
+									>
+										{link.icon}
+									</Link>
+								</Button>
+							</TooltipTrigger>
 
-					<Button
-						size="icon"
-						variant="outline"
-						asChild
-						aria-label="Github"
-					>
-						<Link
-							href="https://github.com/Woskus"
-							target="_blank"
-						>
-							<Github className="h-4 w-4" />
-						</Link>
-					</Button>
-
-					<Button
-						size="icon"
-						variant="outline"
-						asChild
-						aria-label="LeetCode"
-					>
-						<Link
-							href="https://leetcode.com/u/MateuszWoskowicz/"
-							target="_blank"
-						>
-							<Leetcode />
-						</Link>
-					</Button>
+							<TooltipContent>{link.name}</TooltipContent>
+						</Tooltip>
+					))}
 				</div>
 			</Container>
 		</section>

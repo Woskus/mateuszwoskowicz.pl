@@ -13,15 +13,15 @@ export function Leetcode() {
 			/>
 			<path
 				fill="currentColor"
-				fill-rule="evenodd"
+				fillRule="evenodd"
 				d="M41.107 72.001c-3.521 0-6.376-2.859-6.376-6.386s2.855-6.386 6.376-6.386h47.017c3.521 0 6.376 2.859 6.376 6.386s-2.855 6.386-6.376 6.386H41.107Z"
-				clip-rule="evenodd"
+				clipRule="evenodd"
 			/>
 			<path
 				fill="currentColor"
-				fill-rule="evenodd"
+				fillRule="evenodd"
 				d="M49.912 2.023a6.367 6.367 0 0 1 9.01-.3 6.394 6.394 0 0 1 .3 9.026L16.429 56.573c-4.651 4.979-4.142 13 1.217 18.256L37.41 94.21a6.394 6.394 0 0 1 .096 9.031 6.367 6.367 0 0 1-9.016.097L8.726 83.957c-10.151-9.955-11.163-25.883-1.61-36.11L49.913 2.022Z"
-				clip-rule="evenodd"
+				clipRule="evenodd"
 			/>
 		</svg>
 	);
