@@ -3,6 +3,7 @@ import {Download, Linkedin, Github} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {OptimizedImage} from '@/components/optimized-image';
+import {Leetcode} from '@/components/logotypes';
 
 export function Hero() {
 	return (
@@ -48,6 +49,20 @@ export function Hero() {
 							target="_blank"
 						>
 							<Github className="h-4 w-4" />
+						</Link>
+					</Button>
+
+					<Button
+						size="icon"
+						variant="outline"
+						asChild
+						aria-label="LeetCode"
+					>
+						<Link
+							href="https://leetcode.com/u/MateuszWoskowicz/"
+							target="_blank"
+						>
+							<Leetcode />
 						</Link>
 					</Button>
 				</div>
