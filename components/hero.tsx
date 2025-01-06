@@ -4,7 +4,7 @@ import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {Tooltip, TooltipTrigger, TooltipContent} from '@/components/ui/tooltip';
 import {OptimizedImage} from '@/components/optimized-image';
-import {Leetcode} from '@/components/logotypes';
+import {FrontendMasters, Leetcode} from '@/components/logotypes';
 
 const links = [
 	{
@@ -21,6 +21,11 @@ const links = [
 		name: 'LeetCode',
 		href: 'https://leetcode.com/u/MateuszWoskowicz/',
 		icon: <Leetcode />,
+	},
+	{
+		name: 'Frontend Masters',
+		href: 'https://frontendmasters.com/u/MateuszWoskowicz/',
+		icon: <FrontendMasters />,
 	},
 ];
 

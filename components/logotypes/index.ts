@@ -1,5 +1,6 @@
 export {Callpage} from './callpage';
 export {Dcc} from './dcc';
+export {FrontendMasters} from './frontend-masters';
 export {Instreamly} from './instreamly';
 export {Leetcode} from './leetcode';
 export {Mwebs} from './mwebs';
