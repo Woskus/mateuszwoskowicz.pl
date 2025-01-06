@@ -29,7 +29,7 @@ export function Projects({projects, title = 'Wyróżnione projekty'}: ProjectsPr
 			<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
 				<h2 className="border-0 text-base">{title}</h2>
 
-				<div className="hidden">
+				<div className="md:hidden">
 					<SwiperNavigation sliderRef={sliderRef} />
 				</div>
 			</div>
