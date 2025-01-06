@@ -44,13 +44,13 @@ export function About() {
 							>
 								<Link href="#samsung">Samsung</Link>
 							</Button>{' '}
-							czy{' '}
-							<Button
-								variant="link"
-								asChild
-							>
-								<Link href="#pkobp">PKO BP</Link>
-							</Button>{' '}
+							{/*czy{' '}*/}
+							{/*<Button*/}
+							{/*	variant="link"*/}
+							{/*	asChild*/}
+							{/*>*/}
+							{/*	<Link href="#pkobp">PKO BP</Link>*/}
+							{/*</Button>{' '}*/}
 							jako freelancer. Po godzinach prowadzę własną działalność{' '}
 							<Button
 								variant="link"
@@ -111,7 +111,7 @@ export function About() {
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Backend: Node.js, TypeScript, Express
+								Backend: Node.js, TypeScript, Express.js
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />

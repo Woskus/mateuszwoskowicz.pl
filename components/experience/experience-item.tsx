@@ -108,7 +108,7 @@ function ExperienceContent({experience}: {experience: Experience}) {
 											<p className="font-medium text-primary">
 												{project.name}:{' '}
 											</p>
-											<span>{project.description}</span>
+											<span className="[&>a]:p-0 [&>a]:h-auto">{project.description}</span>
 										</div>
 									</li>
 								))}

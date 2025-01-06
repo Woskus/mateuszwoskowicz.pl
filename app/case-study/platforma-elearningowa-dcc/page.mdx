@@ -1,0 +1,55 @@
+import {CaseStudyHeading} from '@/components/case-study-heading';
+import {CaseStudyProjects} from '@/components/case-study-projects';
+import {dcc} from '@/data/projects';
+
+export const metadata = {
+	title: dcc.title,
+	description: '',
+};
+
+<CaseStudyHeading
+	title={dcc.title}
+	company={dcc.company}
+	img={dcc.imgHero}
+  date={dcc.date}
+/>
+
+## Wyzwanie
+
+Projekt polegał na stworzeniu platformy e-learningowej dla społeczności Digital Creators Community. Istotnym aspektem projektu była pełna automatyzacja procesu sprzedaży kursów.
+
+Dodatkowo, jednym z wymagań projektu była funkcjonalność samodzielnego zarządzania kursami – wprowadzania nowych kursów, oraz modyfikacja ich treści. Rozwiązaniem okazało się zbudowanie serwisu opartego na Next.js, Payload CMS i Stripe.
+
+## Moja rola
+
+- **Koordynacja projektu i zarządzanie podwykonawcą** - Moim zadaniem było nadzorowanie pracy projektanta graficznego, szczegółowy feedback, dbanie o spójność wizualną i użyteczność platformy.
+
+- **Wdrożenie frontendu w Next.js & TypeScript** - Na podstawie przygotowanego designu zakodowałem cały frontend w Next.js.
+
+- **Integracja Payload CMS** - Zintegrowałem Payload CMS z Next.js, aby umożliwić aktualizowanie treści.
+
+- **Automatyzacja płatności przez Stripe** - Zintegrowałem Stripe tak, aby po opłaceniu zamówienia użytkownik automatycznie otrzymywał dostęp do zakupionego kursu.
+
+- **Implementacja funkcji platformy e-learningowej** - Zadbałem o funkcjonalności, takie jak śledzenie postępu kursu czy możliwość zdawania testów wiedzy, po których ukończeniu użytkownik otrzymywał certyfikat.
+
+- **Zarządzanie infrastrukturą** - Całość działała w chmurze AWS, a dane przechowywane były w MongoDB. Dzięki temu platforma była bezpieczna, skalowalna i szybka, co w przypadku kursów online jest szczególnie istotne.
+
+## Technologia
+
+- **Next.js & TypeScript** - Wykorzystanie Next.js z TypeScript zapewniło szybkie wdrożenie frontendu i wydajność serwisu.
+
+- **Payload CMS** - Wykorzystałem metodologię Headless CMS, aby umożliwić pełną kontrolę nad treściami w serwisie przy jednoczesnym zwiększeniu wydajności.
+
+- **Stripe** - Integracja Stripe zautomatyzowała wszystkie procesy płatności i pozwoliła na szybkie wdrożenie modelu subskrypcyjnego lub jednorazowych zakupów.
+
+- **AWS** - Aplikacja postawiona była na AWS, co gwarantowało skalowalność i bezpieczeństwo.
+
+- **MongoDB** - Dane przechowywane były w MongoDB.
+
+## Czego się nauczyłem
+
+- **Zaawansowana integracja płatności** - Projekt pozwolił mi pogłębić wiedzę na temat Stripe – od obsługi jednorazowych płatności, po automatyczne przyznawanie dostępu do kursu.
+
+- **Zarządzanie projektem i koordynacja zespołu** - Współpraca z zewnętrznym projektantem wymagała jasnej komunikacji i przekazywania feedbacku, co przełożyło się na sprawne realizowanie kolejnych etapów projektu.
+
+<CaseStudyProjects projectId={dcc.id} />

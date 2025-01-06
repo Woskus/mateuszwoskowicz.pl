@@ -45,13 +45,13 @@ export const instreamly = {
 };
 
 export const dcc = {
-	id: 'dcc-course-platform',
-	title: 'Platforma kursowa DCC',
+	id: 'dcc-elearning-platform',
+	title: 'Platforma e-learningowa DCC',
 	company: 'Digital Creators Community',
 	img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/projects/dcc.jpg',
 	imgHero: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/projects/dcc-hero.jpg',
 	logo: <Dcc />,
-	href: '/case-study/platforma-kursowa-dcc',
+	href: '/case-study/platforma-elearningowa-dcc',
 	date: new Date('2023-10-01'),
 };
 

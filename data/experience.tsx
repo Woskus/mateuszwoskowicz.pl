@@ -18,7 +18,7 @@ export interface Experience {
 		title: string;
 		startDate: Date;
 		endDate?: Date;
-		description: string;
+		description: React.ReactNode;
 		technologies: string[];
 		projects: Array<{
 			name: string;
@@ -70,10 +70,25 @@ export const experiences: Experience[] = [
 				title: 'Strona internetowa - Mobilne Rozgrywki Galaxy',
 				startDate: new Date('2021-12-08'),
 				endDate: new Date('2022-01-31'),
-				description:
-					'Jako podwykonawca stworzyłem stronę internetową korzystając z Pug, aby wyświetlać dynamiczne treści przekazywane z backendu kontrolerów Express & Node.js.',
+				description: (
+					<>
+						Projekt zrealizowałem jako podwykonawca, a moim zadaniem było
+						wdrożenie strony internetowej wykorzystując Node.js, Express.js i
+						Pug. Odpowiadałem za implementację projektu z Figmy oraz
+						integrację frontendu z backendem.{' '}
+						<Button
+							variant="link"
+							asChild
+						>
+							<Link href="/case-study/mobilne-rozgrywki-galaxy">
+								Moje case study
+							</Link>
+						</Button>
+						.
+					</>
+				),
 				projects: [],
-				technologies: ['Node.js', 'Express', 'Pug', 'SCSS'],
+				technologies: ['Node.js', 'Express.js', 'Pug', 'SCSS'],
 			},
 		],
 		open: true,
@@ -87,7 +102,7 @@ export const experiences: Experience[] = [
 				title: 'Senior Frontend Developer',
 				startDate: new Date('2024-06-01'),
 				description:
-					'Obecnie, oprócz kodowania, aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI i samodzielnie prowadzę nowe projekty.',
+					'Jako Senior Frontend Developer coraz więcej czasu poświęcam na projektowanie architektury aplikacji i aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI oraz na projektach, który mają większy wpływ na rozwój biznesowy.',
 				projects: [
 					{
 						name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
@@ -103,6 +118,7 @@ export const experiences: Experience[] = [
 				technologies: [
 					'TypeScript',
 					'Next.js',
+					'React.js',
 					'MySQL',
 					'Node.js',
 					'TailwindCSS',
@@ -113,14 +129,15 @@ export const experiences: Experience[] = [
 				startDate: new Date('2021-10-01'),
 				endDate: new Date('2024-06-01'),
 				description:
-					'W tym okresie znacząco poszerzyłem swoje kompetencje, biorąc odpowiedzialność za coraz większe projekty. Szczególnie skupiłem się na rozwoju w kierunku full-stack.',
+					'Był to okres, w którym poszerzyłem swoje kompetencje, biorąc odpowiedzialność za coraz większe projekty. Skupiłem się na rozwoju w kierunku Fullstack. Nauczyłem się nowych technologii, takich jak TypeScript, Next.js oraz zacząłem samodzielnie pracować na backendzie korzystając z Node.js oraz przy bazach danych MySQL.',
 				projects: [
 					{
 						name: 'AI Voice Recognition Mechanism - Monte Snack',
 						description: (
-							<p>
+							<>
 								Stworzyłem mechanizm do automatycznego wyświetlania
-								sponsoringu podczas streamów na Twitch i YouTube.
+								sponsoringu podczas streamów na Twitch i YouTube na
+								podstawie wypowiedzianych przez streamerów słów.
 								NowyMarketing{' '}
 								<Button
 									variant="link"
@@ -134,16 +151,23 @@ export const experiences: Experience[] = [
 									</Link>
 								</Button>
 								.
-							</p>
+							</>
 						),
 					},
 					{
-						name: 'Rozwój w kierunku full-stack',
+						name: 'Rozwój w kierunku Fullstack',
 						description:
-							'Intensywnie rozwijałem umiejętności backendowe i bazodanowe, co pozwoliło mi na samodzielne prowadzenie kompleksowych projektów.',
+							'Rozwijałem umiejętności backendowe i bazodanowe, co pozwoliło mi na samodzielne prowadzenie kompleksowych projektów.',
 					},
 				],
-				technologies: ['TypeScript', 'Next.js', 'MySQL', 'Node.js'],
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'React.js',
+					'MySQL',
+					'Node.js',
+					'TailwindCSS',
+				],
 			},
 			{
 				title: 'Junior Frontend Developer',
@@ -153,17 +177,19 @@ export const experiences: Experience[] = [
 					'Początkowo do zespołu dołączyłem jako freelancer, ale szybko dostałem propozycję pracy na pełen etat współtworząc aplikację. To był okres intensywnej nauki - stawiałem pierwsze kroki w React.js, backendzie z Node.js i bazach danych MySQL.',
 				projects: [
 					{
-						name: 'Pierwszy projekt w React.js',
-						description:
-							'Pod okiem doświadczonego developera współtworzyłem pierwszą aplikację, która dała mi solidne podstawy do dalszego rozwoju.',
-					},
-					{
 						name: 'Migracja strony z Pug do Wordpress',
 						description:
 							'Samodzielnie wdrożyłem nową stronę, co było moim pierwszym większym projektem w firmie.',
 					},
 				],
-				technologies: ['React.js', 'Wordpress', 'Node.js', 'Express', 'MySQL'],
+				technologies: [
+					'React.js',
+					'Wordpress',
+					'Node.js',
+					'Express.js',
+					'MySQL',
+					'SCSS',
+				],
 			},
 		],
 		open: true,
@@ -176,8 +202,26 @@ export const experiences: Experience[] = [
 			{
 				title: 'Founder & Senior Frontend Developer',
 				startDate: new Date('2021-08-07'),
-				description:
-					'Od kilku lat prowadzę własną działalność, gdzie tworzę strony i aplikacje. Samodzielnie pozyskuję klientów i zarządzam zespołem podwykonawców. Zrealizowałem kilkadziesiąt projektów - od prostych stron po zaawansowane aplikacje z użyciem baz danych.',
+				description: (
+					<>
+						Od kilku lat prowadzę własną działalność, gdzie tworzę strony i
+						aplikacje. Samodzielnie pozyskuję klientów i zarządzam zespołem
+						podwykonawców. Zrealizowałem kilkadziesiąt projektów - od prostych
+						stron po zaawansowane aplikacje z użyciem baz danych.{' '}
+						<Button
+							variant="link"
+							asChild
+						>
+							<Link
+								href="https://mwebs.pl/"
+								target="_blank"
+							>
+								Strona projektu
+							</Link>
+						</Button>
+						.
+					</>
+				),
 				projects: [
 					{
 						name: 'Kompleksowa obsługa klientów',
@@ -190,7 +234,14 @@ export const experiences: Experience[] = [
 							'Koordynuję pracę podwykonawców, dbając o terminową realizację projektów.',
 					},
 				],
-				technologies: ['Wordpress', 'Next.js', 'TypeScript', 'TailwindCSS'],
+				technologies: [
+					'Wordpress',
+					'Next.js',
+					'TypeScript',
+					'PHP',
+					'SCSS',
+					'TailwindCSS',
+				],
 			},
 		],
 		open: true,
@@ -205,12 +256,12 @@ export const experiences: Experience[] = [
 				startDate: new Date('2022-07-01'),
 				endDate: new Date('2024-06-01'),
 				description:
-					'Przez prawie dwa lata współtworzyłem jedną z największych społeczności marketingowych w Polsce. Moim głównym wyzwaniem było stworzenie od podstaw zaawansowanej platformy e-learningowej, która musiała sprawnie obsługiwać płatności i zarządzać treściami kursowymi.',
+					'Przez prawie dwa lata współtworzyłem jedną z największych społeczności marketingowych w Polsce. Moim głównym wyzwaniem było stworzenie platformy e-learningowej, która integrowała płatności ze Stripe.',
 				projects: [
 					{
-						name: 'Kompleksowa platforma edukacyjna',
+						name: 'Platforma e-learningowej',
 						description:
-							'Zaprojektowałem i wdrożyłem system, który nie tylko zarządzał treściami kursowymi, ale też sprawnie obsługiwał płatności poprzez integrację ze Stripe. Wykorzystałem nowoczesny stack technologiczny, łącząc PayloadCMS do zarządzania treścią z Next.js po stronie frontendu.',
+							'Zaprojektowałem i wdrożyłem platformę e-learningową, która poprzez integrację ze Stripe w pełni zautomatyzowała płatności i przypisywanie kursów użytkownikom.',
 					},
 				],
 				technologies: [
@@ -233,11 +284,12 @@ export const experiences: Experience[] = [
 				startDate: new Date('2020-11-01'),
 				endDate: new Date('2021-01-01'),
 				description:
-					'Przy tym projekcie miałem okazję przeprowadzić kompleksową migrację aplikacji z AngularJS do Angulara z TypeScript. Zadanie wykraczało poza samą zmianę technologii - objęło również aktualizację interfejsu i design systemu.',
+					'Przy tym projekcie miałem okazję przeprowadzić migrację aplikacji z AngularJS do Angulara 2+ z TypeScript. Poza samą zmianę technologii moim zadaniem była również aktualizacja UI i design systemu.',
 				projects: [
 					{
 						name: 'Migracja technologii',
-						description: 'Przepisanie całej aplikacji do nowego frameworka.',
+						description:
+							'Przepisanie całej aplikacji do nowego frameworka oraz aktualizacja UI i design systemu.',
 					},
 				],
 				technologies: ['Angular', 'TypeScript', 'AngularJS', 'SCSS'],
@@ -254,17 +306,17 @@ export const experiences: Experience[] = [
 				startDate: new Date('2019-08-01'),
 				endDate: new Date('2020-12-01'),
 				description:
-					'Moją karierę rozpocząłem od pracy przy stronie WordPress, gdzie szybko rozwinąłem nie tylko umiejętności techniczne, ale też zdobyłem pierwsze doświadczenie w zarządzaniu zespołem. Oprócz kodowania, często samodzielnie projektowałem interfejsy, co pozwoliło mi lepiej zrozumieć aspekty UI/UX.',
+					'Moją karierę rozpocząłem od pracy przy stronie WordPress, gdzie szybko rozwinąłem nie tylko umiejętności techniczne, ale też zdobyłem pierwsze doświadczenie w zarządzaniu zespołem. Oprócz kodowania, często samodzielnie projektowałem UI, co pozwoliło mi lepiej zrozumieć UI/UX.',
 				projects: [
 					{
 						name: 'Pierwsze kroki w zarządzaniu',
 						description:
-							'Przez 6 miesięcy kierowałem małym zespołem, ucząc się planowania pracy, pilnowania terminów i raportowania postępów.',
+							'Przez pół roku kierowałem małym zespołem, ucząc się planowania pracy, pilnowania terminów i raportowania postępów.',
 					},
 					{
 						name: 'Rozwój w projektowaniu UI',
 						description:
-							'Z czasem przejąłem odpowiedzialność za projektowanie interfejsów, co znacząco poszerzyło moje kompetencje poza czysty development.',
+							'Z czasem przejąłem odpowiedzialność za projektowanie UI, co znacząco poszerzyło moje kompetencje poza czysty development.',
 					},
 				],
 				technologies: ['WordPress', 'SCSS', 'PHP', 'HTML'],
