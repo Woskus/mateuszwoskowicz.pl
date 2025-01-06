@@ -29,38 +29,38 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-	{
-		id: 'pkobp',
-		logo: <Pkobp />,
-		type: 'freelance',
-		positions: [
-			{
-				title: 'Strona internetowa - Fortnite',
-				startDate: new Date('2024-10-01'),
-				description:
-					'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
-				projects: [
-					{
-						name: 'Security',
-						description:
-							'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
-					},
-					{
-						name: 'Integracja CMS',
-						description:
-							'Jednym z wymagań klienta była integracja z CMS, który pozwalał na zarządzanie treścią i możliwość natychmiastowego zamknięcia strony.',
-					},
-					{
-						name: 'Zarządzanie zespołem',
-						description:
-							'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
-					},
-				],
-				technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS', 'AWS'],
-			},
-		],
-		open: true,
-	},
+	// {
+	// 	id: 'pkobp',
+	// 	logo: <Pkobp />,
+	// 	type: 'freelance',
+	// 	positions: [
+	// 		{
+	// 			title: 'Strona internetowa - Fortnite',
+	// 			startDate: new Date('2024-10-01'),
+	// 			description:
+	// 				'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
+	// 			projects: [
+	// 				{
+	// 					name: 'Security',
+	// 					description:
+	// 						'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
+	// 				},
+	// 				{
+	// 					name: 'Integracja CMS',
+	// 					description:
+	// 						'Jednym z wymagań klienta była integracja z CMS, który pozwalał na zarządzanie treścią i możliwość natychmiastowego zamknięcia strony.',
+	// 				},
+	// 				{
+	// 					name: 'Zarządzanie zespołem',
+	// 					description:
+	// 						'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
+	// 				},
+	// 			],
+	// 			technologies: ['TypeScript', 'Next.js', 'Sanity.io', 'TailwindCSS', 'AWS'],
+	// 		},
+	// 	],
+	// 	open: true,
+	// },
 	{
 		id: 'samsung',
 		logo: <Samsung />,
