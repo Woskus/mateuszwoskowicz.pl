@@ -5,6 +5,7 @@ import {Button} from '@/components/ui/button';
 import {Tooltip, TooltipTrigger, TooltipContent} from '@/components/ui/tooltip';
 import {OptimizedImage} from '@/components/optimized-image';
 import {FrontendMasters, Leetcode} from '@/components/logotypes';
+import {Ping} from '@/components/ping';
 
 const links = [
 	{
@@ -29,6 +30,8 @@ const links = [
 	},
 ];
 
+const isLookingForJob = false;
+
 export function Hero() {
 	return (
 		<section className="mt-[160px]">
@@ -46,6 +49,20 @@ export function Hero() {
 				<h1 className="text-2xl">Mateusz Woskowicz</h1>
 
 				<p className="text-muted-foreground">Senior Frontend Developer</p>
+
+				<p className="text-muted-foreground text-xs flex gap-2 items-center mt-2">
+					{isLookingForJob ? (
+						<>
+							<Ping />
+							Otwarty na oferty pracy
+						</>
+					) : (
+						<>
+							<Ping variant="red" />
+							Obecnie nie szukam pracy
+						</>
+					)}
+				</p>
 
 				<div className="mt-4 flex items-start gap-2">
 					{links.map((link) => (
