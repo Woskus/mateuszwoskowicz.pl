@@ -23,7 +23,6 @@ export function Providers({children}: PropsWithChildren) {
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="dark"
-				enableSystem
 				disableTransitionOnChange
 			>
 				<TooltipProvider>{children}</TooltipProvider>
