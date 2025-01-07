@@ -102,7 +102,7 @@ export const experiences: Experience[] = [
 				title: 'Senior Frontend Developer',
 				startDate: new Date('2024-06-01'),
 				description:
-					'Jako Senior Frontend Developer coraz więcej czasu poświęcam na projektowanie architektury aplikacji i aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI oraz na projektach, który mają większy wpływ na rozwój biznesowy.',
+					'Jako Senior Frontend Developer tworzę i utrzymuje aplikacje przy użyciu Next.js, Node.js i AWS. Coraz więcej czasu poświęcam na projektowanie architektury aplikacji i aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI oraz na projektach, który mają wpływ na rozwój biznesowy.',
 				projects: [
 					{
 						name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
@@ -121,6 +121,10 @@ export const experiences: Experience[] = [
 					'React.js',
 					'MySQL',
 					'Node.js',
+					'Cypress',
+					'Jest',
+					'AWS',
+					'Docker',
 					'TailwindCSS',
 				],
 			},
@@ -129,7 +133,7 @@ export const experiences: Experience[] = [
 				startDate: new Date('2021-10-01'),
 				endDate: new Date('2024-06-01'),
 				description:
-					'Był to okres, w którym poszerzyłem swoje kompetencje, biorąc odpowiedzialność za coraz większe projekty. Skupiłem się na rozwoju w kierunku Fullstack. Nauczyłem się nowych technologii, takich jak TypeScript, Next.js oraz zacząłem samodzielnie pracować na backendzie korzystając z Node.js oraz przy bazach danych MySQL.',
+					'Będąc Frontend Developerem znacząco poszerzyłem swoje kompetencje, biorąc odpowiedzialność za coraz większe projekty. Skupiłem się na rozwoju w kierunku Fullstack. Nauczyłem się nowych technologii, takich jak TypeScript, Next.js oraz zacząłem samodzielnie pracować na backendzie korzystając z Node.js oraz przy bazach danych MySQL.',
 				projects: [
 					{
 						name: 'AI Voice Recognition Mechanism - Monte Snack',
@@ -166,6 +170,10 @@ export const experiences: Experience[] = [
 					'React.js',
 					'MySQL',
 					'Node.js',
+					'Cypress',
+					'Jest',
+					'AWS',
+					'Docker',
 					'TailwindCSS',
 				],
 			},
@@ -238,6 +246,7 @@ export const experiences: Experience[] = [
 					'Wordpress',
 					'Next.js',
 					'TypeScript',
+					'AWS',
 					'PHP',
 					'SCSS',
 					'TailwindCSS',
@@ -270,6 +279,7 @@ export const experiences: Experience[] = [
 					'MongoDB',
 					'Stripe',
 					'PayloadCMS',
+					'AWS',
 				],
 			},
 		],

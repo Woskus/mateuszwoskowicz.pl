@@ -20,20 +20,50 @@ export function About() {
 				<h2 className="mb-5 text-base">O mnie</h2>
 
 				<div className="flex flex-col items-start justify-between gap-5 md:flex-row">
-					<article className="max-w-[800px] space-y-5 text-muted-foreground">
+					<article className="max-w-[800px] space-y-5 text-muted-foreground [&_a]:p-0 [&_a]:h-auto">
 						<p>Hej! 👋</p>
 
 						<p>
 							Jestem Senior Frontend Developerem z ponad {yearsDiff}
-							-letnim doświadczeniem komercyjnym. Na co dzień pracuję w{' '}
+							-letnim doświadczeniem komercyjnym. Specjalizuję się w
+							Next.js, React.js, TypeScript oraz Node.js i MySQL.
+						</p>
+
+						<p>
+							Na co dzień pracuję w{' '}
 							<Button
 								variant="link"
 								asChild
 							>
 								<Link href="#instreamly">inStreamly</Link>
 							</Button>
-							, gdzie oprócz kodowania, chętnie pomagam przy rozwoju
-							projektu i wdrażam rozwiązania AI.
+							, gdzie wraz z zespołem produktowym i biznesowym wdrażam
+							innowacyjne rozwiązania. Jednym z kluczowych obszarów mojej
+							pracy jest{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
+									href="https://www.linkedin.com/posts/maciejsawiksawicki_jak-ai-zmienia-realia-pracy-programist%C3%B3w-activity-7265680977006342144-0VQH?utm_source=share&utm_medium=member_desktop"
+									target="_blank"
+								>
+									implementacja rozwiązań AI
+								</Link>
+							</Button>{' '}
+							oraz{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
+									href="https://www.linkedin.com/posts/maciejsawiksawicki_ka%C5%BCdy-obszar-w-firmie-bot-gpt-wszystkie-activity-7199685411844100096-U-xB?utm_source=share&utm_medium=member_desktop"
+									target="_blank"
+								>
+									wspieranie zespołu w rozwoju
+								</Link>
+							</Button>{' '}
+							w tej dziedzinie.
 						</p>
 
 						<p>
@@ -72,10 +102,10 @@ export function About() {
 									href="https://handbook.gitlab.com/handbook/people-group/directly-responsible-individuals/"
 									target="_blank"
 								>
-									pełną odpowiedzialność za powierzone zadania (DRI)
+									pełną odpowiedzialność (DRI)
 								</Link>
 							</Button>
-							, traktując każdy projekt jak własny, cenię{' '}
+							{' '}za powierzone zadania, traktując każdy projekt jak własny, cenię{' '}
 							<Button
 								variant="link"
 								asChild
@@ -104,30 +134,38 @@ export function About() {
 
 						<p className="text-primary">Mój stack technologiczny:</p>
 
-						<ul className="space-y-1 [&>li]:flex [&>li]:items-center">
+						<ul className="space-y-2 [&>li]:flex [&>li]:items-center [&_span]:text-primary [&_span]:block [&_span]:mr-1">
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Frontend: React.js, Next.js, TypeScript
+								<span>Frontend:</span>Next.js, React.js, TypeScript
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Backend: Node.js, TypeScript, Express.js
+								<span>Backend:</span> Node.js, TypeScript, Express.js
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Bazy danych: MySQL, PostgreSQL
+								<span>Bazy danych:</span> MySQL, PostgreSQL
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								AI: Claude, SuperMaven, v0, AWS Bedrock, OpenAI API
+								<span>AI:</span> Claude, SuperMaven, v0, AWS Bedrock, OpenAI API
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Narzędzia: TailwindCSS, Shadcn UI, SCSS
+								<span>Testy:</span> Cypress, Jest, Playwright
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								Cloud: AWS
+								<span>Stylowanie:</span> TailwindCSS, Shadcn UI, SCSS
+							</li>
+							<li>
+								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
+								<span>Narzędzia:</span> Git, Github, Webstorm, Cursor, Docker, Figma, ClickUp
+							</li>
+							<li>
+								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
+								<span>Cloud:</span> AWS
 							</li>
 						</ul>
 					</article>
