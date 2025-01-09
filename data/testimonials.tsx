@@ -16,14 +16,18 @@ export const testimonials: Testimonial[] = [
 					Mateusz współpracuje z nami już od prawie dwóch lat i widzę ogromny
 					progres jaki dokonał w tym czasie. Od Juniora do osoby która nie tylko
 					samodzielnie stawia skomplikowany projekt (nowa strona Internetowa z
-					bajerami) ale także zarządza procesem i pilnuje jej jakości.
+					bajerami) ale także{' '}
+					<span>zarządza procesem i pilnuje jej jakości</span>.
 				</p>
 
 				<p>
-					Mateusz nie "klepie kodu" tylko kompleksowo realizuje zadania i zawsze
-					można na nim polegać :) A przy okazji oznacza się wielkimi pokładami
-					cierpliwości co jest bardzo cenne w skomplikowanych wdrożeniach i
-					nieco chaotycznym życiu w startupie.
+					Mateusz nie "klepie kodu" tylko{' '}
+					<span>
+						kompleksowo realizuje zadania i zawsze można na nim polegać
+					</span>{' '}
+					:) A przy okazji oznacza się wielkimi pokładami cierpliwości co jest
+					bardzo cenne w skomplikowanych wdrożeniach i nieco chaotycznym życiu w
+					startupie.
 				</p>
 			</>
 		),
@@ -33,29 +37,47 @@ export const testimonials: Testimonial[] = [
 		position: 'Freelance marketer & copywriter',
 		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/robert-szewczyk.jpg',
 		text: (
-      <>
-        <p>Współpraca z Mateuszem to była dla mnie czysta przyjemność.</p>
+			<>
+				<p>
+					Współpracowałem z Mateuszem przez ostatnie 3 lata przy tworzeniu
+					platformy e-learningowej oraz agencji marketingowej.
+				</p>
 
-        <p>Co wyróżnia Mateusza na tle osób, z którymi miałem okazję współpracować?</p>
+				<p>
+					Mateusz zdecydowanie jest osobą{' '}
+					<span>godną zaufania i odpowiedzialną</span>, co udowodnił mi
+					niejednokrotnie podczas naszej współpracy.
+				</p>
 
-        <p>Zdecydowanie niesamowita komunikatywność - od samego początku do końca czułem się bardzo zadbany, byłem informowany o wszystkim na bieżąco, a nasza współpraca przebiegała bez zarzutów.</p>
+				<p>
+					Doceniam również fakt, że wielokrotnie potrafił mnie pozytywnie
+					zaskoczyć i <span>dawał od siebie więcej, niż tego oczekiwałem</span>.
+				</p>
 
-        <p>Kawał świetnej roboty i ogromny profesjonalizm, dziękuję 👏🏼</p>
-      </>
-    ),
+				<p>
+					Często <span>wychodził z własną inicjatywą</span> i doradzał mi, co
+					mogę zrobić lepiej.
+				</p>
+			</>
+		),
 	},
 	{
 		name: 'Wojciech Kluk',
 		position: 'CEO & Founder, IT Recruitment Expert & Headhunter',
-    img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/wojciech-kluk.jpg',
+		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/wojciech-kluk.jpg',
 		text: (
-      <>
-        <p>Mateusz to prawdziwy profesjonalista. Super kontakt i proaktywna postawa.</p>
+			<>
+				<p>
+					Mateusz to prawdziwy profesjonalista. Super kontakt i{' '}
+					<span>proaktywna postawa</span>.
+				</p>
 
-        <p>Zawsze służy pomocą, nawet po ukończeniu projektu.</p>
+				<p>
+					<span>Zawsze służy pomocą</span>, nawet po ukończeniu projektu.
+				</p>
 
-        <p>Serdecznie polecam Mateusza.</p>
-      </>
-    ),
+				<p>Serdecznie polecam Mateusza.</p>
+			</>
+		),
 	},
 ];

@@ -46,7 +46,7 @@ export function Testimonials() {
 							className="group relative cursor-pointer overflow-hidden rounded-lg"
 						>
 							<Card>
-								<CardContent className="pt-6 space-y-2">
+								<CardContent className="pt-6 space-y-2 text-muted-foreground [&_span]:text-primary">
 									{text}
 								</CardContent>
 
