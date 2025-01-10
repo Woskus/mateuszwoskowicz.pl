@@ -67,7 +67,7 @@ export function About() {
 						</p>
 
 						<p>
-							Miałem przyjemność współpracować z takimi markami jak{' '}
+							Współpracowałem z takimi markami jak{' '}
 							<Button
 								variant="link"
 								asChild
