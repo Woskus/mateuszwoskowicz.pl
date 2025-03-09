@@ -33,6 +33,20 @@ export const testimonials: Testimonial[] = [
 		),
 	},
 	{
+		name: 'Norbert Uselis',
+		position: 'Strateg Biznesowy',
+		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/norbert-uselis.jpg',
+		text: (
+			<>
+				<p>
+					Z Mateuszem pracowałem (i nadal pracuje) przy wielu projektach i nigdy nie mogłem powiedzieć złego słowa o jego pracy. Zawsze na czas. Zawsze z naciskiem <span>na jakość</span> i co chyba najważniejsze: zawsze z naciskiem <span>na sprawną komunikację</span>.
+				</p>
+
+				<p>Polecam w 100% do wszystkich tematów związanych ze <span>stronami, aplikacjami, AI oraz technologią</span>.</p>
+			</>
+		),
+	},
+	{
 		name: 'Robert Szewczyk',
 		position: 'Freelance marketer & copywriter',
 		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/robert-szewczyk.jpg',
@@ -58,25 +72,6 @@ export const testimonials: Testimonial[] = [
 					Często <span>wychodził z własną inicjatywą</span> i doradzał mi, co
 					mogę zrobić lepiej.
 				</p>
-			</>
-		),
-	},
-	{
-		name: 'Wojciech Kluk',
-		position: 'CEO & Founder, IT Recruitment Expert & Headhunter',
-		img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/testimonials/wojciech-kluk.jpg',
-		text: (
-			<>
-				<p>
-					Mateusz to prawdziwy profesjonalista. Super kontakt i{' '}
-					<span>proaktywna postawa</span>.
-				</p>
-
-				<p>
-					<span>Zawsze służy pomocą</span>, nawet po ukończeniu projektu.
-				</p>
-
-				<p>Serdecznie polecam Mateusza.</p>
 			</>
 		),
 	},

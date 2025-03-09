@@ -15,7 +15,7 @@ export function Cta() {
 	return (
 		<section className="mt-16">
 			<Container>
-				<Card className="py-8">
+				<Card className="py-8 bg-[url('https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/cta-background.jpg')] bg-cover bg-no-repeat">
 					<CardHeader>
 						<CardTitle className="w-full text-center">
 							Chcesz ze mną współpracować?
