@@ -55,4 +55,4 @@ export const dcc = {
 	date: new Date('2023-10-01'),
 };
 
-export const projects: Project[] = [pkobp, samsung, instreamly, dcc];
+export const projects: Project[] = [samsung, instreamly, dcc];
