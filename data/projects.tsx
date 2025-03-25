@@ -23,13 +23,13 @@ export const samsung = {
 };
 
 export const pkobp = {
-	id: 'pkobp-fortnite',
-	title: 'Strona PKO BP Fortnite',
-	company: 'PKO BP',
+	id: 'pko-bank-polski-fortnite',
+	title: 'Konkursowy Landing Page dla PKO Bank Polski',
+	company: 'PKO Bank Polski',
 	img: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/projects/pkobp.jpg',
 	imgHero: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/projects/pkobp-hero.jpg',
 	logo: <Pkobp />,
-	href: '/case-study/pkobp-fortnite',
+	href: '/case-study/konkursowy-landing-page-dla-pko-bank-polski',
 	date: new Date('2024-10-01'),
 };
 
@@ -55,4 +55,4 @@ export const dcc = {
 	date: new Date('2023-10-01'),
 };
 
-export const projects: Project[] = [samsung, instreamly, dcc];
+export const projects: Project[] = [samsung, pkobp, instreamly, dcc];

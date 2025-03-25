@@ -74,13 +74,13 @@ export function About() {
 							>
 								<Link href="#samsung">Samsung</Link>
 							</Button>{' '}
-							{/*czy{' '}*/}
-							{/*<Button*/}
-							{/*	variant="link"*/}
-							{/*	asChild*/}
-							{/*>*/}
-							{/*	<Link href="#pkobp">PKO BP</Link>*/}
-							{/*</Button>{' '}*/}
+							czy{' '}
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link href="#pkobp">PKO Bank Polski</Link>
+							</Button>{' '}
 							jako freelancer. Po godzinach prowadzę własną działalność{' '}
 							<Button
 								variant="link"
