@@ -37,6 +37,7 @@ export const experiences: Experience[] = [
 			{
 				title: 'Konkursowy Landing Page dla PKO Banku Polskiego',
 				startDate: new Date('2024-10-01'),
+				endDate: new Date('2025-03-10'),
 				description:
 					'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
 				projects: [
