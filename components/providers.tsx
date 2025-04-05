@@ -1,15 +1,16 @@
 'use client';
 
-import {useEffect, Suspense, PropsWithChildren} from 'react';
-import { usePathname, useSearchParams } from "next/navigation"
+import {useEffect, Suspense, type PropsWithChildren} from 'react';
+import {usePathname, useSearchParams} from 'next/navigation';
+import {NextIntlClientProvider} from 'next-intl';
 import {ThemeProvider} from 'next-themes';
 import posthog from 'posthog-js';
 import {PostHogProvider, usePostHog} from 'posthog-js/react';
 import {TooltipProvider} from '@/components/ui/tooltip';
 
-export function Providers({children}: PropsWithChildren) {
+export function Providers({locale, children}: PropsWithChildren & {locale: string}) {
 	useEffect(() => {
-		posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
+		posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY ?? '', {
 			api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
 			capture_pageview: false,
 			capture_pageleave: true,
@@ -20,38 +21,45 @@ export function Providers({children}: PropsWithChildren) {
 		<PostHogProvider client={posthog}>
 			<SuspendedPostHogPageView />
 
-			<ThemeProvider
-				attribute="class"
-				defaultTheme="dark"
-				disableTransitionOnChange
+			<NextIntlClientProvider
+				locale={locale}
+				timeZone="Europe/Warsaw"
 			>
-				<TooltipProvider>{children}</TooltipProvider>
-			</ThemeProvider>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					disableTransitionOnChange
+				>
+					<TooltipProvider>{children}</TooltipProvider>
+				</ThemeProvider>
+			</NextIntlClientProvider>
 		</PostHogProvider>
 	);
 }
 
 function PostHogPageView() {
-	const pathname = usePathname()
-	const searchParams = useSearchParams()
-	const posthog = usePostHog()
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
+	const ph = usePostHog();
 
 	useEffect(() => {
-		if (pathname && posthog) {
-			let url = window.origin + pathname
+		if (pathname && ph) {
+			let url = window.origin + pathname;
 			if (searchParams.toString()) {
-				url = url + `?${searchParams.toString()}`
+				url = `${url}?${searchParams.toString()}`;
 			}
 
-			posthog.capture('$pageview', { '$current_url': url })
+			ph.capture('$pageview', {$current_url: url});
 		}
-	}, [pathname, searchParams, posthog])
+	}, [pathname, searchParams, ph]);
 
-	return null
+	return null;
 }
 
 function SuspendedPostHogPageView() {
-	return <Suspense fallback={null}>
-		<PostHogPageView />
-	</Suspense>
+	return (
+		<Suspense fallback={null}>
+			<PostHogPageView />
+		</Suspense>
+	);
 }

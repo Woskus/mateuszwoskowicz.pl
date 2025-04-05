@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "featuredProjects": "Wyróżnione projekty",
+    "experience": "Doświadczenie",
+    "about": "O mnie",
+    "testimonials": "Opinie"
+  },
+  "HomePage": {
+    "position": "Senior Frontend Developer"
+  }
+}

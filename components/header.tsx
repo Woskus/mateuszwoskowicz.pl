@@ -9,15 +9,23 @@ import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {DarkModeToggler} from '@/components/dark-mode-toggler';
 
-const navLinks = [
-	{href: '/#projekty', label: 'Wyróżnione projekty'},
-	{href: '/#doswiadczenie', label: 'Doświadczenie'},
-	{href: '/#o-mnie', label: 'O mnie'},
-	{href: '/#opinie', label: 'Opinie'},
-];
+interface HeaderProps {
+	links: {
+		href: string;
+		label: string;
+	}[];
+	menuOpenStateLabel: string;
+	menuCloseStateLabel: string;
+	linkedinLabel: string;
+}
 
-export function Header() {
-	const pathname = usePathname()
+export function Header({
+	links,
+	menuOpenStateLabel,
+	menuCloseStateLabel,
+	linkedinLabel,
+}: HeaderProps) {
+	const pathname = usePathname();
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,15 +46,20 @@ export function Header() {
 				<div>
 					<Link
 						href={pathname === '/' ? '/#start' : '/'}
-						className="z-10 rounded-lg py-2 focus:outline-0 focus-visible:ring-1 focus:ring-primary"
+						className="z-10 rounded-lg py-2 focus:outline-0 focus:ring-primary focus-visible:ring-1"
 					>
-						<span aria-label="Mateusz Woskowicz" className="text-2xl font-bold">MW</span>
+						<span
+							aria-label="Mateusz Woskowicz"
+							className="text-2xl font-bold"
+						>
+							MW
+						</span>
 					</Link>
 				</div>
 
 				<nav className="hidden md:block">
 					<ul className="flex justify-end gap-8">
-						{navLinks.map((link) => (
+						{links.map((link) => (
 							<li key={link.href}>
 								<Button
 									variant="link"
@@ -68,7 +81,9 @@ export function Header() {
 						variant="ghost"
 						size="icon"
 						onClick={toggleMobileMenu}
-						aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+						aria-label={
+							isMobileMenuOpen ? menuCloseStateLabel : menuOpenStateLabel
+						}
 						aria-expanded={isMobileMenuOpen}
 						className="z-10"
 					>
@@ -78,8 +93,7 @@ export function Header() {
 			</Container>
 
 			<AnimatePresence>
-				{isMobileMenuOpen && (
-					<motion.nav
+				{isMobileMenuOpen ? <motion.nav
 						className="absolute left-0 right-0 top-0 h-screen bg-background md:hidden"
 						initial={{opacity: 0}}
 						animate={{opacity: 1}}
@@ -88,7 +102,7 @@ export function Header() {
 					>
 						<Container className="h-full">
 							<ul className="flex h-full flex-col items-center justify-center gap-5">
-								{navLinks.map((link, index) => (
+								{links.map((link) => (
 									<li key={link.href}>
 										<Button
 											variant="link"
@@ -117,7 +131,7 @@ export function Header() {
 											onClick={closeMobileMenu}
 										>
 											<Linkedin className="mr-2 h-4 w-4" />
-											Napisz na LinkedIn
+											{linkedinLabel}
 										</Link>
 									</Button>
 								</li>
@@ -127,8 +141,7 @@ export function Header() {
 								</li>
 							</ul>
 						</Container>
-					</motion.nav>
-				)}
+					</motion.nav> : null}
 			</AnimatePresence>
 		</header>
 	);

@@ -1,0 +1,15 @@
+{
+  "Header": {
+    "featuredProjects": "Featured Projects",
+    "experience": "Experience",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "menuOpenState": "Open menu",
+    "menuCloseState": "Close menu",
+    "linkedinLabel": "Write on LinkedIn"
+
+  },
+  "HomePage": {
+    "position": "Senior Frontend Developer"
+  }
+}
