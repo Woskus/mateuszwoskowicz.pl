@@ -1,14 +1,95 @@
-import {Metadata} from 'next';
+import {type Metadata} from 'next';
+import {useLocale} from 'next-intl';
 import {Container} from '@/components/container';
 
 export const metadata: Metadata = {
-	title: 'Polityka prywatności - Mateusz Woskowicz',
-	description: 'Polityka prywatności strony mateuszwoskowicz.pl',
+	title: 'Mateusz Woskowicz',
+	description: '',
 };
 
 export default function Page() {
+	const locale = useLocale();
+
 	return (
 		<Container className="pt-[120px]">
+			{locale === 'pl' ? <PrivacyPolicyPl /> : <PrivacyPolicyEn />}
+		</Container>
+	);
+}
+
+export function PrivacyPolicyEn() {
+	return (
+		<>
+			<h1 className="mb-8 text-3xl md:text-4xl">Privacy Policy</h1>
+			<ol className="list-decimal space-y-4 pl-5">
+				<li>
+					General information: This Privacy Policy outlines the rules for
+					processing and protecting personal data provided by users in
+					connection with their use of the website located at
+					https://mateuszwoskowicz.pl/.
+				</li>
+				<li>
+					The administrator of personal data contained in the service is Mateusz
+					Woskowicz, NIP 6282282230 REGON 388095340.
+				</li>
+				<li>
+					Personal data is processed based on the user&apos;s consent or when the law
+					permits it to fulfill a contract between the parties.
+				</li>
+				<li>
+					The service collects user data and behavior in the following ways: a)
+					through voluntarily submitted forms, b) via cookies.
+				</li>
+				<li>The service collects information voluntarily provided by users.</li>
+				<li>
+					The data entered in the form is processed to handle contact inquiries
+					and facilitate the execution of the contract between the user and the
+					site administrator.
+				</li>
+				<li>
+					Personal data left on the website will not be sold or shared with
+					third parties, in accordance with data protection laws.
+				</li>
+				<li>
+					The person who provided the data in the form has the right to access,
+					modify, and request the deletion of their data at any time.
+				</li>
+				<li>
+					We reserve the right to change this privacy policy due to developments
+					in internet technology, changes in law, or the evolution of our
+					website. Any changes will be clearly communicated.
+				</li>
+				<li>
+					Cookies are small text files stored on the user’s device. Most
+					browsers accept them by default, but users can adjust cookie settings.
+					Restricting or disabling cookies may impact website functionality.
+					<br />
+					<br />
+					This site uses:
+					<ul className="mt-5 list-disc space-y-2 pl-5">
+						<li>
+							PostHog - This website uses PostHog services for anonymous
+							analytics. Users can block data transfer to PostHog through
+							browser settings. More info is available{' '}
+							<a
+								href="https://posthog.com/privacy"
+								target="_blank"
+								rel="nofollow noreferrer"
+							>
+								here
+							</a>
+							.
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</>
+	);
+}
+
+export function PrivacyPolicyPl() {
+	return (
+		<>
 			<h1 className="mb-8 text-3xl md:text-4xl">Polityka prywatności</h1>
 
 			<ol className="list-decimal space-y-4 pl-5">
@@ -104,6 +185,6 @@ export default function Page() {
 					</ul>
 				</li>
 			</ol>
-		</Container>
+		</>
 	);
 }
