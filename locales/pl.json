@@ -18,6 +18,7 @@
   "HomePage": {
     "featuredProjects": "Wyróżnione projekty",
     "lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}",
+    "testimonials": "Opinie",
     "cta": {
       "title": "Chcesz ze mną współpracować?",
       "description": "Napisz do mnie na linkedin i bądźmy w kontakcie!",

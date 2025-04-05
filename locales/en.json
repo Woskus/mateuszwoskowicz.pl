@@ -18,6 +18,7 @@
 	"HomePage": {
 		"featuredProjects": "Featured Projects",
 		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}",
+		"testimonials": "Testimonials",
 		"cta": {
 			"title": "Want to work with me?",
 			"description": "Write to me on LinkedIn and we'll be in touch!",

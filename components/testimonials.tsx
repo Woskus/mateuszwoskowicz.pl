@@ -1,7 +1,8 @@
 'use client';
 
 import {useRef} from 'react';
-import {Swiper, SwiperSlide, SwiperRef} from 'swiper/react';
+import {useTranslations, useLocale} from 'next-intl';
+import {Swiper, SwiperSlide, type SwiperRef} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import {Container} from '@/components/container';
 import {Card, CardContent, CardFooter} from '@/components/ui/card';
@@ -11,7 +12,11 @@ import {testimonials} from '@/data/testimonials';
 import 'swiper/css';
 
 export function Testimonials() {
+	const t = useTranslations('HomePage');
+	const locale = useLocale();
 	const sliderRef = useRef<SwiperRef>(null);
+
+	const localizedTestimonials = testimonials[locale];
 
 	return (
 		<section
@@ -20,7 +25,7 @@ export function Testimonials() {
 		>
 			<Container>
 				<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
-					<h2 className="border-0 text-base">Opinie</h2>
+					<h2 className="border-0 text-base">{t('testimonials')}</h2>
 
 					<SwiperNavigation sliderRef={sliderRef} />
 				</div>
@@ -40,7 +45,7 @@ export function Testimonials() {
 					}}
 					loop
 				>
-					{testimonials.map(({name, position, img, text}) => (
+					{localizedTestimonials.map(({name, position, img, text}) => (
 						<SwiperSlide
 							key={name}
 							className="group relative cursor-pointer overflow-hidden rounded-lg"
