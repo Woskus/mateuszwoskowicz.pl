@@ -3,6 +3,7 @@ import {
 	Callpage,
 	Dcc,
 	Instreamly,
+	Manaboo,
 	Mwebs,
 	Pkobp,
 	Salesmanago,
@@ -36,6 +37,60 @@ export interface Experience {
 
 export const experiences: Experience[] = [
 	{
+		id: 'manaboo',
+		logo: <Manaboo />,
+		type: 'business',
+		positions: [
+			{
+				startDate: new Date('2024-10-15'),
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'OpenAI',
+					'Pinecone',
+					'AWS Bedrock',
+					'TailwindCSS',
+				],
+				locale: {
+					en: {
+						title: 'Co-Founder & AI Fullstack Developer',
+						description:
+							'A platform that uses AI to recommend games on Roblox and allows users to earn money in-game. I am co-creating the project, among others, with the founders of my current full-time job.',
+						projects: [
+							{
+								name: 'AI Recommendation System',
+								description:
+									'I developed a proprietary recommendation system based on AI, RAG, and vector databases. The system uses the "Collaborative Filtering" method to find the best games for users based on their demographics, game history, and other users.',
+							},
+							{
+								name: 'Internal Dashboard',
+								description:
+									'I created an internal dashboard that enables editing and managing campaigns, user management, payment handling, and generating reports for clients.',
+							},
+						],
+					},
+					pl: {
+						title: 'Co-Founder & AI Fullstack Developer',
+						description:
+							'Platforma, która wykorzystuje AI do rekomendacji gier w Roblox oraz pozwala użytkownikom zarabiać w grze. Projekt współtworzę między innymi z Founderami mojej obecnej pracy etatowej.',
+						projects: [
+							{
+								name: 'System rekomendacji AI',
+								description:
+									'Stworzyłem autorski system rekomendacji oparty o AI, RAG, bazy wektorowe. System wykorzystuje metodę "Collaborative Filtering" do wyszukiwania najlepszych gier dla użytkownika bazując na jego danych demograficznych, historii gier oraz innych użytkownikach.',
+							},
+							{
+								name: 'Wewnętrzny dashboard',
+								description:
+									'Stworzyłem wewnętrzny dashboard, który pozwala na edycje i zarządzanie kampaniami, zarządzanie użytkownikami oraz obsługę płatności, a także tworzenie raportów dla klientów.',
+							},
+						],
+					},
+				},
+			},
+		],
+		open: true,
+	},{
 		id: 'pkobp',
 		logo: <Pkobp />,
 		type: 'freelance',
@@ -183,14 +238,14 @@ export const experiences: Experience[] = [
 							'As a Senior Frontend Developer, I create and maintain applications using Next.js, Node.js, and AWS. I’m increasingly involved in designing application architecture and actively participate in product development planning. I focus particularly on innovative solutions using AI and on projects that have a business growth impact.',
 						projects: [
 							{
-								name: 'Custom Sponsorship Mechanisms – Netflix, PlayStation, Pepsi',
+								name: 'Custom Sponsorship Mechanisms – Netflix, PlayStation, Pepsi and others',
 								description:
 									'Implementation of tailored solutions for displaying sponsorships during live broadcasts on Twitch, YouTube or Kick.',
 							},
 							{
 								name: 'Implementing AI Solutions',
 								description:
-									'I bring my passion for AI into my daily work by implementing both internal and external solutions, such as chatbots and applications.',
+									'I bring my passion for AI into my daily work by implementing both internal and external solutions, such as AI Agents, chatbots and applications.',
 							},
 						],
 					},
@@ -200,14 +255,14 @@ export const experiences: Experience[] = [
 							'Jako Senior Frontend Developer tworzę i utrzymuje aplikacje przy użyciu Next.js, Node.js i AWS. Coraz więcej czasu poświęcam na projektowanie architektury aplikacji i aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI oraz na projektach, który mają wpływ na rozwój biznesowy.',
 						projects: [
 							{
-								name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
+								name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi i inni',
 								description:
 									'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch, YouTube lub Kick.',
 							},
 							{
 								name: 'Wdrażanie rozwiązań AI',
 								description:
-									'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Chatbotów oraz aplikacji.',
+									'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Agentów AI, Chatbotów oraz aplikacji.',
 							},
 						],
 					},
