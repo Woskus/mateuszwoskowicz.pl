@@ -185,7 +185,7 @@ export const experiences: Experience[] = [
 							{
 								name: 'Custom Sponsorship Mechanisms – Netflix, PlayStation, Pepsi',
 								description:
-									'Implementation of tailored solutions for displaying sponsorships during live broadcasts on Twitch or YouTube.',
+									'Implementation of tailored solutions for displaying sponsorships during live broadcasts on Twitch, YouTube or Kick.',
 							},
 							{
 								name: 'Implementing AI Solutions',
@@ -202,7 +202,7 @@ export const experiences: Experience[] = [
 							{
 								name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi',
 								description:
-									'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch lub YouTube.',
+									'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch, YouTube lub Kick.',
 							},
 							{
 								name: 'Wdrażanie rozwiązań AI',
@@ -239,9 +239,9 @@ export const experiences: Experience[] = [
 								description: (
 									<>
 										I created a mechanism for automatically displaying
-										sponsorships during Twitch and YouTube streams
-										based on words spoken by streamers. The platform
-										NowyMarketing{' '}
+										sponsorships during Twitch, YouTube and Kick
+										streams based on words spoken by streamers. The
+										platform NowyMarketing{' '}
 										<Button
 											variant="link"
 											asChild
@@ -275,8 +275,9 @@ export const experiences: Experience[] = [
 									<>
 										Stworzyłem mechanizm do automatycznego
 										wyświetlania sponsoringu podczas streamów na
-										Twitch i YouTube na podstawie wypowiedzianych
-										przez streamerów słów. NowyMarketing{' '}
+										Twitch, YouTube i Kick na podstawie
+										wypowiedzianych przez streamerów słów.
+										NowyMarketing{' '}
 										<Button
 											variant="link"
 											asChild
