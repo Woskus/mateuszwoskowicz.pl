@@ -26,10 +26,10 @@ export function Header() {
 	};
 
 	const navLinks = [
-		{href: '/#projekty', label: t('featuredProjects')},
-		{href: '/#doswiadczenie', label: t('experience')},
-		{href: '/#o-mnie', label: t('about')},
-		{href: '/#opinie', label: t('testimonials')},
+		{href: '/#projects', label: t('featuredProjects')},
+		{href: '/#experience', label: t('experience')},
+		{href: '/#about', label: t('about')},
+		{href: '/#testimonials', label: t('testimonials')},
 	];
 
 	return (

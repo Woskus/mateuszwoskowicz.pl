@@ -15,7 +15,7 @@ export function About() {
 	return (
 		<section
 			className="mt-16"
-			id="o-mnie"
+			id="about"
 		>
 			<Container>
 				<h2 className="mb-5 text-base">{t('about.title')}</h2>

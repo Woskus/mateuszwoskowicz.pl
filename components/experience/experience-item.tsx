@@ -1,34 +1,27 @@
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import pl from 'dayjs/locale/pl';
+import {useTranslations, useLocale} from 'next-intl';
 import {ArrowRight, Calendar} from 'lucide-react';
 import {Card, CardContent} from '@/components/ui/card';
-import {Badge, BadgeProps} from '@/components/ui/badge';
+import {Badge, type BadgeProps} from '@/components/ui/badge';
 import {Ping} from '@/components/ping';
-import {ExperienceCollapsible} from './experience-collapsible';
+import {LocalizedDate} from '@/components/localized-date';
+import {LocalizedRelativeTime} from '@/components/localized-relative-time';
 import type {Experience} from '@/data/experience';
-
-dayjs.locale(pl);
-dayjs.extend(relativeTime);
+import {ExperienceCollapsible} from './experience-collapsible';
 
 const experiencesMap: Record<
 	Experience['type'],
 	{
 		variant: BadgeProps['variant'];
-		label: string;
 	}
 > = {
-	'full-time': {
+	fullTime: {
 		variant: 'success',
-		label: 'Pełen etat',
 	},
-	'business': {
+	business: {
 		variant: 'info',
-		label: 'Własna działalność',
 	},
 	freelance: {
 		variant: 'warning',
-		label: 'Freelance',
 	},
 };
 
@@ -38,41 +31,50 @@ interface ExperienceItemProps {
 }
 
 function ExperienceHeader({experience}: {experience: Experience}) {
-	const {variant, label} = experiencesMap[experience.type];
+	const t = useTranslations('HomePage.experience');
+
+	const {variant} = experiencesMap[experience.type];
 
 	return (
 		<div className="flex items-center gap-3">
 			{experience.logo}
-			<Badge variant={variant}>{label}</Badge>
+			<Badge variant={variant}>{t(experience.type)}</Badge>
 		</div>
 	);
 }
 
 function ExperienceContent({experience}: {experience: Experience}) {
+	const t = useTranslations('HomePage.experience');
+	const locale = useLocale();
+
 	return (
 		<CardContent className="space-y-6">
 			{experience.positions.map((position) => (
 				<div
-					key={position.title}
+					key={position.locale[locale].title}
 					className="border-t pt-6 first:border-t-0 first:pt-0"
 				>
-					<h3 className="text-lg font-semibold">{position.title}</h3>
+					<h3 className="text-lg font-semibold">
+						{position.locale[locale].title}
+					</h3>
 
 					<div className="mt-1 flex items-center text-sm text-muted-foreground">
 						<Calendar className="mr-2 h-3.5 w-3.5" />
 
-						<div className="flex items-center gap-2 flex-wrap">
-							<span>{dayjs(position.startDate).format('MMMM YYYY')}</span>
+						<div className="flex flex-wrap items-center gap-2">
+							<span>
+								<LocalizedDate date={position.startDate} />
+							</span>
 
 							<span>-</span>
 
 							<span className="flex items-center gap-1">
 								{position.endDate ? (
-									dayjs(position.endDate).format('MMMM YYYY')
+									<LocalizedDate date={position.endDate} />
 								) : (
 									<>
 										<Ping />
-										Obecnie
+										{t('present')}
 									</>
 								)}
 							</span>
@@ -80,25 +82,27 @@ function ExperienceContent({experience}: {experience: Experience}) {
 							<span className="flex items-center gap-1">
 								<span>-</span>
 								<span className="text-sm text-muted-foreground">
-									{dayjs(position.startDate).to(
-										position?.endDate ? position.endDate : dayjs(),
-										true,
-									)}
+									<LocalizedRelativeTime
+										startDate={position.startDate}
+										endDate={position?.endDate}
+									/>
 								</span>
 							</span>
 						</div>
 					</div>
 
 					<p className="mt-2 text-sm text-muted-foreground">
-						{position.description}
+						{position.locale[locale].description}
 					</p>
 
-					{position.projects.length > 0 && (
+					{position.locale[locale].projects.length > 0 && (
 						<div className="mt-6">
-							<h4 className="mb-2 text-sm font-semibold">Wyróżnione:</h4>
+							<h4 className="mb-2 text-sm font-semibold">
+								{t('featured')}:
+							</h4>
 
 							<ul className="space-y-2">
-								{position.projects.map((project) => (
+								{position.locale[locale].projects.map((project) => (
 									<li
 										key={project.name}
 										className="flex items-start gap-1 text-muted-foreground"
@@ -108,7 +112,9 @@ function ExperienceContent({experience}: {experience: Experience}) {
 											<p className="font-medium text-primary">
 												{project.name}:{' '}
 											</p>
-											<span className="[&>a]:p-0 [&>a]:h-auto">{project.description}</span>
+											<span className="[&>a]:h-auto [&>a]:p-0">
+												{project.description}
+											</span>
 										</div>
 									</li>
 								))}
@@ -118,7 +124,9 @@ function ExperienceContent({experience}: {experience: Experience}) {
 
 					{position.technologies.length > 0 && (
 						<div className="mt-6">
-							<h4 className="mb-1 text-sm font-semibold">Technologia:</h4>
+							<h4 className="mb-1 text-sm font-semibold">
+								{t('technologies')}:
+							</h4>
 							<p className="text-sm text-muted-foreground">
 								{position.technologies.join(', ')}
 							</p>

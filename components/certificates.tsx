@@ -6,7 +6,7 @@ export function Certificates() {
 	return (
 		<section
 			className="mt-12"
-			id="certyfikaty"
+			id="certificates"
 		>
       <Container>
         <h2 className="mb-5 text-base">Certyfikaty</h2>

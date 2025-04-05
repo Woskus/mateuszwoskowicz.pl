@@ -23,7 +23,7 @@ export function Projects({projects, title}: ProjectsProps) {
 	return (
 		<section
 			className="mt-8"
-			id="projekty"
+			id="projects"
 		>
 			<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
 				<h2 className="border-0 text-base">{title}</h2>

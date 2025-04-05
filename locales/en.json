@@ -18,6 +18,15 @@
 	"HomePage": {
 		"featuredProjects": "Featured Projects",
 		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}",
+		"experience": {
+			"title": "Experience",
+			"present": "Present",
+			"featured": "Featured",
+			"technologies": "Technologies",
+			"fullTime": "Full time job",
+			"business": "My own business",
+			"freelance": "Freelance"
+		},
 		"testimonials": "Testimonials",
 		"about": {
 			"title": "About me",

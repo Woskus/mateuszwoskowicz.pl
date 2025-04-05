@@ -18,6 +18,15 @@
 	"HomePage": {
 		"featuredProjects": "Wyróżnione projekty",
 		"lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}",
+		"experience": {
+			"title": "Doświadczenie",
+			"present": "Obecnie",
+			"featured": "Wyróżnione",
+			"technologies": "Technologie",
+			"fullTime": "Pełen etat",
+			"business": "Własny działalność",
+			"freelance": "Freelance"
+		},
 		"testimonials": "Opinie",
 		"about": {
 			"title": "O mnie",
@@ -34,10 +43,10 @@
 			},
 			"techStack": {
 				"title": "Mój stack technologiczny:",
-                "database": "Bazy danych",
-                "tests": "Testy",
-                "styling": "Stylowanie",
-                "tools": "Narzędzia"
+				"database": "Bazy danych",
+				"tests": "Testy",
+				"styling": "Stylowanie",
+				"tools": "Narzędzia"
 			}
 		},
 		"cta": {

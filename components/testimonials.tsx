@@ -21,7 +21,7 @@ export function Testimonials() {
 	return (
 		<section
 			className="mt-16"
-			id="opinie"
+			id="testimonials"
 		>
 			<Container>
 				<div className="mb-5 flex items-center justify-between gap-5 border-b pb-1">
