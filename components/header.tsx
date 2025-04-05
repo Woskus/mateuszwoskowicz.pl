@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
 import {Container} from '@/components/container';
@@ -13,6 +13,7 @@ import {LocaleSwitcher} from '@/components/locale-switcher/locale-switcher';
 
 export function Header() {
 	const t = useTranslations('Header');
+	const locale = useLocale();
 	const pathname = usePathname();
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,10 +27,10 @@ export function Header() {
 	};
 
 	const navLinks = [
-		{href: '/#projects', label: t('featuredProjects')},
-		{href: '/#experience', label: t('experience')},
-		{href: '/#about', label: t('about')},
-		{href: '/#testimonials', label: t('testimonials')},
+		{href: `/${locale}/#projects`, label: t('featuredProjects')},
+		{href: `/${locale}/#experience`, label: t('experience')},
+		{href: `/${locale}/#about`, label: t('about')},
+		{href: `/${locale}/#testimonials`, label: t('testimonials')},
 	];
 
 	return (
