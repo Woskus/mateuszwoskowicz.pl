@@ -2,7 +2,7 @@
 	"Header": {
 		"featuredProjects": "Featured Projects",
 		"experience": "Experience",
-		"about": "About",
+		"about": "About me",
 		"testimonials": "Testimonials",
 		"menuOpenState": "Open menu",
 		"menuCloseState": "Close menu",
@@ -19,6 +19,27 @@
 		"featuredProjects": "Featured Projects",
 		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}",
 		"testimonials": "Testimonials",
+		"about": {
+			"title": "About me",
+			"greeting": "Hi! 👋",
+			"experience": "I am a Senior Frontend Developer with over {yearsDiff} years of commercial experience. I specialize in Next.js, React.js, TypeScript, as well as Node.js and MySQL.",
+			"work": {
+				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where I implement innovative solutions together with the product and business teams. One of the key areas of my work is <aiImplementation>implementing AI solutions</aiImplementation> and <teamSupport>supporting team development</teamSupport>."
+			},
+			"brands": {
+				"description": "I have collaborated with brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp> as a freelancer. In my spare time, I run my own business <mwebs>mwebs</mwebs>, where I create websites and applications for dozens of clients."
+			},
+			"values": {
+				"description": "In my work, I take <dri>full responsibility (DRI)</dri> for the tasks entrusted to me, treating each project as if it were my own. I value <feedback>honest and constructive feedback (Feedback)</feedback> and believe that <nvc>kindness and mutual respect (NVC)</nvc> are key to team success."
+			},
+			"techStack": {
+				"title": "My Technology Stack:",
+				"database": "Database",
+				"tests": "Tests",
+				"styling": "Styling",
+				"tools": "Tools"
+			}
+		},
 		"cta": {
 			"title": "Want to work with me?",
 			"description": "Write to me on LinkedIn and we'll be in touch!",

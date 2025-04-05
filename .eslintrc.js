@@ -60,5 +60,6 @@ module.exports = {
 		'no-nested-ternary': 'off',
 		'no-param-reassign': 'warn',
 		'react/no-unknown-property': 'warn',
+		'react/no-unstable-nested-components': 'off',
 	},
 };

@@ -1,43 +1,64 @@
 {
-  "Header": {
-    "featuredProjects": "Wyróżnione projekty",
-    "experience": "Doświadczenie",
-    "about": "O mnie",
-    "testimonials": "Opinie",
-    "menuOpenState": "Otwórz menu",
-    "menuCloseState": "Zamknij menu",
-    "linkedinLabel": "Napisz na LinkedIn"
-  },
-  "Footer": {
-    "privacyPolicy": "Polityka prywatności"
-  },
-  "LocaleSwitcher": {
-    "label": "Język",
-    "locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
-  },
-  "HomePage": {
-    "featuredProjects": "Wyróżnione projekty",
-    "lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}",
-    "testimonials": "Opinie",
-    "cta": {
-      "title": "Chcesz ze mną współpracować?",
-      "description": "Napisz do mnie na linkedin i bądźmy w kontakcie!",
-      "button": "Napisz na Linkedin"
-    }
-  },
-  "CaseStudies": {
-    "otherProjects": "Inne projekty",
-    "samsung": {
-      "title": "Strona \"Mobilne Rozgrywki Galaxy\""
-    },
-    "pko": {
-      "title": "Konkursowy Landing Page dla PKO Bank Polski"
-    },
-    "instreamlyWordpress": {
-      "title": "Migracja strony z Wordpress do Next.js"
-    },
-    "digitalCreatorsCommunity": {
-      "title": "Platforma e-learningowa DCC"
-    }
-  }
+	"Header": {
+		"featuredProjects": "Wyróżnione projekty",
+		"experience": "Doświadczenie",
+		"about": "O mnie",
+		"testimonials": "Opinie",
+		"menuOpenState": "Otwórz menu",
+		"menuCloseState": "Zamknij menu",
+		"linkedinLabel": "Napisz na LinkedIn"
+	},
+	"Footer": {
+		"privacyPolicy": "Polityka prywatności"
+	},
+	"LocaleSwitcher": {
+		"label": "Język",
+		"locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
+	},
+	"HomePage": {
+		"featuredProjects": "Wyróżnione projekty",
+		"lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}",
+		"testimonials": "Opinie",
+		"about": {
+			"title": "O mnie",
+			"greeting": "Hej! 👋",
+			"experience": "Jestem Senior Frontend Developerem z ponad {yearsDiff}-letnim doświadczeniem komercyjnym. Specjalizuję się w Next.js, React.js, TypeScript oraz Node.js i MySQL.",
+			"work": {
+				"description": "Na co dzień pracuję w <instreamly>inStreamly</instreamly>, gdzie wraz z zespołem produktowym i biznesowym wdrażam innowacyjne rozwiązania. Jednym z kluczowych obszarów mojej pracy jest <aiImplementation>implementacja rozwiązań AI</aiImplementation> oraz <teamSupport>wspieranie zespołu w rozwoju</teamSupport> w tej dziedzinie."
+			},
+			"brands": {
+				"description": "Współpracowałem z takimi markami jak <samsung>Samsung</samsung> czy <pkobp>PKO Bank Polski</pkobp> jako freelancer. Po godzinach prowadzę własną działalność <mwebs>mwebs</mwebs>, gdzie tworzę strony i aplikacje dla kilkudziesięciu klientów."
+			},
+			"values": {
+				"description": "W mojej pracy biorę <dri>pełną odpowiedzialność (DRI)</dri> za powierzone zadania, traktując każdy projekt jak własny, cenię <feedback>szczerą i konstruktywną komunikację (Feedback)</feedback> i wierzę, że <nvc>życzliwość i wzajemny szacunek (NVC)</nvc> są kluczem do sukcesu w zespole."
+			},
+			"techStack": {
+				"title": "Mój stack technologiczny:",
+                "database": "Bazy danych",
+                "tests": "Testy",
+                "styling": "Stylowanie",
+                "tools": "Narzędzia"
+			}
+		},
+		"cta": {
+			"title": "Chcesz ze mną współpracować?",
+			"description": "Napisz do mnie na linkedin i bądźmy w kontakcie!",
+			"button": "Napisz na Linkedin"
+		}
+	},
+	"CaseStudies": {
+		"otherProjects": "Inne projekty",
+		"samsung": {
+			"title": "Strona \"Mobilne Rozgrywki Galaxy\""
+		},
+		"pko": {
+			"title": "Konkursowy Landing Page dla PKO Bank Polski"
+		},
+		"instreamlyWordpress": {
+			"title": "Migracja strony z Wordpress do Next.js"
+		},
+		"digitalCreatorsCommunity": {
+			"title": "Platforma e-learningowa DCC"
+		}
+	}
 }
