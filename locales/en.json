@@ -1,18 +1,34 @@
 {
-  "Header": {
-    "featuredProjects": "Featured Projects",
-    "experience": "Experience",
-    "about": "About",
-    "testimonials": "Testimonials",
-    "menuOpenState": "Open menu",
-    "menuCloseState": "Close menu",
-    "linkedinLabel": "Write on LinkedIn"
-  },
-  "LocaleSwitcher": {
-    "label": "Language",
-    "locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
-  },
-  "HomePage": {
-    "position": "Senior Frontend Developer"
-  }
+	"Header": {
+		"featuredProjects": "Featured Projects",
+		"experience": "Experience",
+		"about": "About",
+		"testimonials": "Testimonials",
+		"menuOpenState": "Open menu",
+		"menuCloseState": "Close menu",
+		"linkedinLabel": "Write on LinkedIn"
+	},
+	"LocaleSwitcher": {
+		"label": "Language",
+		"locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
+	},
+	"HomePage": {
+		"featuredProjects": "Featured Projects",
+		"position": "Senior Frontend Developer"
+	},
+	"CaseStudies": {
+		"otherProjects": "Other projects",
+		"samsung": {
+			"title": "\"Mobilne Rozgrywki Galaxy\" Website"
+		},
+		"pko": {
+			"title": "Contest Landing Page for PKO Bank Polski"
+		},
+		"instreamlyWordpress": {
+			"title": "Website Migration from WordPress to Next.js"
+		},
+		"digitalCreatorsCommunity": {
+			"title": "DCC E-learning Platform"
+		}
+	}
 }

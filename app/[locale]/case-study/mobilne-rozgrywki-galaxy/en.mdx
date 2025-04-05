@@ -1,0 +1,35 @@
+import {CaseStudyHeading} from '@/components/case-study-heading';
+import {CaseStudyProjects} from '@/components/case-study-projects';
+import {samsung} from '@/data/projects';
+
+<CaseStudyHeading
+  id={samsung.id}
+  company={samsung.company}
+  img={samsung.imgHero}
+  date={samsung.date}
+/>
+
+## The Challenge
+
+The goal of the project was to create a website targeted at young fans of mobile games. The site was intended to encourage participation in a contest where users could win attractive prizes, such as Samsung phones or Google Play vouchers. Given the young target audience and the contest’s connection to mobile games, the top priority was ensuring appropriate design and responsiveness.
+
+## My Role
+
+As a subcontractor on the project, I was responsible for:
+
+- Implementing the site based on a graphic design provided in Figma
+- Integrating the frontend with a backend written in Node.js and Express.js
+- Ensuring responsiveness across all popular mobile devices
+- Implementing animations that would attract young users’ attention while keeping the site lightweight
+
+## Technology
+
+- **Node.js & Express.js** – used for handling dynamic content on the backend
+- **Pug** – used for rendering content fetched from the backend
+- **SCSS** – CSS preprocessor used to style the website
+
+## What I Learned
+
+- **Working with Node.js & Express.js** – by integrating the frontend with the backend, I gained additional experience in Node.js and Express.js
+
+<CaseStudyProjects projectId={samsung.id} />

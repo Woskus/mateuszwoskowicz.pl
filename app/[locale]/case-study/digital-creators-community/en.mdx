@@ -1,0 +1,50 @@
+import {CaseStudyHeading} from '@/components/case-study-heading';
+import {CaseStudyProjects} from '@/components/case-study-projects';
+import {dcc} from '@/data/projects';
+
+<CaseStudyHeading
+  id={dcc.id}
+  company={dcc.company}
+  img={dcc.imgHero}
+  date={dcc.date}
+/>
+
+## The Challenge
+
+The project involved creating an e-learning platform for the Digital Creators Community. A crucial aspect of the project was the full automation of the course sales process.
+
+Additionally, one of the project requirements was the ability for self-management of the courses – adding new ones and modifying their content. The solution turned out to be building a service based on Next.js, Payload CMS, and Stripe.
+
+## My Role
+
+- **Project coordination and subcontractor management** – I was responsible for supervising the graphic designer's work, providing detailed feedback, ensuring visual consistency and platform usability.
+
+- **Frontend implementation in Next.js & TypeScript** – Based on the prepared design, I coded the entire frontend using Next.js.
+
+- **Payload CMS integration** – I integrated Payload CMS with Next.js to enable content updates.
+
+- **Stripe payment automation** – I integrated Stripe so that users would automatically receive access to the purchased course after payment.
+
+- **Implementation of e-learning platform features** – I ensured the implementation of features such as course progress tracking and knowledge tests that grant a certificate upon completion.
+
+- **Infrastructure management** – Everything was hosted in the AWS cloud, and data was stored in MongoDB. This made the platform secure, scalable, and fast, which is particularly important for online courses.
+
+## Technology
+
+- **Next.js & TypeScript** – Using Next.js with TypeScript enabled quick frontend deployment and ensured performance.
+
+- **Payload CMS** – I used the Headless CMS methodology to allow full content control while improving performance.
+
+- **Stripe** – Stripe integration automated all payment processes and allowed for quick implementation of a subscription or one-time purchase model.
+
+- **AWS** – The application was hosted on AWS, which guaranteed scalability and security.
+
+- **MongoDB** – Data was stored in MongoDB.
+
+## What I Learned
+
+- **Advanced payment integration** – The project allowed me to deepen my knowledge of Stripe – from handling one-time payments to automatically granting course access.
+
+- **Project management and team coordination** – Working with an external designer required clear communication and feedback delivery, which translated into efficient execution of subsequent project stages.
+
+<CaseStudyProjects projectId={dcc.id} />

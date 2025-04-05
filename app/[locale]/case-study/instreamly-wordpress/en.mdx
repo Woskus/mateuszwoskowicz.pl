@@ -1,0 +1,48 @@
+import {CaseStudyHeading} from '@/components/case-study-heading';
+import {CaseStudyProjects} from '@/components/case-study-projects';
+import {instreamly} from '@/data/projects';
+
+<CaseStudyHeading
+  id={instreamly.id}
+  company={instreamly.company}
+  img={instreamly.imgHero}
+  date={instreamly.date}
+/>
+
+[Link to the project](https://instreamly.com/)
+
+## The Challenge
+
+As part of inStreamly’s rebranding, I was tasked with building a new website while retaining the existing backend on WordPress.
+
+Since WordPress already hosted several dozen posts, switching to an entirely new CMS would have been too time-consuming and costly.
+
+The solution turned out to be applying the Headless CMS methodology: WordPress provided data via API and GraphQL, while Next.js took over the frontend role, rendering individual pages with content fetched from the API.
+
+## My Role
+
+- **End-to-end implementation** – I was responsible for fully migrating the site from WordPress to Next.js, including CMS integration, design implementation, and project management.
+
+- **Project management** – In addition to development, I managed the project by organizing tasks, coordinating the team, and ensuring timely delivery of each component. Despite very tight deadlines, the entire implementation was completed within just a month, which was quite a challenge given the complexity of the website.
+
+- **Design implementation** – The design included many custom elements, which posed challenges in terms of responsiveness and performance.
+
+- **SEO optimization** – It was essential to maintain or even improve the site’s search engine rankings. In Next.js, I implemented solutions that allowed for generating meta tags and a sitemap similarly to WordPress, while improving page load times.
+
+## Technology
+
+- **Next.js & TypeScript** – I used Server-Side Rendering (SSR) and Static Site Generation (SSG), which translated into better performance and improved SEO.
+- **WordPress** – Served as the backend, providing data through GraphQL and API.
+- **GraphQL** – Enabled data fetching from WordPress and smooth integration with the frontend.
+
+## What I Learned
+
+- **Implementing Headless CMS** – Integrating WordPress with Next.js required combining several technologies, significantly expanding my knowledge and skills in headless architecture.
+
+- **Working with custom design** – Balancing an impressive visual design with high performance was key in this project.
+
+- **Maintaining and improving SEO** – Migrating from WordPress to Next.js posed SEO challenges but ultimately improved search rankings.
+
+- **Project management under tight deadlines** – Effective planning, team communication, and task prioritization were critical to launching such an extensive site in an exceptionally short time.
+
+<CaseStudyProjects projectId={instreamly.id} />

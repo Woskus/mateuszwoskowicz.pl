@@ -13,6 +13,22 @@
     "locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
   },
   "HomePage": {
+    "featuredProjects": "Wyróżnione projekty",
     "position": "Senior Frontend Developer"
+  },
+  "CaseStudies": {
+    "otherProjects": "Inne projekty",
+    "samsung": {
+      "title": "Strona \"Mobilne Rozgrywki Galaxy\""
+    },
+    "pko": {
+      "title": "Konkursowy Landing Page dla PKO Bank Polski"
+    },
+    "instreamlyWordpress": {
+      "title": "Migracja strony z Wordpress do Next.js"
+    },
+    "digitalCreatorsCommunity": {
+      "title": "Platforma e-learningowa DCC"
+    }
   }
 }

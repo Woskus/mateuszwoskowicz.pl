@@ -2,13 +2,8 @@ import {CaseStudyHeading} from '@/components/case-study-heading';
 import {CaseStudyProjects} from '@/components/case-study-projects';
 import {pkobp} from '@/data/projects';
 
-export const metadata = {
-	title: pkobp.title,
-	description: '',
-};
-
 <CaseStudyHeading
-	title={pkobp.title}
+  id={pkobp.id}
 	company={pkobp.company}
 	img={pkobp.imgHero}
   date={pkobp.date}

@@ -2,13 +2,8 @@ import {CaseStudyHeading} from '@/components/case-study-heading';
 import {CaseStudyProjects} from '@/components/case-study-projects';
 import {instreamly} from '@/data/projects';
 
-export const metadata = {
-	title: instreamly.title,
-	description: '',
-};
-
 <CaseStudyHeading
-	title={instreamly.title}
+	id={instreamly.id}
 	company={instreamly.company}
 	img={instreamly.imgHero}
   date={instreamly.date}

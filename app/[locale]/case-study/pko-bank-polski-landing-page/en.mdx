@@ -1,0 +1,55 @@
+import {CaseStudyHeading} from '@/components/case-study-heading';
+import {CaseStudyProjects} from '@/components/case-study-projects';
+import {pkobp} from '@/data/projects';
+
+<CaseStudyHeading
+  id={pkobp.id}
+  company={pkobp.company}
+  img={pkobp.imgHero}
+  date={pkobp.date}
+/>
+
+## The Challenge
+
+The goal of the project for PKO Bank Polski was to create a website aimed at young Fortnite players. This required a modern, dynamic design while maintaining high security standards — after all, PKO Bank Polski is the largest bank in Poland.
+
+At the same time, full accessibility had to be ensured so that every user could access the website.
+
+Another key requirement was enabling flexible content changes via a CMS, allowing the site to be updated at any time.
+
+## My Role
+
+In this project, I led the work comprehensively, going beyond just writing code:
+
+- **Design preparation** – Together with a subcontractor, I prepared two initial design proposals: one closely aligned with the client’s brand style, and the other being our original creative interpretation. Ultimately, the client chose our concept, which we further developed.
+
+- **Subcontractor coordination** – I oversaw the team responsible for design and cybersecurity. I regularly provided feedback, ensured timely delivery, and monitored task execution.
+
+- **Implementation** – I coded the website according to the Figma design, using Next.js and Tailwind CSS.
+
+- **CMS integration** – Using Sanity.io, I enabled content editing, giving the PKO Bank Polski team full control over website content and allowing them to toggle the site on or off at any time.
+
+- **Security** – We implemented special cloud-based solutions on AWS. By using Server Components in Next.js, CMS data processing occurred on the server side. As a result, users received pre-rendered HTML, which significantly improved security.
+
+- **Accessibility focus** – I placed special emphasis on ensuring the site met full accessibility standards.
+
+- **Client communication** – I conducted consultations and training sessions with the PKO Bank Polski team so they could fully leverage the implemented solutions.
+
+## Technology
+
+- **Next.js & TypeScript** – Used Server Components for better performance and security.
+- **Tailwind CSS** – Enabled faster website styling, which was helpful given the short project timeline.
+- **Sanity.io** – The CMS that allows the PKO Bank Polski team to freely update content or take the site offline.
+- **AWS** – Provided a high level of security, scalability, and uptime.
+
+## What I Learned
+
+- **Advanced practical security** – Working for PKO Bank Polski deepened my understanding of implementing security measures and cloud-based solutions.
+
+- **Comprehensive project coordination** – Collaborating with subcontractors and the client helped me develop my team management and project communication skills.
+
+- **Improved accessibility handling** – The project required meticulous application of accessibility guidelines, which enhanced my knowledge in this area.
+
+- **CMS integration with Next.js** – I learned how Sanity.io works and how to implement it securely into a Next.js project.
+
+<CaseStudyProjects projectId={pkobp.id} />

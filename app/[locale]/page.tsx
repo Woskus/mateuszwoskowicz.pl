@@ -1,4 +1,5 @@
-import {Metadata} from 'next';
+import type {Metadata} from 'next';
+import {useTranslations} from 'next-intl';
 import {Container} from '@/components/container';
 import {Hero} from '@/components/hero';
 import {Projects} from '@/components/projects';
@@ -23,10 +24,12 @@ export const metadata: Metadata = {
 				alt: 'Mateusz Woskowicz - Senior Frontend Developer',
 			},
 		],
-	}
+	},
 };
 
 export default function Home() {
+	const t = useTranslations('HomePage');
+
 	return (
 		<>
 			<NorthenLights />
@@ -34,7 +37,10 @@ export default function Home() {
 			<Hero />
 
 			<Container>
-				<Projects projects={projects} />
+				<Projects
+					title={t('featuredProjects')}
+					projects={projects}
+				/>
 			</Container>
 
 			<Experience />
