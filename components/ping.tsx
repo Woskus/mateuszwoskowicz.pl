@@ -8,8 +8,8 @@ interface PingProps {
 }
 
 export function Ping({variant = 'green', className}: PingProps) {
-	const getColorClasses = (variant: PingVariant) => {
-		switch (variant) {
+	const getColorClasses = (v: PingVariant) => {
+		switch (v) {
 			case 'red':
 				return {
 					ping: 'bg-red-400',

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import {Download, Linkedin, Github} from 'lucide-react';
+import {useTranslations} from 'next-intl';
+import {Linkedin, Github} from 'lucide-react';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {Tooltip, TooltipTrigger, TooltipContent} from '@/components/ui/tooltip';
@@ -33,6 +34,8 @@ const links = [
 const isLookingForJob = false;
 
 export function Hero() {
+	const t = useTranslations('HomePage');
+
 	return (
 		<section className="pt-[160px]">
 			<Container>
@@ -50,18 +53,9 @@ export function Hero() {
 
 				<p className="text-muted-foreground">Senior Frontend Developer</p>
 
-				<p className="text-muted-foreground text-xs flex gap-2 items-center mt-2">
-					{isLookingForJob ? (
-						<>
-							<Ping />
-							Otwarty na oferty pracy
-						</>
-					) : (
-						<>
-							<Ping variant="red" />
-							Obecnie nie szukam pracy
-						</>
-					)}
+				<p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+					<Ping variant={isLookingForJob ? 'green' : 'red'} />
+					{t('lookingForJob', {isLookingForJob: String(isLookingForJob)})}
 				</p>
 
 				<div className="mt-4 flex items-start gap-2">

@@ -14,7 +14,7 @@
 	},
 	"HomePage": {
 		"featuredProjects": "Featured Projects",
-		"position": "Senior Frontend Developer"
+		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}"
 	},
 	"CaseStudies": {
 		"otherProjects": "Other projects",

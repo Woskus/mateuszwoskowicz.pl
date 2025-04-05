@@ -14,7 +14,7 @@
   },
   "HomePage": {
     "featuredProjects": "Wyróżnione projekty",
-    "position": "Senior Frontend Developer"
+    "lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}"
   },
   "CaseStudies": {
     "otherProjects": "Inne projekty",
