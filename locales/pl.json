@@ -17,7 +17,12 @@
   },
   "HomePage": {
     "featuredProjects": "Wyróżnione projekty",
-    "lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}"
+    "lookingForJob": "{isLookingForJob, select, true {Otwarty na oferty pracy} false {Obecnie nie szukam pracy} other {-}}",
+    "cta": {
+      "title": "Chcesz ze mną współpracować?",
+      "description": "Napisz do mnie na linkedin i bądźmy w kontakcie!",
+      "button": "Napisz na Linkedin"
+    }
   },
   "CaseStudies": {
     "otherProjects": "Inne projekty",

@@ -17,7 +17,12 @@
 	},
 	"HomePage": {
 		"featuredProjects": "Featured Projects",
-		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}"
+		"lookingForJob": "{isLookingForJob, select, true {Open for job offers} false {Not looking for a job right now} other {-}}",
+		"cta": {
+			"title": "Want to work with me?",
+			"description": "Write to me on LinkedIn and we'll be in touch!",
+			"button": "Write on LinkedIn"
+		}
 	},
 	"CaseStudies": {
 		"otherProjects": "Other projects",
