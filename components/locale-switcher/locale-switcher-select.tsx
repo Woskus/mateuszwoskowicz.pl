@@ -4,7 +4,6 @@ import {useParams} from 'next/navigation';
 import {type Locale} from 'next-intl';
 import {useTransition} from 'react';
 import {usePathname, useRouter} from '@/lib/i18n/navigation';
-import {cn} from '@/lib/utils';
 import {
 	Select,
 	SelectContent,

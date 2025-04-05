@@ -1,9 +1,9 @@
 'use client';
 
 import {useCallback} from 'react';
-import {SwiperRef} from 'swiper/react';
-import {Button} from '@/components/ui/button';
+import {type SwiperRef} from 'swiper/react';
 import {ArrowLeft, ArrowRight} from 'lucide-react';
+import {Button} from '@/components/ui/button';
 
 interface SwiperNavigationProps {
 	sliderRef: React.RefObject<SwiperRef | null>;

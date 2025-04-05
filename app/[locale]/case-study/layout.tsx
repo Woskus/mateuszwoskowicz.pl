@@ -1,4 +1,4 @@
-import {PropsWithChildren} from 'react';
+import {type PropsWithChildren} from 'react';
 import {Container} from '@/components/container';
 
 export default function Layout({children}: PropsWithChildren) {

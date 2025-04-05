@@ -33,13 +33,13 @@ export function Ping({variant = 'green', className}: PingProps) {
 					'absolute inline-flex h-full w-full animate-ping rounded-full opacity-75',
 					colorClasses.ping,
 				)}
-			></span>
+			 />
 			<span
 				className={cn(
 					'relative inline-flex h-2 w-2 rounded-full',
 					colorClasses.dot,
 				)}
-			></span>
+			 />
 		</span>
 	);
 }

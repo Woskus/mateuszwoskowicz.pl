@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect, useState, CSSProperties} from 'react';
+import {useEffect, useState, type CSSProperties} from 'react';
 import {useTheme} from 'next-themes';
 
 interface LightCSSProperties extends CSSProperties {
@@ -33,8 +33,8 @@ export function NorthenLights() {
 	}, []);
 
 	useEffect(() => {
-		const timer = setTimeout(() => setOpacity(1), 200);
-		return () => clearTimeout(timer);
+		const timer = setTimeout(() => { setOpacity(1); }, 200);
+		return () => { clearTimeout(timer); };
 	}, []);
 
 	if (!mounted) return null;

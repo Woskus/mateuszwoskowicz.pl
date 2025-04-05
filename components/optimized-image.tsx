@@ -1,4 +1,4 @@
-import {DetailedHTMLProps, ImgHTMLAttributes} from 'react';
+import {type DetailedHTMLProps, type ImgHTMLAttributes} from 'react';
 
 type OptimizedImageProps = Omit<
 	DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>,

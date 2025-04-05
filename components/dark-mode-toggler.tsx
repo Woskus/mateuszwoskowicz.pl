@@ -10,15 +10,15 @@ export function DarkModeToggler() {
 	return (
 		<Button
 			variant="ghost"
-			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      size="icon"
-			aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+			onClick={() => {
+				setTheme(theme === 'dark' ? 'light' : 'dark');
+			}}
+			size="icon"
+			aria-label={
+				theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
+			}
 		>
-			{theme === 'light' ? (
-				<Moon />
-			) : (
-				<Sun />
-			)}
+			{theme === 'light' ? <Moon /> : <Sun />}
 		</Button>
 	);
 }
