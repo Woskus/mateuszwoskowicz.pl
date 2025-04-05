@@ -8,6 +8,9 @@
     "menuCloseState": "Zamknij menu",
     "linkedinLabel": "Napisz na LinkedIn"
   },
+  "Footer": {
+    "privacyPolicy": "Polityka prywatności"
+  },
   "LocaleSwitcher": {
     "label": "Język",
     "locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"

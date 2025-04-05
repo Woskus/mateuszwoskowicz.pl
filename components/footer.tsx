@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import {useTranslations} from 'next-intl';
 import {Button} from '@/components/ui/button';
 import {Container} from '@/components/container';
 
 export function Footer() {
+	const t = useTranslations('Footer');
+
 	return (
 		<footer className="my-8">
 			<Container>
@@ -19,7 +22,7 @@ export function Footer() {
 									asChild
 								>
 									<Link href="/polityka-prywatnosci">
-										Polityka prywatności
+										{t('privacyPolicy')}
 									</Link>
 								</Button>
 							</li>
