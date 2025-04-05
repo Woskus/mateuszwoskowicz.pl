@@ -8,6 +8,7 @@ import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
+import {Mw} from '@/components/logotypes';
 import {DarkModeToggler} from '@/components/dark-mode-toggler';
 import {LocaleSwitcher} from '@/components/locale-switcher/locale-switcher';
 
@@ -44,12 +45,7 @@ export function Header() {
 						href={pathname === `/${locale}/` ? `/${locale}#start` : `/${locale}/`}
 						className="z-10 rounded-lg py-2 focus:outline-0 focus:ring-primary focus-visible:ring-1"
 					>
-						<span
-							aria-label="Mateusz Woskowicz"
-							className="text-2xl font-bold"
-						>
-							MW
-						</span>
+						<Mw className="w-[36px] h-auto" />
 					</Link>
 				</div>
 
