@@ -33,8 +33,12 @@ export function NorthenLights() {
 	}, []);
 
 	useEffect(() => {
-		const timer = setTimeout(() => { setOpacity(1); }, 200);
-		return () => { clearTimeout(timer); };
+		const timer = setTimeout(() => {
+			setOpacity(1);
+		}, 200);
+		return () => {
+			clearTimeout(timer);
+		};
 	}, []);
 
 	if (!mounted) return null;

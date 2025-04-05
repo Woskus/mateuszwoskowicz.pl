@@ -13,12 +13,12 @@ export function SwiperNavigation({sliderRef}: SwiperNavigationProps) {
 	const handlePrev = useCallback(() => {
 		if (!sliderRef.current) return;
 		sliderRef.current.swiper.slidePrev();
-	}, []);
+	}, [sliderRef]);
 
 	const handleNext = useCallback(() => {
 		if (!sliderRef.current) return;
 		sliderRef.current.swiper.slideNext();
-	}, []);
+	}, [sliderRef]);
 
 	return (
 		<div>

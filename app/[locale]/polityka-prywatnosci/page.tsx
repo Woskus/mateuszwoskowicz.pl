@@ -17,7 +17,7 @@ export default function Page() {
 	);
 }
 
-export function PrivacyPolicyEn() {
+function PrivacyPolicyEn() {
 	return (
 		<>
 			<h1 className="mb-8 text-3xl md:text-4xl">Privacy Policy</h1>
@@ -87,7 +87,7 @@ export function PrivacyPolicyEn() {
 	);
 }
 
-export function PrivacyPolicyPl() {
+function PrivacyPolicyPl() {
 	return (
 		<>
 			<h1 className="mb-8 text-3xl md:text-4xl">Polityka prywatności</h1>

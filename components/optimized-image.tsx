@@ -7,8 +7,8 @@ type OptimizedImageProps = Omit<
 	src: string;
 };
 
-export function OptimizedImage({src, ...imageProps}: OptimizedImageProps) {
-	const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+export function OptimizedImage({src, alt, ...imageProps}: OptimizedImageProps) {
+	const webpSrc = src.replace(/\.(?:jpe?g|png)$/i, '.webp');
 
 	const originalType = src.toLowerCase().endsWith('png') ? 'image/png' : 'image/jpeg';
 
@@ -24,6 +24,7 @@ export function OptimizedImage({src, ...imageProps}: OptimizedImageProps) {
 			/>
 			<img
 				src={src}
+				alt={alt}
 				{...imageProps}
 			/>
 		</picture>
