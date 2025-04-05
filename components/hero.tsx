@@ -34,7 +34,7 @@ const isLookingForJob = false;
 
 export function Hero() {
 	return (
-		<section className="mt-[160px]">
+		<section className="pt-[160px]">
 			<Container>
 				<div className="mb-2 w-fit rounded-full border border-border p-1">
 					<OptimizedImage

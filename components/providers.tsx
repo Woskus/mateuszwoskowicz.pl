@@ -2,13 +2,12 @@
 
 import {useEffect, Suspense, type PropsWithChildren} from 'react';
 import {usePathname, useSearchParams} from 'next/navigation';
-import {NextIntlClientProvider} from 'next-intl';
 import {ThemeProvider} from 'next-themes';
 import posthog from 'posthog-js';
 import {PostHogProvider, usePostHog} from 'posthog-js/react';
 import {TooltipProvider} from '@/components/ui/tooltip';
 
-export function Providers({locale, children}: PropsWithChildren & {locale: string}) {
+export function Providers({children}: PropsWithChildren) {
 	useEffect(() => {
 		posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY ?? '', {
 			api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
@@ -21,18 +20,13 @@ export function Providers({locale, children}: PropsWithChildren & {locale: strin
 		<PostHogProvider client={posthog}>
 			<SuspendedPostHogPageView />
 
-			<NextIntlClientProvider
-				locale={locale}
-				timeZone="Europe/Warsaw"
+			<ThemeProvider
+				attribute="class"
+				defaultTheme="dark"
+				disableTransitionOnChange
 			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					disableTransitionOnChange
-				>
-					<TooltipProvider>{children}</TooltipProvider>
-				</ThemeProvider>
-			</NextIntlClientProvider>
+				<TooltipProvider>{children}</TooltipProvider>
+			</ThemeProvider>
 		</PostHogProvider>
 	);
 }

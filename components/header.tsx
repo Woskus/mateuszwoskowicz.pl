@@ -3,28 +3,16 @@
 import {useState} from 'react';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
+import {useTranslations} from 'next-intl';
 import {Linkedin, Menu, X} from 'lucide-react';
 import {motion, AnimatePresence} from 'framer-motion';
 import {Container} from '@/components/container';
 import {Button} from '@/components/ui/button';
 import {DarkModeToggler} from '@/components/dark-mode-toggler';
+import {LocaleSwitcher} from '@/components/locale-switcher/locale-switcher';
 
-interface HeaderProps {
-	links: {
-		href: string;
-		label: string;
-	}[];
-	menuOpenStateLabel: string;
-	menuCloseStateLabel: string;
-	linkedinLabel: string;
-}
-
-export function Header({
-	links,
-	menuOpenStateLabel,
-	menuCloseStateLabel,
-	linkedinLabel,
-}: HeaderProps) {
+export function Header() {
+	const t = useTranslations('Header');
 	const pathname = usePathname();
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,6 +24,13 @@ export function Header({
 	const closeMobileMenu = () => {
 		setIsMobileMenuOpen(false);
 	};
+
+	const navLinks = [
+		{href: '/#projekty', label: t('featuredProjects')},
+		{href: '/#doswiadczenie', label: t('experience')},
+		{href: '/#o-mnie', label: t('about')},
+		{href: '/#opinie', label: t('testimonials')},
+	];
 
 	return (
 		<header
@@ -59,7 +54,7 @@ export function Header({
 
 				<nav className="hidden md:block">
 					<ul className="flex justify-end gap-8">
-						{links.map((link) => (
+						{navLinks.map((link) => (
 							<li key={link.href}>
 								<Button
 									variant="link"
@@ -69,6 +64,10 @@ export function Header({
 								</Button>
 							</li>
 						))}
+
+						<li>
+							<LocaleSwitcher />
+						</li>
 
 						<li>
 							<DarkModeToggler />
@@ -82,7 +81,7 @@ export function Header({
 						size="icon"
 						onClick={toggleMobileMenu}
 						aria-label={
-							isMobileMenuOpen ? menuCloseStateLabel : menuOpenStateLabel
+							isMobileMenuOpen ? t('menuCloseState') : t('menuOpenState')
 						}
 						aria-expanded={isMobileMenuOpen}
 						className="z-10"
@@ -102,7 +101,7 @@ export function Header({
 					>
 						<Container className="h-full">
 							<ul className="flex h-full flex-col items-center justify-center gap-5">
-								{links.map((link) => (
+								{navLinks.map((link) => (
 									<li key={link.href}>
 										<Button
 											variant="link"
@@ -131,9 +130,13 @@ export function Header({
 											onClick={closeMobileMenu}
 										>
 											<Linkedin className="mr-2 h-4 w-4" />
-											{linkedinLabel}
+											{t('linkedinLabel')}
 										</Link>
 									</Button>
+								</li>
+
+								<li>
+									<LocaleSwitcher />
 								</li>
 
 								<li>

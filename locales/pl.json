@@ -3,7 +3,14 @@
     "featuredProjects": "Wyróżnione projekty",
     "experience": "Doświadczenie",
     "about": "O mnie",
-    "testimonials": "Opinie"
+    "testimonials": "Opinie",
+    "menuOpenState": "Otwórz menu",
+    "menuCloseState": "Zamknij menu",
+    "linkedinLabel": "Napisz na LinkedIn"
+  },
+  "LocaleSwitcher": {
+    "label": "Język",
+    "locale": "{locale, select, pl {🇵🇱} en {🇺🇸} other {⚙️}}"
   },
   "HomePage": {
     "position": "Senior Frontend Developer"
