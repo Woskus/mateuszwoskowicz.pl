@@ -41,7 +41,7 @@ export function Header() {
 			<Container className="grid grid-cols-2 pb-2 pt-4 md:py-4">
 				<div>
 					<Link
-						href={pathname === '/' ? '/#start' : '/'}
+						href={pathname === `/${locale}/` ? `/${locale}#start` : `/${locale}/`}
 						className="z-10 rounded-lg py-2 focus:outline-0 focus:ring-primary focus-visible:ring-1"
 					>
 						<span
