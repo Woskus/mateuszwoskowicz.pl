@@ -37,60 +37,6 @@ export interface Experience {
 
 export const experiences: Experience[] = [
 	{
-		id: 'manaboo',
-		logo: <Manaboo />,
-		type: 'business',
-		positions: [
-			{
-				startDate: new Date('2024-10-15'),
-				technologies: [
-					'TypeScript',
-					'Next.js',
-					'OpenAI',
-					'Pinecone',
-					'AWS Bedrock',
-					'TailwindCSS',
-				],
-				locale: {
-					en: {
-						title: 'Co-Founder & AI Fullstack Developer',
-						description:
-							'A platform that uses AI to recommend games on Roblox and allows users to earn money in-game. I am co-creating the project, among others, with the founders of my current full-time job.',
-						projects: [
-							{
-								name: 'AI Recommendation System',
-								description:
-									'I developed a proprietary recommendation system based on AI, RAG, and vector databases. The system uses the "Collaborative Filtering" method to find the best games for users based on their demographics, game history, and other users.',
-							},
-							{
-								name: 'Internal Dashboard',
-								description:
-									'I created an internal dashboard that enables editing and managing campaigns, user management, payment handling, and generating reports for clients.',
-							},
-						],
-					},
-					pl: {
-						title: 'Co-Founder & AI Fullstack Developer',
-						description:
-							'Platforma, która wykorzystuje AI do rekomendacji gier w Roblox oraz pozwala użytkownikom zarabiać w grze. Projekt współtworzę między innymi z Founderami mojej obecnej pracy etatowej.',
-						projects: [
-							{
-								name: 'System rekomendacji AI',
-								description:
-									'Stworzyłem autorski system rekomendacji oparty o AI, RAG, bazy wektorowe. System wykorzystuje metodę "Collaborative Filtering" do wyszukiwania najlepszych gier dla użytkownika bazując na jego danych demograficznych, historii gier oraz innych użytkownikach.',
-							},
-							{
-								name: 'Wewnętrzny dashboard',
-								description:
-									'Stworzyłem wewnętrzny dashboard, który pozwala na edycje i zarządzanie kampaniami, zarządzanie użytkownikami oraz obsługę płatności, a także tworzenie raportów dla klientów.',
-							},
-						],
-					},
-				},
-			},
-		],
-		open: true,
-	},{
 		id: 'pkobp',
 		logo: <Pkobp />,
 		type: 'freelance',
@@ -390,6 +336,61 @@ export const experiences: Experience[] = [
 								name: 'Migracja strony z Pug do Wordpress',
 								description:
 									'Samodzielnie wdrożyłem nową stronę, co było moim pierwszym większym projektem w firmie.',
+							},
+						],
+					},
+				},
+			},
+		],
+		open: true,
+	},
+	{
+		id: 'manaboo',
+		logo: <Manaboo />,
+		type: 'business',
+		positions: [
+			{
+				startDate: new Date('2024-10-15'),
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'OpenAI',
+					'Pinecone',
+					'AWS Bedrock',
+					'TailwindCSS',
+				],
+				locale: {
+					en: {
+						title: 'Co-Founder & AI Fullstack Developer',
+						description:
+							'A platform that uses AI to recommend games on Roblox and allows users to earn money in-game. I am co-creating the project, among others, with the founders of my current full-time job.',
+						projects: [
+							{
+								name: 'AI Recommendation System',
+								description:
+									'I developed a proprietary recommendation system based on AI, RAG, and vector databases. The system uses the "Collaborative Filtering" method to find the best games for users based on their demographics, game history, and other users.',
+							},
+							{
+								name: 'Internal Dashboard',
+								description:
+									'I created an internal dashboard that enables editing and managing campaigns, user management, payment handling, and generating reports for clients.',
+							},
+						],
+					},
+					pl: {
+						title: 'Co-Founder & AI Fullstack Developer',
+						description:
+							'Platforma, która wykorzystuje AI do rekomendacji gier w Roblox oraz pozwala użytkownikom zarabiać w grze. Projekt współtworzę między innymi z Founderami mojej obecnej pracy etatowej.',
+						projects: [
+							{
+								name: 'System rekomendacji AI',
+								description:
+									'Stworzyłem autorski system rekomendacji oparty o AI, RAG, bazy wektorowe. System wykorzystuje metodę "Collaborative Filtering" do wyszukiwania najlepszych gier dla użytkownika bazując na jego danych demograficznych, historii gier oraz innych użytkownikach.',
+							},
+							{
+								name: 'Wewnętrzny dashboard',
+								description:
+									'Stworzyłem wewnętrzny dashboard, który pozwala na edycje i zarządzanie kampaniami, zarządzanie użytkownikami oraz obsługę płatności, a także tworzenie raportów dla klientów.',
 							},
 						],
 					},
