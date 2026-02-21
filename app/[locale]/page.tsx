@@ -14,7 +14,7 @@ import {projects} from '@/data/projects';
 export const metadata: Metadata = {
 	title: 'Mateusz Woskowicz - Senior Frontend Developer',
 	description:
-		'Senior Frontend Developer z 5-letnim doświadczeniem, specjalizujący się w React.js, Next.js, TypeScript i rozwiązaniach AI. Obecnie pracuję w inStreamly oraz prowadzący agencję mwebs.',
+		'Senior Frontend Developer specjalizujący się we wdrożeniach AI, systemach multiagentowych, automatyzacjach n8n oraz integracjach z ekosystemami OpenAI, Notion, Airtable i Google.',
 	openGraph: {
 		images: [
 			{

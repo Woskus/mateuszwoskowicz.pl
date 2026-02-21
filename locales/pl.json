@@ -24,19 +24,20 @@
 			"featured": "Wyróżnione",
 			"technologies": "Technologie",
 			"fullTime": "Pełen etat",
-			"business": "Własny działalność",
+			"partTime": "Niepełny etat",
+			"business": "Własna działalność",
 			"freelance": "Freelance"
 		},
 		"testimonials": "Opinie",
 		"about": {
 			"title": "O mnie",
 			"greeting": "Hej! 👋",
-			"experience": "Jestem Senior Frontend Developerem z ponad {yearsDiff}-letnim doświadczeniem komercyjnym. Specjalizuję się w Next.js, React.js, TypeScript oraz Node.js i MySQL.",
+			"experience": "Jestem Senior Frontend Developerem z ponad {yearsDiff}-letnim doświadczeniem komercyjnym. Łączę rozwój aplikacji z wdrożeniami AI, automatyzacjami oraz budową systemów multiagentowych.",
 			"work": {
-				"description": "Na co dzień pracuję w <instreamly>inStreamly</instreamly>, gdzie wraz z zespołem produktowym i biznesowym wdrażam innowacyjne rozwiązania. Jednym z kluczowych obszarów mojej pracy jest <aiImplementation>implementacja rozwiązań AI</aiImplementation> oraz <teamSupport>wspieranie zespołu w rozwoju</teamSupport> w tej dziedzinie."
+				"description": "Na co dzień pracuję w <instreamly>inStreamly</instreamly>, gdzie jestem jednym z pionierów <aiImplementation>wdrażania AI</aiImplementation> i samodzielnie tworzę <teamSupport>rozwiązania, które odzyskują zespołowi dziesiątki godzin pracy</teamSupport>. Równolegle rozwijam te kompetencje w <aihero>AI Hero</aihero>, budując agentów AI, systemy multiagentowe i zaawansowane automatyzacje."
 			},
 			"brands": {
-				"description": "Współpracowałem z takimi markami jak <samsung>Samsung</samsung> czy <pkobp>PKO Bank Polski</pkobp> jako freelancer. Po godzinach prowadzę własną działalność <mwebs>mwebs</mwebs>, gdzie tworzę strony i aplikacje dla kilkudziesięciu klientów."
+				"description": "Współpracowałem z takimi markami jak <samsung>Samsung</samsung> czy <pkobp>PKO Bank Polski</pkobp> jako freelancer. Do sierpnia 2025 prowadziłem własną działalność <mwebs>mwebs</mwebs>, w ramach której tworzyłem strony i aplikacje dla kilkudziesięciu klientów."
 			},
 			"values": {
 				"description": "W mojej pracy biorę <dri>pełną odpowiedzialność (DRI)</dri> za powierzone zadania, traktując każdy projekt jak własny, cenię <feedback>szczerą i konstruktywną komunikację (Feedback)</feedback> i wierzę, że <nvc>życzliwość i wzajemny szacunek (NVC)</nvc> są kluczem do sukcesu w zespole."

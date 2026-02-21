@@ -17,6 +17,9 @@ const experiencesMap: Record<
 	fullTime: {
 		variant: 'success',
 	},
+	partTime: {
+		variant: 'success',
+	},
 	business: {
 		variant: 'info',
 	},

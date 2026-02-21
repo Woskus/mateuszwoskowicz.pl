@@ -1,3 +1,4 @@
+export {AiHero} from './aihero';
 export {Callpage} from './callpage';
 export {Dcc} from './dcc';
 export {FrontendMasters} from './frontend-masters';

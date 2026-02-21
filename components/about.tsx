@@ -33,6 +33,14 @@ export function About() {
 										<Link href="#instreamly">{chunks}</Link>
 									</Button>
 								),
+								aihero: (chunks) => (
+									<Button
+										variant="link"
+										asChild
+									>
+										<Link href="#aihero">{chunks}</Link>
+									</Button>
+								),
 								aiImplementation: (chunks) => (
 									<Button
 										variant="link"
@@ -148,7 +156,7 @@ export function About() {
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>AI:</span> Claude, SuperMaven, v0, AWS Bedrock, OpenAI API
+								<span>AI:</span> Gemini, Claude, Claude Code, OpenAI, Codex, Pinecone, n8n
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />

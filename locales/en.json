@@ -24,6 +24,7 @@
 			"featured": "Featured",
 			"technologies": "Technologies",
 			"fullTime": "Full time job",
+			"partTime": "Part-time",
 			"business": "My own business",
 			"freelance": "Freelance"
 		},
@@ -31,12 +32,12 @@
 		"about": {
 			"title": "About me",
 			"greeting": "Hi! 👋",
-			"experience": "I am a Senior Frontend Developer with over {yearsDiff} years of commercial experience. I specialize in Next.js, React.js, TypeScript, as well as Node.js and MySQL.",
+			"experience": "I am a Senior Frontend Developer with over {yearsDiff} years of commercial experience. I combine product development with AI implementations, advanced automations, and multi-agent systems.",
 			"work": {
-				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where I implement innovative solutions together with the product and business teams. One of the key areas of my work is <aiImplementation>implementing AI solutions</aiImplementation> and <teamSupport>supporting team development</teamSupport>."
+				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where I am one of the pioneers of <aiImplementation>AI implementations</aiImplementation> and independently create <teamSupport>solutions that return dozens of working hours to the team</teamSupport>. In parallel, I grow this expertise at <aihero>AI Hero</aihero>, building AI agents, multi-agent systems, and advanced automations."
 			},
 			"brands": {
-				"description": "I have collaborated with brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp> as a freelancer. In my spare time, I run my own business <mwebs>mwebs</mwebs>, where I create websites and applications for dozens of clients."
+				"description": "I have collaborated with brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp> as a freelancer. Until August 2025, I ran my own business <mwebs>mwebs</mwebs>, where I delivered websites and applications for dozens of clients."
 			},
 			"values": {
 				"description": "In my work, I take <dri>full responsibility (DRI)</dri> for the tasks entrusted to me, treating each project as if it were my own. I value <feedback>honest and constructive feedback (Feedback)</feedback> and believe that <nvc>kindness and mutual respect (NVC)</nvc> are key to team success."

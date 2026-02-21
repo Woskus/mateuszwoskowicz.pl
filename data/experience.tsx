@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {
+	AiHero,
 	Callpage,
 	Dcc,
 	Instreamly,
@@ -15,7 +16,7 @@ import type {routing} from '@/lib/i18n/routing';
 export interface Experience {
 	id: string;
 	logo: React.ReactNode;
-	type: 'fullTime' | 'business' | 'freelance';
+	type: 'fullTime' | 'partTime' | 'business' | 'freelance';
 	positions: {
 		startDate: Date;
 		endDate?: Date;
@@ -36,128 +37,6 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-	{
-		id: 'pkobp',
-		logo: <Pkobp />,
-		type: 'freelance',
-		positions: [
-			{
-				startDate: new Date('2024-10-01'),
-				endDate: new Date('2025-03-10'),
-				technologies: [
-					'TypeScript',
-					'Next.js',
-					'Sanity.io',
-					'TailwindCSS',
-					'AWS',
-				],
-				locale: {
-					en: {
-						title: 'Contest Landing Page for PKO Bank Polski',
-						description:
-							'In this project, I combined the roles of Frontend Developer and Project Manager. I was responsible for both the development of the website and overseeing the project process and subcontractors.',
-						projects: [
-							{
-								name: 'Security',
-								description:
-									'Ensuring a high level of application security, which is essential for a project carried out for a bank.',
-							},
-							{
-								name: 'CMS Integration',
-								description:
-									'One of the client’s requirements was integration with a CMS that allowed for content management and the ability to immediately shut down the page.',
-							},
-							{
-								name: 'Team Management',
-								description:
-									'Oversight of the project process and team management.',
-							},
-						],
-					},
-					pl: {
-						title: 'Konkursowy Landing Page dla PKO Banku Polskiego',
-						description:
-							'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
-						projects: [
-							{
-								name: 'Security',
-								description:
-									'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
-							},
-							{
-								name: 'Integracja CMS',
-								description:
-									'Jednym z wymagań klienta była integracja z CMS, który pozwalał na zarządzanie treścią i możliwość natychmiastowego zamknięcia strony.',
-							},
-							{
-								name: 'Zarządzanie zespołem',
-								description:
-									'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
-							},
-						],
-					},
-				},
-			},
-		],
-		open: true,
-	},
-	{
-		id: 'samsung',
-		logo: <Samsung />,
-		type: 'freelance',
-		positions: [
-			{
-				startDate: new Date('2021-12-08'),
-				endDate: new Date('2022-01-31'),
-				technologies: ['Node.js', 'Express.js', 'Pug', 'SCSS'],
-				locale: {
-					en: {
-						title: 'Website – Galaxy Mobile Tournaments',
-						description: (
-							<>
-								I completed this project as a subcontractor. My task was
-								to implement the website using Node.js, Express.js, and
-								Pug. I was responsible for implementing the design from
-								Figma and integrating the frontend with the backend.{' '}
-								<Button
-									variant="link"
-									asChild
-								>
-									<Link href="/case-study/mobilne-rozgrywki-galaxy">
-										My case study
-									</Link>
-								</Button>
-								.
-							</>
-						),
-						projects: [],
-					},
-					pl: {
-						title: 'Strona internetowa - Mobilne Rozgrywki Galaxy',
-						description: (
-							<>
-								Projekt zrealizowałem jako podwykonawca, a moim zadaniem
-								było wdrożenie strony internetowej wykorzystując Node.js,
-								Express.js i Pug. Odpowiadałem za implementację projektu z
-								Figmy oraz integrację frontendu z backendem.{' '}
-								<Button
-									variant="link"
-									asChild
-								>
-									<Link href="/case-study/mobilne-rozgrywki-galaxy">
-										Moje case study
-									</Link>
-								</Button>
-								.
-							</>
-						),
-						projects: [],
-					},
-				},
-			},
-		],
-		open: true,
-	},
 	{
 		id: 'instreamly',
 		logo: <Instreamly />,
@@ -345,6 +224,189 @@ export const experiences: Experience[] = [
 		open: true,
 	},
 	{
+		id: 'aihero',
+		logo: <AiHero />,
+		type: 'partTime',
+		positions: [
+			{
+				startDate: new Date('2025-07-11'),
+				technologies: [
+					'TypeScript',
+					'Node.js',
+					'n8n',
+					'OpenAI',
+					'Claude',
+					'Gemini',
+					'Pinecone',
+					'RAG',
+					'Notion',
+					'Airtable',
+					'Google Workspace',
+					'Copilot Studio',
+				],
+				locale: {
+					en: {
+						title: 'Senior Software Developer',
+						description:
+							'I work part-time at AI Hero as a Senior Software Developer, with a strong focus on AI and n8n. I design and implement complex multi-agent systems and advanced automations for both internal teams and clients.',
+						projects: [
+							{
+								name: 'Multi-Agent Systems & n8n Automations',
+								description:
+									'I build production-ready multi-agent architectures and automation flows that streamline operations and eliminate repetitive manual work.',
+							},
+							{
+								name: 'AI Integrations & RAG Tooling',
+								description:
+									'I deliver solutions based on OpenAI, Claude, Gemini, and RAG with Pinecone, and build integrations with Notion, Airtable, Google ecosystem, and Microsoft Copilot Studio.',
+							},
+						],
+					},
+					pl: {
+						title: 'Senior Software Developer',
+						description:
+							'W AI Hero pracuję na niepełny etat jako Senior Software Developer, koncentrując się na AI i n8n. Projektuję oraz wdrażam złożone systemy multiagentowe i zaawansowane automatyzacje zarówno dla zespołów wewnętrznych, jak i klientów.',
+						projects: [
+							{
+								name: 'Systemy multiagentowe i automatyzacje n8n',
+								description:
+									'Buduję gotowe produkcyjnie architektury multiagentowe i automatyzacje, które upraszczają procesy i usuwają powtarzalną pracę manualną.',
+							},
+							{
+								name: 'Integracje AI i narzędzia RAG',
+								description:
+									'Wdrażam rozwiązania oparte o OpenAI, Claude, Gemini oraz RAG z wykorzystaniem Pinecone, a także integracje z Notion, Airtable, ekosystemem Google i Microsoft Copilot Studio.',
+							},
+						],
+					},
+				},
+			},
+		],
+		open: true,
+	},
+	{
+		id: 'pkobp',
+		logo: <Pkobp />,
+		type: 'freelance',
+		positions: [
+			{
+				startDate: new Date('2024-10-01'),
+				endDate: new Date('2025-03-10'),
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'Sanity.io',
+					'TailwindCSS',
+					'AWS',
+				],
+				locale: {
+					en: {
+						title: 'Contest Landing Page for PKO Bank Polski',
+						description:
+							'In this project, I combined the roles of Frontend Developer and Project Manager. I was responsible for both the development of the website and overseeing the project process and subcontractors.',
+						projects: [
+							{
+								name: 'Security',
+								description:
+									'Ensuring a high level of application security, which is essential for a project carried out for a bank.',
+							},
+							{
+								name: 'CMS Integration',
+								description:
+									'One of the client’s requirements was integration with a CMS that allowed for content management and the ability to immediately shut down the page.',
+							},
+							{
+								name: 'Team Management',
+								description:
+									'Oversight of the project process and team management.',
+							},
+						],
+					},
+					pl: {
+						title: 'Konkursowy Landing Page dla PKO Banku Polskiego',
+						description:
+							'Przy tym projekcie połączyłem role Frontend Developera i Project Managera. Odpowiadałem zarówno za development strony, jak i za nadzór nad procesem projektowym oraz podwykonawcami.',
+						projects: [
+							{
+								name: 'Security',
+								description:
+									'Dbanie o wysoki poziom bezpieczeństwa aplikacji konieczny przy realizacji projektu dla banku.',
+							},
+							{
+								name: 'Integracja CMS',
+								description:
+									'Jednym z wymagań klienta była integracja z CMS, który pozwalał na zarządzanie treścią i możliwość natychmiastowego zamknięcia strony.',
+							},
+							{
+								name: 'Zarządzanie zespołem',
+								description:
+									'Nadzór nad procesem projektowym oraz zarządzaniem zespołem.',
+							},
+						],
+					},
+				},
+			},
+		],
+		open: true,
+	},
+	{
+		id: 'samsung',
+		logo: <Samsung />,
+		type: 'freelance',
+		positions: [
+			{
+				startDate: new Date('2021-12-08'),
+				endDate: new Date('2022-01-31'),
+				technologies: ['Node.js', 'Express.js', 'Pug', 'SCSS'],
+				locale: {
+					en: {
+						title: 'Website – Galaxy Mobile Tournaments',
+						description: (
+							<>
+								I completed this project as a subcontractor. My task was
+								to implement the website using Node.js, Express.js, and
+								Pug. I was responsible for implementing the design from
+								Figma and integrating the frontend with the backend.{' '}
+								<Button
+									variant="link"
+									asChild
+								>
+									<Link href="/case-study/mobilne-rozgrywki-galaxy">
+										My case study
+									</Link>
+								</Button>
+								.
+							</>
+						),
+						projects: [],
+					},
+					pl: {
+						title: 'Strona internetowa - Mobilne Rozgrywki Galaxy',
+						description: (
+							<>
+								Projekt zrealizowałem jako podwykonawca, a moim zadaniem
+								było wdrożenie strony internetowej wykorzystując Node.js,
+								Express.js i Pug. Odpowiadałem za implementację projektu z
+								Figmy oraz integrację frontendu z backendem.{' '}
+								<Button
+									variant="link"
+									asChild
+								>
+									<Link href="/case-study/mobilne-rozgrywki-galaxy">
+										Moje case study
+									</Link>
+								</Button>
+								.
+							</>
+						),
+						projects: [],
+					},
+				},
+			},
+		],
+		open: true,
+	},
+	{
 		id: 'manaboo',
 		logo: <Manaboo />,
 		type: 'business',
@@ -406,6 +468,7 @@ export const experiences: Experience[] = [
 		positions: [
 			{
 				startDate: new Date('2021-08-07'),
+				endDate: new Date('2025-08-07'),
 				technologies: [
 					'Wordpress',
 					'Next.js',
@@ -491,7 +554,7 @@ export const experiences: Experience[] = [
 				},
 			},
 		],
-		open: true,
+		open: false,
 	},
 	{
 		id: 'dcc',
