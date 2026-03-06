@@ -51,7 +51,7 @@ export function Hero() {
 
 				<h1 className="text-2xl">Mateusz Woskowicz</h1>
 
-				<p className="text-muted-foreground">Senior Frontend Developer</p>
+				<p className="text-muted-foreground">AI Engineer</p>
 
 				<p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
 					<Ping variant={isLookingForJob ? 'green' : 'red'} />
