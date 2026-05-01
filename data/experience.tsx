@@ -246,36 +246,36 @@ export const experiences: Experience[] = [
 				],
 				locale: {
 					en: {
-						title: 'Senior Software Developer',
+						title: 'AI Engineering Projects Owner',
 						description:
-							'I work part-time at AI Hero as a Senior Software Developer, with a strong focus on AI and n8n. I design and implement complex multi-agent systems and advanced automations for both internal teams and clients.',
+							'I work part-time at AI Hero as an AI Engineering Projects Owner, owning the client AI implementation area from an operational and managerial perspective. I build a repeatable delivery model for AI implementations, combining project leadership, development, and practical know-how.',
 						projects: [
 							{
-								name: 'Multi-Agent Systems & n8n Automations',
+								name: 'Client AI Implementation Delivery',
 								description:
-									'I build production-ready multi-agent architectures and automation flows that streamline operations and eliminate repetitive manual work.',
+									'I lead client implementation projects and shape the operating model for delivering AI solutions predictably across discovery, development, rollout, and iteration.',
 							},
 							{
-								name: 'AI Integrations & RAG Tooling',
+								name: 'AI Engineering Know-How & Tooling',
 								description:
-									'I deliver solutions based on OpenAI, Claude, Gemini, and RAG with Pinecone, and build integrations with Notion, Airtable, Google ecosystem, and Microsoft Copilot Studio.',
+									'I combine hands-on development with reusable patterns for AI agents, automations, RAG, and integrations with tools such as Notion, Airtable, Google Workspace, and Microsoft Copilot Studio.',
 							},
 						],
 					},
 					pl: {
-						title: 'Senior Software Developer',
+						title: 'AI Engineering Projects Owner',
 						description:
-							'W AI Hero pracuję na niepełny etat jako Senior Software Developer, koncentrując się na AI i n8n. Projektuję oraz wdrażam złożone systemy multiagentowe i zaawansowane automatyzacje zarówno dla zespołów wewnętrznych, jak i klientów.',
+							'W AI Hero pracuję na niepełny etat jako AI Engineering Projects Owner, odpowiadając managersko-operacyjnie za obszar wdrożeń AI dla klientów. Buduję powtarzalny model delivery wdrożeń AI, łącząc prowadzenie projektów, development i praktyczne know-how.',
 						projects: [
 							{
-								name: 'Systemy multiagentowe i automatyzacje n8n',
+								name: 'Delivery wdrożeń AI dla klientów',
 								description:
-									'Buduję gotowe produkcyjnie architektury multiagentowe i automatyzacje, które upraszczają procesy i usuwają powtarzalną pracę manualną.',
+									'Prowadzę projekty wdrożeniowe dla klientów i kształtuję model operacyjny dostarczania rozwiązań AI: od discovery, przez development, po rollout i iterację.',
 							},
 							{
-								name: 'Integracje AI i narzędzia RAG',
+								name: 'AI engineering know-how i tooling',
 								description:
-									'Wdrażam rozwiązania oparte o OpenAI, Claude, Gemini oraz RAG z wykorzystaniem Pinecone, a także integracje z Notion, Airtable, ekosystemem Google i Microsoft Copilot Studio.',
+									'Łączę hands-on development z budową powtarzalnych wzorców dla agentów AI, automatyzacji, RAG oraz integracji z Notion, Airtable, Google Workspace i Microsoft Copilot Studio.',
 							},
 						],
 					},
