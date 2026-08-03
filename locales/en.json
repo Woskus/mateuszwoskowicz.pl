@@ -32,9 +32,9 @@
 		"about": {
 			"title": "About me",
 			"greeting": "Hi! 👋",
-			"experience": "I am a Senior Frontend Developer with over {yearsDiff} years of commercial experience. I combine product development with AI implementations, advanced automations, and multi-agent systems.",
+			"experience": "I am an AI Engineering & Innovation Lead with over {yearsDiff} years of commercial development experience. I specialize in implementing AI solutions as well as Next.js, React.js, TypeScript, and Node.js.",
 			"work": {
-				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where I am one of the pioneers of <aiImplementation>AI implementations</aiImplementation> and independently create <teamSupport>solutions that return dozens of working hours to the team</teamSupport>. In parallel, I grow this expertise at <aihero>AI Hero</aihero>, leading the client AI implementation area and building a repeatable delivery model."
+				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where as one of the pioneers of <aiImplementation>AI implementations</aiImplementation> I support teams across the entire organization - I talk to departments, identify processes that can be improved, and build <teamSupport>solutions that return dozens of working hours to the teams</teamSupport>. In parallel, I grow this expertise at <aihero>AI Hero</aihero>, leading the client AI implementation area and building a repeatable delivery model."
 			},
 			"brands": {
 				"description": "I have collaborated with brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp> as a freelancer. Until August 2025, I ran my own business <mwebs>mwebs</mwebs>, where I delivered websites and applications for dozens of clients."

@@ -43,7 +43,34 @@ export const experiences: Experience[] = [
 		type: 'fullTime',
 		positions: [
 			{
+				startDate: new Date('2026-08-01'),
+				technologies: [
+					'TypeScript',
+					'Next.js',
+					'Node.js',
+					'AWS',
+					'AWS Bedrock',
+					'OpenAI',
+					'Claude',
+				],
+				locale: {
+					en: {
+						title: 'AI Engineering & Innovation Lead',
+						description:
+							'As an AI Engineering & Innovation Lead, I am responsible for implementing AI solutions across the entire organization. I talk to teams, identify repetitive processes, and build solutions — AI agents and automations — that departments use every day. I am also responsible for educating teams so they can recognize on their own where AI can genuinely help them. I stay close to the product and the code, working with Next.js, Node.js, and AWS.',
+						projects: [],
+					},
+					pl: {
+						title: 'AI Engineering & Innovation Lead',
+						description:
+							'Jako AI Engineering & Innovation Lead odpowiadam za wdrażanie rozwiązań AI w całej organizacji. Rozmawiam z zespołami, identyfikuję powtarzalne procesy i buduję rozwiązania - agentów AI i automatyzacje - z których działy korzystają na co dzień. Odpowiadam również za edukację zespołów, tak aby same rozpoznawały, gdzie AI może im realnie pomóc. Pozostaję blisko produktu i kodu, pracując z Next.js, Node.js i AWS.',
+						projects: [],
+					},
+				},
+			},
+			{
 				startDate: new Date('2024-06-01'),
+				endDate: new Date('2026-08-01'),
 				technologies: [
 					'TypeScript',
 					'Next.js',

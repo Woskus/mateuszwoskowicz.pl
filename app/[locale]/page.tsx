@@ -12,16 +12,16 @@ import {Certificates} from '@/components/certificates';
 import {projects} from '@/data/projects';
 
 export const metadata: Metadata = {
-	title: 'Mateusz Woskowicz - Senior Frontend Developer',
+	title: 'Mateusz Woskowicz - AI Engineering & Innovation Lead',
 	description:
-		'Senior Frontend Developer specjalizujący się we wdrożeniach AI, systemach multiagentowych, automatyzacjach n8n oraz integracjach z ekosystemami OpenAI, Notion, Airtable i Google.',
+		'AI Engineering & Innovation Lead specjalizujący się we wdrożeniach AI, agentach AI, systemach multiagentowych, automatyzacjach n8n oraz integracjach z ekosystemami OpenAI, Notion, Airtable i Google.',
 	openGraph: {
 		images: [
 			{
 				url: 'https://s3.eu-central-1.amazonaws.com/mateuszwoskowicz.pl/og-image.jpg',
 				width: 1200,
 				height: 628,
-				alt: 'Mateusz Woskowicz - Senior Frontend Developer',
+				alt: 'Mateusz Woskowicz - AI Engineering & Innovation Lead',
 			},
 		],
 	},
