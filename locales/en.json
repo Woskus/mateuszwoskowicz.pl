@@ -32,21 +32,22 @@
 		"about": {
 			"title": "About me",
 			"greeting": "Hi! 👋",
-			"experience": "I am an AI Engineering & Innovation Lead with over {yearsDiff} years of commercial development experience. I specialize in implementing AI solutions as well as Next.js, React.js, TypeScript, and Node.js.",
+			"experience": "I am an AI Engineering & Innovation Lead with over {yearsDiff} years of commercial software development experience. I design and build AI systems - agents, automations and applications that teams use in their daily work.",
 			"work": {
-				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where as one of the pioneers of <aiImplementation>AI implementations</aiImplementation> I support teams across the entire organization - I talk to departments, identify processes that can be improved, and build <teamSupport>solutions that return dozens of working hours to the teams</teamSupport>. In parallel, I grow this expertise at <aihero>AI Hero</aihero>, leading the client AI implementation area and building a repeatable delivery model."
+				"description": "On a daily basis, I work at <instreamly>inStreamly</instreamly>, where I work on transforming the company into an AI-first organization - rebuilding processes and leading <aiImplementation>AI implementation</aiImplementation> across the company. One of the projects is an AI-first sales engine: a shared database of clients, offers and correspondence, plus agents that maintain it and pick up signals for reaching out. Earlier, I created <teamSupport>solutions that save teams time</teamSupport>, including a support agent that correctly handled 95.8% of 932 tickets in Q2 2026. In parallel, part-time at <aihero>AI Hero</aihero>, I own the internal and product areas of the Development department, including the AI platform for the company's clients."
 			},
 			"brands": {
-				"description": "I have collaborated with brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp> as a freelancer. Until August 2025, I ran my own business <mwebs>mwebs</mwebs>, where I delivered websites and applications for dozens of clients."
+				"description": "I have also worked on projects for brands such as <samsung>Samsung</samsung> and <pkobp>PKO Bank Polski</pkobp>. Until August 2025, I ran my own business <mwebs>mwebs</mwebs>, where I was responsible for the entire process - from first contact with a client to implementation and technical support."
 			},
 			"values": {
 				"description": "In my work, I take <dri>full responsibility (DRI)</dri> for the tasks entrusted to me, treating each project as if it were my own. I value <feedback>honest and constructive feedback (Feedback)</feedback> and believe that <nvc>kindness and mutual respect (NVC)</nvc> are key to team success."
 			},
 			"techStack": {
 				"title": "My Technology Stack:",
-				"database": "Database",
+				"automation": "Automation",
+				"applications": "Applications",
+				"database": "Data",
 				"tests": "Tests",
-				"styling": "Styling",
 				"tools": "Tools"
 			}
 		},

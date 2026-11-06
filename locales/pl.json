@@ -32,21 +32,22 @@
 		"about": {
 			"title": "O mnie",
 			"greeting": "Hej! 👋",
-			"experience": "Jestem AI Engineering & Innovation Leadem z ponad {yearsDiff}-letnim komercyjnym doświadczeniem deweloperskim. Specjalizuję się we wdrażaniu rozwiązań AI oraz w Next.js, React.js, TypeScript i Node.js.",
+			"experience": "Jestem AI Engineering & Innovation Leadem z ponad {yearsDiff}-letnim komercyjnym doświadczeniem w tworzeniu oprogramowania. Projektuję i buduję systemy AI - agentów, automatyzacje i aplikacje, z których zespoły korzystają w codziennej pracy.",
 			"work": {
-				"description": "Na co dzień pracuję w <instreamly>inStreamly</instreamly>, gdzie jako jeden z pionierów <aiImplementation>wdrażania AI</aiImplementation> wspieram zespoły w całej organizacji - rozmawiam z działami, identyfikuję procesy, które można usprawnić, i buduję <teamSupport>rozwiązania, które odzyskują zespołom dziesiątki godzin pracy</teamSupport>. Równolegle rozwijam te kompetencje w <aihero>AI Hero</aihero>, prowadząc obszar wdrożeń AI dla klientów i budując powtarzalny model delivery."
+				"description": "Na co dzień pracuję w <instreamly>inStreamly</instreamly>, gdzie zajmuję się transformacją firmy w organizację AI-first - przebudową procesów i <aiImplementation>wdrażaniem AI</aiImplementation> w całej firmie. Jednym z projektów jest silnik sprzedaży AI-first, czyli wspólna baza danych o klientach, ofertach i korespondencji oraz agenci, którzy ją utrzymują i wyłapują sygnały do kontaktu. Wcześniej stworzyłem tam m.in. <teamSupport>rozwiązania oszczędzające zespołom czas</teamSupport>, w tym agenta supportowego, który w II kwartale 2026 poprawnie obsłużył 95,8% z 932 ticketów. Równolegle, na część etatu, w <aihero>AI Hero</aihero> odpowiadam za obszary wewnętrzne i produktowe działu Development, w tym platformę AI dla klientów firmy."
 			},
 			"brands": {
-				"description": "Współpracowałem z takimi markami jak <samsung>Samsung</samsung> czy <pkobp>PKO Bank Polski</pkobp> jako freelancer. Do sierpnia 2025 prowadziłem własną działalność <mwebs>mwebs</mwebs>, w ramach której tworzyłem strony i aplikacje dla kilkudziesięciu klientów."
+				"description": "Mam też za sobą projekty dla takich marek jak <samsung>Samsung</samsung> czy <pkobp>PKO Bank Polski</pkobp>. Do sierpnia 2025 prowadziłem własną działalność <mwebs>mwebs</mwebs>, gdzie odpowiadałem za cały proces - od pierwszego kontaktu z klientem po wdrożenie i wsparcie techniczne."
 			},
 			"values": {
 				"description": "W mojej pracy biorę <dri>pełną odpowiedzialność (DRI)</dri> za powierzone zadania, traktując każdy projekt jak własny, cenię <feedback>szczerą i konstruktywną komunikację (Feedback)</feedback> i wierzę, że <nvc>życzliwość i wzajemny szacunek (NVC)</nvc> są kluczem do sukcesu w zespole."
 			},
 			"techStack": {
 				"title": "Mój stack technologiczny:",
-				"database": "Bazy danych",
+				"automation": "Automatyzacje",
+				"applications": "Aplikacje",
+				"database": "Dane",
 				"tests": "Testy",
-				"styling": "Stylowanie",
 				"tools": "Narzędzia"
 			}
 		},

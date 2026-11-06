@@ -144,31 +144,27 @@ export function About() {
 						<ul className="space-y-2 [&>li]:flex [&>li]:items-center [&_span]:mr-1 [&_span]:block [&_span]:text-primary">
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>Frontend:</span>Next.js, React.js, TypeScript
+								<span>AI:</span> Claude, Claude Code, OpenAI, Codex, Azure OpenAI, Gemini, Vercel AI SDK
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>Backend:</span> Node.js, TypeScript, Express.js
+								<span>{t('about.techStack.automation')}:</span> n8n, Copilot Studio, Power Automate, Apps Script
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>{t('about.techStack.database')}:</span> MySQL, PostgreSQL
+								<span>{t('about.techStack.applications')}:</span> TypeScript, Python, Next.js, Node.js
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>AI:</span> Gemini, Claude, Claude Code, OpenAI, Codex, Pinecone, n8n
+								<span>{t('about.techStack.database')}:</span> MySQL, PostgreSQL, Pinecone
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>{t('about.techStack.tests')}:</span> Cypress, Jest, Playwright
+								<span>{t('about.techStack.tests')}:</span> Vitest, Playwright, Jest
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>{t('about.techStack.styling')}:</span> TailwindCSS, Shadcn UI, SCSS
-							</li>
-							<li>
-								<ArrowRight className="mr-2 h-4 w-4 text-primary" />
-								<span>{t('about.techStack.tools')}:</span> Git, Github, Webstorm, Cursor, Docker, Figma, ClickUp
+								<span>{t('about.techStack.tools')}:</span> Git, GitHub, Docker, ClickUp
 							</li>
 							<li>
 								<ArrowRight className="mr-2 h-4 w-4 text-primary" />

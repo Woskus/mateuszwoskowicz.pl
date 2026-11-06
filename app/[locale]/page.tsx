@@ -14,7 +14,7 @@ import {projects} from '@/data/projects';
 export const metadata: Metadata = {
 	title: 'Mateusz Woskowicz - AI Engineering & Innovation Lead',
 	description:
-		'AI Engineering & Innovation Lead specjalizujący się we wdrożeniach AI, agentach AI, systemach multiagentowych, automatyzacjach n8n oraz integracjach z ekosystemami OpenAI, Notion, Airtable i Google.',
+		'AI Engineering & Innovation Lead. Projektuję i buduję agentów AI, automatyzacje i aplikacje AI, z których zespoły korzystają w codziennej pracy.',
 	openGraph: {
 		images: [
 			{

@@ -46,25 +46,59 @@ export const experiences: Experience[] = [
 				startDate: new Date('2026-08-01'),
 				technologies: [
 					'TypeScript',
+					'Python',
 					'Next.js',
 					'Node.js',
+					'n8n',
 					'AWS',
-					'AWS Bedrock',
-					'OpenAI',
 					'Claude',
+					'Claude Code',
+					'OpenAI',
 				],
 				locale: {
 					en: {
 						title: 'AI Engineering & Innovation Lead',
 						description:
-							'As an AI Engineering & Innovation Lead, I am responsible for implementing AI solutions across the entire organization. I talk to teams, identify repetitive processes, and build solutions — AI agents and automations — that departments use every day. I am also responsible for educating teams so they can recognize on their own where AI can genuinely help them. I stay close to the product and the code, working with Next.js, Node.js, and AWS.',
-						projects: [],
+							'I work on transforming inStreamly into an AI-first organization and rebuilding the company’s processes around AI, from talking to departments and setting priorities, through building agents and automations, to measuring the results. One of the projects is an AI-first sales engine, where I am the technical lead. I also support people who build AI solutions in their own teams, advise on the choice of AI models and tools, and keep an eye on their costs.',
+						projects: [
+							{
+								name: 'AI-First Sales Engine',
+								description:
+									'I am building a system that supports sales: a shared database of companies, contacts, offers and correspondence, agents that clean and complete it every night, and tests of detecting sales signals in emails and calls. The agents only save information they are certain of, and contact with clients stays with people.',
+							},
+							{
+								name: 'AI Discovery and Priorities Across the Company',
+								description:
+									'I talked through AI needs with every department and turned those conversations into a backlog of implementations. I set priorities directly with a co-founder and report on progress regularly.',
+							},
+							{
+								name: 'AI-First Moderation Dashboard',
+								description:
+									'I am co-creating a new moderation dashboard built from scratch around the target process. AI handles the analysis and repetitive work, moderators assess the cases it selects, and every automation reports its own results from day one.',
+							},
+						],
 					},
 					pl: {
 						title: 'AI Engineering & Innovation Lead',
 						description:
-							'Jako AI Engineering & Innovation Lead odpowiadam za wdrażanie rozwiązań AI w całej organizacji. Rozmawiam z zespołami, identyfikuję powtarzalne procesy i buduję rozwiązania - agentów AI i automatyzacje - z których działy korzystają na co dzień. Odpowiadam również za edukację zespołów, tak aby same rozpoznawały, gdzie AI może im realnie pomóc. Pozostaję blisko produktu i kodu, pracując z Next.js, Node.js i AWS.',
-						projects: [],
+							'Pracuję nad transformacją inStreamly w organizację AI-first i przebudową procesów firmy pod AI - od rozmów z działami i ustalania priorytetów, przez budowę agentów i automatyzacji, po mierzenie efektów. Jednym z projektów jest silnik sprzedaży AI-first, w którym jestem liderem technicznym. Wspieram też osoby budujące rozwiązania AI w swoich zespołach, doradzam w wyborze modeli i narzędzi oraz pilnuję ich kosztów.',
+						projects: [
+							{
+								name: 'Silnik sprzedaży AI-first',
+								description:
+									'Buduję system wspierający sprzedaż - wspólną bazę danych o firmach, kontaktach, ofertach i korespondencji, agentów, którzy co noc ją porządkują i uzupełniają, oraz testy wykrywania sygnałów sprzedażowych z maili i rozmów. Agenci zapisują tylko pewne informacje, a kontakt z klientem zostaje po stronie ludzi.',
+							},
+							{
+								name: 'Discovery i priorytety AI w całej firmie',
+								description:
+									'Przegadałem potrzeby AI z każdym działem i zamieniłem te rozmowy w backlog wdrożeń. Priorytety ustalam bezpośrednio z co-founderem, a postępy regularnie raportuję.',
+							},
+							{
+								name: 'Dashboard moderacyjny AI-first',
+								description:
+									'Współtworzę od zera nowy dashboard moderacyjny, projektowany pod docelowy proces. AI wykonuje analizy i powtarzalne czynności, moderatorzy oceniają wybrane przez nie przypadki, a każda automatyzacja od pierwszego dnia raportuje swoje wyniki.',
+							},
+						],
 					},
 				},
 			},
@@ -87,34 +121,44 @@ export const experiences: Experience[] = [
 					en: {
 						title: 'Senior Frontend Developer',
 						description:
-							'As a Senior Frontend Developer, I create and maintain applications using Next.js, Node.js, and AWS. I’m increasingly involved in designing application architecture and actively participate in product development planning. I focus particularly on innovative solutions using AI and on projects that have a business growth impact.',
+							'I built and maintained applications, designed their architecture and took part in product planning. Over time, more and more of my work moved towards AI. In this role I built the first AI features in the product, which later led to creating my current position.',
 						projects: [
 							{
-								name: 'Custom Sponsorship Mechanisms – Netflix, PlayStation, Pepsi and others',
+								name: 'AI Support Agent',
 								description:
-									'Implementation of tailored solutions for displaying sponsorships during live broadcasts on Twitch, YouTube or Kick.',
+									'I built and develop an agent that handles tickets from streamers based on their account data, and passes cases that need a decision to a person. In Q2 2026, AI correctly handled 95.8% of 932 tickets, with 138% more requests than a year earlier. By our estimate, the work dropped from about 15 hours a week to about 1.5.',
 							},
 							{
-								name: 'Implementing AI Solutions',
+								name: 'AI in Clip Moderation',
 								description:
-									'I bring my passion for AI into my daily work by implementing both internal and external solutions, such as AI Agents, chatbots and applications.',
+									'AI analyzes transcripts of campaign clips and flags material that may be risky for a client, taking the context of the game into account. A flagged clip goes to a moderator, who makes the decision.',
+							},
+							{
+								name: 'Custom Sponsorship Mechanisms - Netflix, PlayStation, Pepsi and others',
+								description:
+									'Implementation of tailored solutions for displaying sponsorships during live broadcasts on Twitch, YouTube or Kick.',
 							},
 						],
 					},
 					pl: {
 						title: 'Senior Frontend Developer',
 						description:
-							'Jako Senior Frontend Developer tworzę i utrzymuje aplikacje przy użyciu Next.js, Node.js i AWS. Coraz więcej czasu poświęcam na projektowanie architektury aplikacji i aktywnie uczestniczę w planowaniu rozwoju produktu. Szczególnie koncentruję się na innowacyjnych rozwiązaniach z wykorzystaniem AI oraz na projektach, który mają wpływ na rozwój biznesowy.',
+							'Tworzyłem i utrzymywałem aplikacje, projektowałem ich architekturę i uczestniczyłem w planowaniu rozwoju produktu. Z czasem coraz większa część mojej pracy przesuwała się w stronę AI. W tej roli zbudowałem pierwsze funkcje AI w produkcie, co doprowadziło później do powstania mojego obecnego stanowiska.',
 						projects: [
+							{
+								name: 'Agent supportowy AI',
+								description:
+									'Zbudowałem i rozwijam agenta, który obsługuje tickety od streamerów na podstawie danych ich kont, a sprawy wymagające decyzji przekazuje człowiekowi. W II kwartale 2026 AI poprawnie obsłużyło 95,8% z 932 ticketów, a zgłoszeń było o 138% więcej niż rok wcześniej. Według estymacji praca spadła z około 15 godzin tygodniowo do około 1,5 godziny.',
+							},
+							{
+								name: 'AI w moderacji klipów',
+								description:
+									'AI analizuje transkrypcje klipów z kampanii i oznacza materiały potencjalnie ryzykowne dla klienta, uwzględniając kontekst gry. Klip z tagiem trafia do moderatora, który podejmuje decyzję.',
+							},
 							{
 								name: 'Dedykowane mechanizmy sponsoringów - Netflix, Play Station, Pepsi i inni',
 								description:
 									'Wdrożenie dedykowanych rozwiązań przy wyświetlaniu sponsoringów na transmisjach na żywo na Twitch, YouTube lub Kick.',
-							},
-							{
-								name: 'Wdrażanie rozwiązań AI',
-								description:
-									'Moje zainteresowanie AI przekładam do codziennej pracy, wdrażam rozwiązania, zarówno wewnętrzne jak i zewnętrzne w postaci Agentów AI, Chatbotów oraz aplikacji.',
 							},
 						],
 					},
@@ -142,7 +186,7 @@ export const experiences: Experience[] = [
 							'As a Frontend Developer, I significantly expanded my skill set by taking on increasingly large projects. I focused on developing towards Fullstack. I learned new technologies such as TypeScript and Next.js, and began working independently on the backend using Node.js and MySQL databases.',
 						projects: [
 							{
-								name: 'AI Voice Recognition Mechanism – Monte Snack',
+								name: 'AI Voice Recognition Mechanism - Monte Snack',
 								description: (
 									<>
 										I created a mechanism for automatically displaying
@@ -224,7 +268,7 @@ export const experiences: Experience[] = [
 					en: {
 						title: 'Junior Frontend Developer',
 						description:
-							'I initially joined the team as a freelancer, but quickly received a full-time offer to co-develop the application. It was a time of intensive learning – I took my first steps with React.js, backend development using Node.js, and MySQL databases.',
+							'I initially joined the team as a freelancer, but quickly received a full-time offer to co-develop the application. It was a time of intensive learning - I took my first steps with React.js, backend development using Node.js, and MySQL databases.',
 						projects: [
 							{
 								name: 'Website Migration from Pug to WordPress',
@@ -259,50 +303,70 @@ export const experiences: Experience[] = [
 				startDate: new Date('2025-07-11'),
 				technologies: [
 					'TypeScript',
-					'Node.js',
-					'n8n',
-					'OpenAI',
-					'Claude',
-					'Gemini',
-					'Pinecone',
-					'RAG',
-					'Notion',
-					'Airtable',
-					'Google Workspace',
+					'Next.js',
+					'Vercel AI SDK',
+					'Azure OpenAI',
+					'Claude Code',
+					'Microsoft Graph',
 					'Copilot Studio',
+					'Power Automate',
+					'n8n',
+					'Airtable',
+					'MySQL',
+					'AWS',
 				],
 				locale: {
 					en: {
 						title: 'AI Engineering Projects Owner',
 						description:
-							'I work part-time at AI Hero as an AI Engineering Projects Owner, owning the client AI implementation area from an operational and managerial perspective. I build a repeatable delivery model for AI implementations, combining project leadership, development, and practical know-how.',
+							'I work part-time at AI Hero, a company that implements AI in large organizations. In the Development department I own the internal and product areas: the AI platform for the company’s clients, internal tools and the company-wide Claude Code environment. Before that, I led the catalog of ready-made AI solutions and their rollouts for enterprise clients.',
 						projects: [
 							{
-								name: 'Client AI Implementation Delivery',
+								name: 'AI Platform for Clients',
 								description:
-									'I lead client implementation projects and shape the operating model for delivering AI solutions predictably across discovery, development, rollout, and iteration.',
+									'I built the application where the company’s business clients use an AI chat, four specialized agents and a prompt library. It also covers company email sign-in, onboarding, per-plan message limits, organizations and security documentation for corporate reviews.',
 							},
 							{
-								name: 'AI Engineering Know-How & Tooling',
+								name: 'Trainer Allocation App',
 								description:
-									'I combine hands-on development with reusable patterns for AI agents, automations, RAG, and integrations with tools such as Notion, Airtable, Google Workspace, and Microsoft Copilot Studio.',
+									'I built an internal tool that combines project management data and Outlook calendars into a view of the trainer team’s workload and availability. Sales, PMs and the education team can see in one place who can be offered to a client.',
+							},
+							{
+								name: 'Prompt Hero and Agent Hero',
+								description:
+									'Public AI tools that turn a simple request into a structured prompt, or a one-line idea into a complete agent system prompt, based on the company’s frameworks.',
+							},
+							{
+								name: 'AI Solution Catalog and Client Rollouts',
+								description:
+									'I developed the Quick Start catalog and the process from briefing, through implementation and testing, to maintenance. I was responsible for the first rollouts of agents and automations for clients in Microsoft and Google environments, coordinating the developers’ work.',
 							},
 						],
 					},
 					pl: {
 						title: 'AI Engineering Projects Owner',
 						description:
-							'W AI Hero pracuję na niepełny etat jako AI Engineering Projects Owner, odpowiadając managersko-operacyjnie za obszar wdrożeń AI dla klientów. Buduję powtarzalny model delivery wdrożeń AI, łącząc prowadzenie projektów, development i praktyczne know-how.',
+							'W AI Hero, firmie wdrażającej AI w dużych organizacjach, pracuję na część etatu. W dziale Development odpowiadam za obszary wewnętrzne i produktowe - platformę AI dla klientów firmy, narzędzia wewnętrzne i firmowe środowisko pracy z Claude Code. Wcześniej prowadziłem katalog gotowych rozwiązań AI i ich wdrożenia u klientów enterprise.',
 						projects: [
 							{
-								name: 'Delivery wdrożeń AI dla klientów',
+								name: 'Platforma AI dla klientów',
 								description:
-									'Prowadzę projekty wdrożeniowe dla klientów i kształtuję model operacyjny dostarczania rozwiązań AI: od discovery, przez development, po rollout i iterację.',
+									'Zbudowałem aplikację, w której klienci biznesowi firmy korzystają z czatu AI, czterech wyspecjalizowanych agentów i bazy promptów. Obejmuje też logowanie mailem firmowym, onboarding, limity wiadomości w planach, organizacje i dokumentację bezpieczeństwa pod korporacyjne audyty.',
 							},
 							{
-								name: 'AI engineering know-how i tooling',
+								name: 'Aplikacja do alokacji trenerów',
 								description:
-									'Łączę hands-on development z budową powtarzalnych wzorców dla agentów AI, automatyzacji, RAG oraz integracji z Notion, Airtable, Google Workspace i Microsoft Copilot Studio.',
+									'Zbudowałem narzędzie wewnętrzne, które z danych projektowych i kalendarzy Outlook składa obraz obłożenia i dostępności zespołu trenerów. Sprzedaż, PM-owie i dział edukacji widzą w jednym miejscu, kogo można zaproponować klientowi.',
+							},
+							{
+								name: 'Prompt Hero i Agent Hero',
+								description:
+									'Publiczne narzędzia AI, które na bazie firmowych frameworków zamieniają prostą prośbę w ustrukturyzowany prompt, a jednozdaniowy pomysł w kompletny prompt systemowy agenta.',
+							},
+							{
+								name: 'Katalog rozwiązań AI i wdrożenia dla klientów',
+								description:
+									'Rozwijałem katalog Szybki Start i proces od briefu, przez wdrożenie i testy, po utrzymanie. Odpowiadałem za pierwsze wdrożenia agentów i automatyzacji u klientów w środowisku Microsoft i Google, koordynując pracę developerów.',
 							},
 						],
 					},
@@ -387,7 +451,7 @@ export const experiences: Experience[] = [
 				technologies: ['Node.js', 'Express.js', 'Pug', 'SCSS'],
 				locale: {
 					en: {
-						title: 'Website – Galaxy Mobile Tournaments',
+						title: 'Website - Galaxy Mobile Tournaments',
 						description: (
 							<>
 								I completed this project as a subcontractor. My task was
@@ -510,11 +574,11 @@ export const experiences: Experience[] = [
 						title: 'Founder & Senior Frontend Developer',
 						description: (
 							<>
-								For several years, I’ve been running my own business where
-								I create websites and applications. I independently
-								acquire clients and manage a team of subcontractors. I’ve
-								completed dozens of projects — from simple websites to
-								advanced applications using databases.{' '}
+								For several years, I ran my own business where I created
+								websites and applications. I independently acquired clients
+								and managed a team of subcontractors. I completed dozens of
+								projects - from simple websites to advanced applications
+								using databases.{' '}
 								<Button
 									variant="link"
 									asChild
@@ -533,12 +597,12 @@ export const experiences: Experience[] = [
 							{
 								name: 'Comprehensive Client Support',
 								description:
-									'I handle the entire process — from first contact, through design, to implementation and technical support.',
+									'I handled the entire process - from first contact, through design, to implementation and technical support.',
 							},
 							{
 								name: 'Team Management',
 								description:
-									'I coordinate the work of subcontractors, ensuring timely project delivery.',
+									'I coordinated the work of subcontractors, ensuring timely project delivery.',
 							},
 						],
 					},
@@ -546,10 +610,10 @@ export const experiences: Experience[] = [
 						title: 'Founder & Senior Frontend Developer',
 						description: (
 							<>
-								Od kilku lat prowadzę własną działalność, gdzie tworzę
-								strony i aplikacje. Samodzielnie pozyskuję klientów i
-								zarządzam zespołem podwykonawców. Zrealizowałem
-								kilkadziesiąt projektów - od prostych stron po
+								Przez kilka lat prowadziłem własną działalność, w ramach
+								której tworzyłem strony i aplikacje. Samodzielnie
+								pozyskiwałem klientów i zarządzałem zespołem podwykonawców.
+								Zrealizowałem kilkadziesiąt projektów - od prostych stron po
 								zaawansowane aplikacje z użyciem baz danych.{' '}
 								<Button
 									variant="link"
@@ -569,12 +633,12 @@ export const experiences: Experience[] = [
 							{
 								name: 'Kompleksowa obsługa klientów',
 								description:
-									'Zajmuję się całym procesem - od pierwszego kontaktu, przez projekt, po wdrożenie i wsparcie techniczne.',
+									'Zajmowałem się całym procesem - od pierwszego kontaktu, przez projekt, po wdrożenie i wsparcie techniczne.',
 							},
 							{
 								name: 'Zarządzanie zespołem',
 								description:
-									'Koordynuję pracę podwykonawców, dbając o terminową realizację projektów.',
+									'Koordynowałem pracę podwykonawców, dbając o terminową realizację projektów.',
 							},
 						],
 					},
